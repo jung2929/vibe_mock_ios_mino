@@ -31,8 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //FirebaseApp.configure()
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        let splashViewController = SplashViewController()
-        self.window?.rootViewController = UINavigationController(rootViewController: splashViewController)
+        let mainTabBarController = MainTabBarController()
+        self.window?.rootViewController = UINavigationController(rootViewController: mainTabBarController)
         self.window?.makeKeyAndVisible()
         return true
     }
