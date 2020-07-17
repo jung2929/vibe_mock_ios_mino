@@ -8,10 +8,15 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class HomeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+//        let navigationAppearance = UINavigationBarAppearance()
+//        navigationAppearance.backgroundColor = .clear
+//        
+//        self.navigationController?.navigationBar.standardAppearance = navigationAppearance
     }
 }

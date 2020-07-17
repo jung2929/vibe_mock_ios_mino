@@ -10,7 +10,6 @@
 		A18740AE24C197CF009E118D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18740AC24C197CF009E118D /* HomeViewController.swift */; };
 		A18740AF24C197CF009E118D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18740AD24C197CF009E118D /* HomeViewController.xib */; };
 		A18740B324C19860009E118D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18740B124C19860009E118D /* MainTabBarController.swift */; };
-		A18740B424C19860009E118D /* MainTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18740B224C19860009E118D /* MainTabBarController.xib */; };
 		A18740C324C19DF5009E118D /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18740C124C19DF5009E118D /* ChartViewController.swift */; };
 		A18740C424C19DF5009E118D /* ChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18740C224C19DF5009E118D /* ChartViewController.xib */; };
 		A18740C724C19E0D009E118D /* DJViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18740C524C19E0D009E118D /* DJViewController.swift */; };
@@ -44,7 +43,6 @@
 		A18740AC24C197CF009E118D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A18740AD24C197CF009E118D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		A18740B124C19860009E118D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		A18740B224C19860009E118D /* MainTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarController.xib; sourceTree = "<group>"; };
 		A18740C124C19DF5009E118D /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		A18740C224C19DF5009E118D /* ChartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartViewController.xib; sourceTree = "<group>"; };
 		A18740C524C19E0D009E118D /* DJViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				A18740B124C19860009E118D /* MainTabBarController.swift */,
-				A18740B224C19860009E118D /* MainTabBarController.xib */,
 			);
 			path = TabBarController;
 			sourceTree = "<group>";
@@ -377,7 +374,6 @@
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
 				A18740AF24C197CF009E118D /* HomeViewController.xib in Resources */,
 				A18740CC24C19E21009E118D /* SearchViewController.xib in Resources */,
-				A18740B424C19860009E118D /* MainTabBarController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

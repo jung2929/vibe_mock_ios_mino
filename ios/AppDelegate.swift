@@ -11,6 +11,7 @@ import CoreData
 import AlamofireNetworkActivityIndicator
 import Firebase
 
+@available(iOS 13.0, *)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -33,9 +34,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let mainTabBarController = MainTabBarController()
         self.window?.rootViewController = UINavigationController(rootViewController: mainTabBarController)
+        self.window?.rootViewController?.tabBarController?.navigationController?.navigationBar.isTranslucent = false
+        self.window?.rootViewController?.tabBarController?.navigationController?.navigationBar.barTintColor = .clear
+        self.window?.rootViewController?.navigationController?.navigationBar.isTranslucent = false
+        self.window?.rootViewController?.navigationController?.navigationBar.barTintColor = .clear
         self.window?.makeKeyAndVisible()
+        
         return true
     }
+
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
