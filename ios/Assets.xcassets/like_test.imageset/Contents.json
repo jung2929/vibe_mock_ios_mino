@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "hvtest.jpeg",
+      "filename" : "like_test.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "hvtest-1.jpeg",
+      "filename" : "like_test-1.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "hvtest-2.jpeg",
+      "filename" : "like_test-2.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }

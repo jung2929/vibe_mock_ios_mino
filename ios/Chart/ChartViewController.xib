@@ -19,28 +19,28 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="m8P-4P-3S1">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="735.99999999999989"/>
                     <subviews>
                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htu-ru-tFU">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="1299.6666666666667"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="2400"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDV-9K-csc">
-                                    <rect key="frame" x="175" y="1252" width="42" height="20.666666666666742"/>
+                                    <rect key="frame" x="175" y="2352.3333333333335" width="42" height="20.666666666666515"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCl-OV-E5O">
-                                    <rect key="frame" x="20" y="121" width="42" height="21"/>
+                                    <rect key="frame" x="20" y="150.66666666666666" width="42" height="38.666666666666657"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view clipsSubviews="YES" contentMode="top" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="6ZK-4h-V3L" userLabel="네비게이션뷰">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="164.33333333333334"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="차트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcC-r6-W9t">
-                                            <rect key="frame" x="20" y="30" width="59" height="35"/>
+                                            <rect key="frame" x="20" y="30" width="59" height="64.666666666666671"/>
                                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -58,7 +58,6 @@
                             <constraints>
                                 <constraint firstItem="KCl-OV-E5O" firstAttribute="leading" secondItem="EcC-r6-W9t" secondAttribute="leading" id="1e3-O1-VoZ"/>
                                 <constraint firstItem="6ZK-4h-V3L" firstAttribute="top" secondItem="htu-ru-tFU" secondAttribute="top" id="7du-3t-RBr"/>
-                                <constraint firstItem="nDV-9K-csc" firstAttribute="top" secondItem="htu-ru-tFU" secondAttribute="top" constant="1252" id="7pO-v8-wV5"/>
                                 <constraint firstAttribute="trailing" secondItem="6ZK-4h-V3L" secondAttribute="trailing" id="9vt-1h-cWg"/>
                                 <constraint firstItem="6ZK-4h-V3L" firstAttribute="leading" secondItem="htu-ru-tFU" secondAttribute="leading" id="AD2-RR-GHL"/>
                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nDV-9K-csc" secondAttribute="trailing" constant="20" symbolic="YES" id="IHc-9F-YfN"/>
@@ -69,6 +68,7 @@
                                 <constraint firstItem="nDV-9K-csc" firstAttribute="leading" secondItem="htu-ru-tFU" secondAttribute="leading" constant="175" id="tQB-Ah-nNX"/>
                                 <constraint firstItem="KCl-OV-E5O" firstAttribute="top" secondItem="EcC-r6-W9t" secondAttribute="bottom" constant="56" id="ucn-CD-8YH"/>
                                 <constraint firstItem="KCl-OV-E5O" firstAttribute="width" secondItem="EcC-r6-W9t" secondAttribute="width" multiplier="0.711864" id="wtV-RT-uEQ"/>
+                                <constraint firstItem="nDV-9K-csc" firstAttribute="height" secondItem="htu-ru-tFU" secondAttribute="height" multiplier="0.00861111" id="xep-qj-Tsd"/>
                             </constraints>
                         </view>
                     </subviews>

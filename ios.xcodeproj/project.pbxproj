@@ -20,6 +20,8 @@
 		A18740D024C19E30009E118D /* StorageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18740CE24C19E30009E118D /* StorageViewController.xib */; };
 		A1F1D10424C2AAB600085DF9 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F1D10224C2AAB600085DF9 /* TitleCollectionViewCell.swift */; };
 		A1F1D10524C2AAB600085DF9 /* TitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F1D10324C2AAB600085DF9 /* TitleCollectionViewCell.xib */; };
+		A1F1D10824C331E200085DF9 /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F1D10624C331E200085DF9 /* RecommendCollectionViewCell.swift */; };
+		A1F1D10924C331E200085DF9 /* RecommendCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F1D10724C331E200085DF9 /* RecommendCollectionViewCell.xib */; };
 		BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */; };
 		BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */; };
 		BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */; };
@@ -55,6 +57,8 @@
 		A18740CE24C19E30009E118D /* StorageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StorageViewController.xib; sourceTree = "<group>"; };
 		A1F1D10224C2AAB600085DF9 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1F1D10324C2AAB600085DF9 /* TitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCollectionViewCell.xib; sourceTree = "<group>"; };
+		A1F1D10624C331E200085DF9 /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1F1D10724C331E200085DF9 /* RecommendCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCollectionViewCell.xib; sourceTree = "<group>"; };
 		BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePopUp.swift; sourceTree = "<group>"; };
 		BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePopUpDelegate.swift; sourceTree = "<group>"; };
 		BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoticePopUp.storyboard; sourceTree = "<group>"; };
@@ -248,6 +252,8 @@
 				A18740AD24C197CF009E118D /* HomeViewController.xib */,
 				A1F1D10224C2AAB600085DF9 /* TitleCollectionViewCell.swift */,
 				A1F1D10324C2AAB600085DF9 /* TitleCollectionViewCell.xib */,
+				A1F1D10624C331E200085DF9 /* RecommendCollectionViewCell.swift */,
+				A1F1D10724C331E200085DF9 /* RecommendCollectionViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -375,6 +381,7 @@
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
 				A1F1D10524C2AAB600085DF9 /* TitleCollectionViewCell.xib in Resources */,
 				A18740C824C19E0D009E118D /* DJViewController.xib in Resources */,
+				A1F1D10924C331E200085DF9 /* RecommendCollectionViewCell.xib in Resources */,
 				A18740D024C19E30009E118D /* StorageViewController.xib in Resources */,
 				A18740C424C19DF5009E118D /* ChartViewController.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
@@ -438,6 +445,7 @@
 				A18740B324C19860009E118D /* MainTabBarController.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
 				BD9BF17E22F9CD60009E47EB /* ColorPalette.swift in Sources */,
+				A1F1D10824C331E200085DF9 /* RecommendCollectionViewCell.swift in Sources */,
 				A18740C324C19DF5009E118D /* ChartViewController.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
 				A18740CF24C19E30009E118D /* StorageViewController.swift in Sources */,
