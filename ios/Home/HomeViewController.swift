@@ -20,7 +20,7 @@ class HomeViewController: BaseViewController {
         
         let lineSpacing: CGFloat = 20
         
-        let cellRatio: CGFloat = 0.87
+        let cellRatio: CGFloat = 1
         
         var isOneStepPaging = true
         
@@ -37,8 +37,8 @@ class HomeViewController: BaseViewController {
             let cellHeight = floor(view.frame.height * cellRatio)
 
             // 상하, 좌우 inset value 설정
-            let insetX = (view.frame.width - cellWidth) / 8.0
-            let insetY = (view.frame.width - cellHeight) / 2.0
+            let insetX = (view.frame.width - cellWidth) / 10
+            let insetY = (view.frame.width - cellHeight) / 10
             
             let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
             layout.itemSize = CGSize(width: cellWidth, height: cellHeight)
@@ -72,7 +72,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             cell.backgroundColor = .white
             cell.subTitleLabel.text = data[indexPath.row]
             cell.descriptionLabel.text = data[indexPath.row]
-//            cell.alpha = 0.5
+            cell.alpha = 0.5
             return cell
         }
         
