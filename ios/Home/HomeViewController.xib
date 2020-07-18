@@ -8,8 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ios" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="VIBE" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="kg4-tE-DtB" id="hRo-1l-98n"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,15 +23,26 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                     <subviews>
                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="if5-FE-dV7">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="1299.6666666666667"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1299.3333333333333"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZES-yn-Zps">
-                                    <rect key="frame" x="175" y="1252" width="42" height="20.666666666666742"/>
+                                    <rect key="frame" x="175" y="1252" width="41.666666666666657" height="20.333333333333258"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kg4-tE-DtB">
+                                    <rect key="frame" x="0.0" y="103" width="414" height="273"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pHa-IL-dfx">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
                             </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZES-yn-Zps" secondAttribute="trailing" constant="20" symbolic="YES" id="BNq-yE-5O1"/>
                                 <constraint firstItem="ZES-yn-Zps" firstAttribute="leading" secondItem="if5-FE-dV7" secondAttribute="leading" constant="175" id="Fyj-Ce-0hx"/>
@@ -39,41 +51,33 @@
                             </constraints>
                         </view>
                         <view clipsSubviews="YES" contentMode="top" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="DsN-1q-Ui0" userLabel="네비게이션뷰">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 VIBE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITH-mg-55V">
-                                    <rect key="frame" x="20" y="49" width="148" height="35"/>
+                                    <rect key="frame" x="20" y="30" width="148" height="35"/>
                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWJ-jH-3HS">
-                                    <rect key="frame" x="362" y="51" width="32" height="32"/>
+                                    <rect key="frame" x="362" y="30" width="32" height="32"/>
                                     <state key="normal" image="UserImage"/>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            <constraints>
-                                <constraint firstItem="ITH-mg-55V" firstAttribute="top" secondItem="DsN-1q-Ui0" secondAttribute="top" constant="49" id="1eu-ul-kWy"/>
-                                <constraint firstAttribute="height" constant="106" id="5SD-u5-8w1"/>
-                                <constraint firstItem="oWJ-jH-3HS" firstAttribute="top" secondItem="DsN-1q-Ui0" secondAttribute="top" constant="51" id="90R-4n-o3a"/>
-                                <constraint firstItem="ITH-mg-55V" firstAttribute="width" secondItem="DsN-1q-Ui0" secondAttribute="width" multiplier="0.357488" id="GwE-oa-eSZ"/>
-                                <constraint firstItem="oWJ-jH-3HS" firstAttribute="width" secondItem="DsN-1q-Ui0" secondAttribute="width" multiplier="0.0772947" id="LKg-Pu-76J"/>
-                                <constraint firstItem="ITH-mg-55V" firstAttribute="leading" secondItem="DsN-1q-Ui0" secondAttribute="leading" constant="20" id="kEl-aw-sJf"/>
-                                <constraint firstItem="ITH-mg-55V" firstAttribute="height" secondItem="DsN-1q-Ui0" secondAttribute="height" multiplier="0.330189" id="oBj-c2-FUr"/>
-                                <constraint firstAttribute="trailing" secondItem="oWJ-jH-3HS" secondAttribute="trailing" constant="20" id="qsk-XX-7qi"/>
-                                <constraint firstItem="oWJ-jH-3HS" firstAttribute="height" secondItem="DsN-1q-Ui0" secondAttribute="height" multiplier="0.301887" id="uRk-3q-c3w"/>
-                            </constraints>
                         </view>
                     </subviews>
                     <constraints>
                         <constraint firstItem="DsN-1q-Ui0" firstAttribute="centerX" secondItem="0rd-a1-lV8" secondAttribute="centerX" id="4OX-FH-KqI"/>
                         <constraint firstAttribute="trailing" secondItem="if5-FE-dV7" secondAttribute="trailing" id="4Vp-cP-a9K"/>
                         <constraint firstAttribute="bottom" secondItem="if5-FE-dV7" secondAttribute="bottom" id="Bjh-we-oJ3"/>
+                        <constraint firstItem="kg4-tE-DtB" firstAttribute="top" secondItem="DsN-1q-Ui0" secondAttribute="bottom" constant="8" id="KOK-Nk-tFB"/>
                         <constraint firstItem="if5-FE-dV7" firstAttribute="top" secondItem="DsN-1q-Ui0" secondAttribute="top" id="VeT-aA-JAK"/>
                         <constraint firstItem="if5-FE-dV7" firstAttribute="top" secondItem="0rd-a1-lV8" secondAttribute="top" id="ZNZ-kz-fBe"/>
                         <constraint firstItem="if5-FE-dV7" firstAttribute="leading" secondItem="0rd-a1-lV8" secondAttribute="leading" id="aet-sF-EuC"/>
+                        <constraint firstItem="kg4-tE-DtB" firstAttribute="leading" secondItem="DsN-1q-Ui0" secondAttribute="leading" id="bwc-Io-8YU"/>
                         <constraint firstItem="DsN-1q-Ui0" firstAttribute="trailing" secondItem="if5-FE-dV7" secondAttribute="trailing" id="hEs-E5-XJs"/>
+                        <constraint firstItem="kg4-tE-DtB" firstAttribute="trailing" secondItem="DsN-1q-Ui0" secondAttribute="trailing" id="lhP-sV-UqD"/>
                         <constraint firstItem="if5-FE-dV7" firstAttribute="leading" secondItem="DsN-1q-Ui0" secondAttribute="leading" id="xjN-yh-b0d"/>
                     </constraints>
                 </scrollView>
@@ -81,12 +85,23 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="0rd-a1-lV8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="0ft-RE-pp8"/>
+                <constraint firstItem="oWJ-jH-3HS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="0j5-Xs-6zV"/>
+                <constraint firstItem="oWJ-jH-3HS" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.0772947" id="0oM-j8-mDS"/>
+                <constraint firstItem="ITH-mg-55V" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.357488" id="1mL-BZ-xgI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oWJ-jH-3HS" secondAttribute="trailing" constant="20" id="3Mg-uy-6bp"/>
                 <constraint firstItem="0rd-a1-lV8" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="5uo-SW-X7K"/>
+                <constraint firstItem="ITH-mg-55V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="IKa-bU-zKh"/>
+                <constraint firstItem="ITH-mg-55V" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0475543" id="IPr-mF-lhk"/>
+                <constraint firstItem="kg4-tE-DtB" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Lay-Ga-xP1"/>
                 <constraint firstItem="0rd-a1-lV8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fMA-Ru-WUl"/>
+                <constraint firstItem="kg4-tE-DtB" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.370924" id="kNn-x3-PPh"/>
+                <constraint firstItem="DsN-1q-Ui0" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.129076" id="umf-MU-tTP"/>
+                <constraint firstItem="ITH-mg-55V" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="uxV-ad-2DP"/>
+                <constraint firstItem="oWJ-jH-3HS" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0434783" id="xvm-Qf-wsI"/>
                 <constraint firstAttribute="trailing" secondItem="0rd-a1-lV8" secondAttribute="trailing" id="zDG-BJ-Otd"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="131.8840579710145" y="119.83695652173914"/>
+            <point key="canvasLocation" x="172" y="113"/>
         </view>
         <view hidden="YES" contentMode="scaleToFill" id="Hme-4Y-RUf">
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -99,7 +114,7 @@
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <viewLayoutGuide key="safeArea" id="ZV8-4F-xdm"/>
-            <point key="canvasLocation" x="-519" y="119"/>
+            <point key="canvasLocation" x="-477" y="91"/>
         </view>
     </objects>
     <resources>

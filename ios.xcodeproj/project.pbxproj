@@ -18,6 +18,8 @@
 		A18740CC24C19E21009E118D /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18740CA24C19E21009E118D /* SearchViewController.xib */; };
 		A18740CF24C19E30009E118D /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18740CD24C19E30009E118D /* StorageViewController.swift */; };
 		A18740D024C19E30009E118D /* StorageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18740CE24C19E30009E118D /* StorageViewController.xib */; };
+		A1F1D10424C2AAB600085DF9 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F1D10224C2AAB600085DF9 /* TitleCollectionViewCell.swift */; };
+		A1F1D10524C2AAB600085DF9 /* TitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F1D10324C2AAB600085DF9 /* TitleCollectionViewCell.xib */; };
 		BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */; };
 		BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */; };
 		BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */; };
@@ -51,6 +53,8 @@
 		A18740CA24C19E21009E118D /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		A18740CD24C19E30009E118D /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
 		A18740CE24C19E30009E118D /* StorageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StorageViewController.xib; sourceTree = "<group>"; };
+		A1F1D10224C2AAB600085DF9 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1F1D10324C2AAB600085DF9 /* TitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCollectionViewCell.xib; sourceTree = "<group>"; };
 		BD75ABD72301B5F600E0FC7A /* NoticePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePopUp.swift; sourceTree = "<group>"; };
 		BD75ABD92301B73400E0FC7A /* NoticePopUpDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticePopUpDelegate.swift; sourceTree = "<group>"; };
 		BD75ABDB2301B7B500E0FC7A /* NoticePopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoticePopUp.storyboard; sourceTree = "<group>"; };
@@ -63,7 +67,7 @@
 		BD9BF17B22F9C737009E47EB /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		BD9BF17D22F9CD60009E47EB /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		BD9BF17F22F9CDEF009E47EB /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		BDEF322B22F9B7CB00FEF8BD /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDEF322B22F9B7CB00FEF8BD /* VIBE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIBE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEF322E22F9B7CB00FEF8BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDEF323622F9B7CB00FEF8BD /* ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios.xcdatamodel; sourceTree = "<group>"; };
 		BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -242,6 +246,8 @@
 				BD75ABD62301B42900E0FC7A /* Entity */,
 				A18740AC24C197CF009E118D /* HomeViewController.swift */,
 				A18740AD24C197CF009E118D /* HomeViewController.xib */,
+				A1F1D10224C2AAB600085DF9 /* TitleCollectionViewCell.swift */,
+				A1F1D10324C2AAB600085DF9 /* TitleCollectionViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -282,7 +288,7 @@
 		BDEF322C22F9B7CB00FEF8BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BDEF322B22F9B7CB00FEF8BD /* ios.app */,
+				BDEF322B22F9B7CB00FEF8BD /* VIBE.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -309,9 +315,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BDEF322A22F9B7CB00FEF8BD /* ios */ = {
+		BDEF322A22F9B7CB00FEF8BD /* VIBE */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BDEF325622F9B7CC00FEF8BD /* Build configuration list for PBXNativeTarget "ios" */;
+			buildConfigurationList = BDEF325622F9B7CC00FEF8BD /* Build configuration list for PBXNativeTarget "VIBE" */;
 			buildPhases = (
 				CA7E1F2F9E66AD8729AB40D3 /* [CP] Check Pods Manifest.lock */,
 				BDEF322722F9B7CB00FEF8BD /* Sources */,
@@ -323,9 +329,9 @@
 			);
 			dependencies = (
 			);
-			name = ios;
+			name = VIBE;
 			productName = ios;
-			productReference = BDEF322B22F9B7CB00FEF8BD /* ios.app */;
+			productReference = BDEF322B22F9B7CB00FEF8BD /* VIBE.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -356,7 +362,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BDEF322A22F9B7CB00FEF8BD /* ios */,
+				BDEF322A22F9B7CB00FEF8BD /* VIBE */,
 			);
 		};
 /* End PBXProject section */
@@ -367,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
+				A1F1D10524C2AAB600085DF9 /* TitleCollectionViewCell.xib in Resources */,
 				A18740C824C19E0D009E118D /* DJViewController.xib in Resources */,
 				A18740D024C19E30009E118D /* StorageViewController.xib in Resources */,
 				A18740C424C19DF5009E118D /* ChartViewController.xib in Resources */,
@@ -443,6 +450,7 @@
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
+				A1F1D10424C2AAB600085DF9 /* TitleCollectionViewCell.swift in Sources */,
 				A18740C724C19E0D009E118D /* DJViewController.swift in Sources */,
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,
 			);
@@ -592,7 +600,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.softsquared.template.ios;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VIBE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -612,7 +620,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.softsquared.template.ios;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = VIBE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -630,7 +638,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BDEF325622F9B7CC00FEF8BD /* Build configuration list for PBXNativeTarget "ios" */ = {
+		BDEF325622F9B7CC00FEF8BD /* Build configuration list for PBXNativeTarget "VIBE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BDEF325722F9B7CC00FEF8BD /* Debug */,

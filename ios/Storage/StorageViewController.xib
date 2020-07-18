@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StorageViewController" customModule="ios" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StorageViewController" customModule="VIBE" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="1Gk-qw-TfI" id="aWU-b5-o3l"/>
             </connections>
@@ -39,31 +39,20 @@
                             </constraints>
                         </view>
                         <view clipsSubviews="YES" contentMode="top" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="xHO-G5-LJi" userLabel="네비게이션뷰">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="93"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="보관함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hS8-0c-4fu">
-                                    <rect key="frame" x="20" y="49" width="148" height="35"/>
+                                    <rect key="frame" x="20" y="30" width="148" height="35"/>
                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfl-xu-epS">
-                                    <rect key="frame" x="362" y="51" width="32" height="32"/>
+                                    <rect key="frame" x="362" y="30" width="32" height="32"/>
                                     <state key="normal" image="Storage_설정"/>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            <constraints>
-                                <constraint firstItem="hS8-0c-4fu" firstAttribute="leading" secondItem="xHO-G5-LJi" secondAttribute="leading" constant="20" id="B6t-C9-wt9"/>
-                                <constraint firstItem="hS8-0c-4fu" firstAttribute="top" secondItem="xHO-G5-LJi" secondAttribute="top" constant="49" id="MUx-eo-jNL"/>
-                                <constraint firstItem="Cfl-xu-epS" firstAttribute="width" secondItem="xHO-G5-LJi" secondAttribute="width" multiplier="0.0772947" id="QgE-e9-hjL"/>
-                                <constraint firstItem="Cfl-xu-epS" firstAttribute="height" secondItem="xHO-G5-LJi" secondAttribute="height" multiplier="0.301887" id="Xlk-Pf-hvY"/>
-                                <constraint firstItem="hS8-0c-4fu" firstAttribute="width" secondItem="xHO-G5-LJi" secondAttribute="width" multiplier="0.357488" id="e1R-j4-bdY"/>
-                                <constraint firstAttribute="height" constant="106" id="gOF-PW-wiN"/>
-                                <constraint firstAttribute="trailing" secondItem="Cfl-xu-epS" secondAttribute="trailing" constant="20" id="h0o-KQ-QVl"/>
-                                <constraint firstItem="Cfl-xu-epS" firstAttribute="top" secondItem="xHO-G5-LJi" secondAttribute="top" constant="51" id="ntH-4V-Lan"/>
-                                <constraint firstItem="hS8-0c-4fu" firstAttribute="height" secondItem="xHO-G5-LJi" secondAttribute="height" multiplier="0.330189" id="t8j-TV-M7n"/>
-                            </constraints>
                         </view>
                     </subviews>
                     <constraints>
@@ -81,9 +70,18 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="x4P-3N-5K6" secondAttribute="trailing" id="1s5-rX-xqj"/>
+                <constraint firstItem="xHO-G5-LJi" firstAttribute="height" secondItem="1Gk-qw-TfI" secondAttribute="height" multiplier="0.126359" id="FEl-0x-8VK"/>
+                <constraint firstItem="hS8-0c-4fu" firstAttribute="top" secondItem="lkd-hq-qAE" secondAttribute="top" constant="30" id="FEt-j1-MPM"/>
                 <constraint firstItem="x4P-3N-5K6" firstAttribute="bottom" secondItem="lkd-hq-qAE" secondAttribute="bottom" id="N8g-In-dH3"/>
+                <constraint firstItem="lkd-hq-qAE" firstAttribute="trailing" secondItem="Cfl-xu-epS" secondAttribute="trailing" constant="20" id="Nhk-Kw-QcC"/>
+                <constraint firstItem="Cfl-xu-epS" firstAttribute="height" secondItem="1Gk-qw-TfI" secondAttribute="height" multiplier="0.0434783" id="O1M-nD-39P"/>
+                <constraint firstItem="Cfl-xu-epS" firstAttribute="top" secondItem="lkd-hq-qAE" secondAttribute="top" constant="30" id="ck2-gI-oNJ"/>
+                <constraint firstItem="hS8-0c-4fu" firstAttribute="leading" secondItem="lkd-hq-qAE" secondAttribute="leading" constant="20" id="fJn-iK-lfa"/>
                 <constraint firstItem="x4P-3N-5K6" firstAttribute="leading" secondItem="1Gk-qw-TfI" secondAttribute="leading" id="j7y-8L-2Wu"/>
                 <constraint firstItem="x4P-3N-5K6" firstAttribute="top" secondItem="lkd-hq-qAE" secondAttribute="top" id="mjm-3G-KhZ"/>
+                <constraint firstItem="Cfl-xu-epS" firstAttribute="width" secondItem="1Gk-qw-TfI" secondAttribute="width" multiplier="0.0772947" id="nUC-Gt-6vK"/>
+                <constraint firstItem="hS8-0c-4fu" firstAttribute="height" secondItem="1Gk-qw-TfI" secondAttribute="height" multiplier="0.0475543" id="sXc-Dk-zOg"/>
+                <constraint firstItem="hS8-0c-4fu" firstAttribute="width" secondItem="1Gk-qw-TfI" secondAttribute="width" multiplier="0.357488" id="z0O-1A-gJB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="lkd-hq-qAE"/>
             <point key="canvasLocation" x="140.57971014492756" y="119.83695652173914"/>
@@ -104,7 +102,7 @@
                 <constraint firstItem="h0p-YC-O8I" firstAttribute="bottom" secondItem="Erq-er-9NY" secondAttribute="bottom" id="eSY-02-deM"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="h0p-YC-O8I"/>
-            <point key="canvasLocation" x="-499" y="120"/>
+            <point key="canvasLocation" x="-516" y="112"/>
         </view>
     </objects>
     <resources>

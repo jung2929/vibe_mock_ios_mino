@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="ios" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="VIBE" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="fGZ-Fx-j3w" id="DXt-7x-R9z"/>
             </connections>
@@ -39,23 +39,16 @@
                             </constraints>
                         </view>
                         <view clipsSubviews="YES" contentMode="top" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="mHy-Ld-2Fh" userLabel="네비게이션뷰">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="검색" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyO-N0-Nt3">
-                                    <rect key="frame" x="20" y="49" width="148" height="35"/>
+                                    <rect key="frame" x="20" y="30" width="148" height="35"/>
                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            <constraints>
-                                <constraint firstItem="fyO-N0-Nt3" firstAttribute="width" secondItem="mHy-Ld-2Fh" secondAttribute="width" multiplier="0.357488" id="Bg6-QS-uQA"/>
-                                <constraint firstItem="fyO-N0-Nt3" firstAttribute="height" secondItem="mHy-Ld-2Fh" secondAttribute="height" multiplier="0.330189" id="I44-dE-Otp"/>
-                                <constraint firstAttribute="height" constant="106" id="MeI-IF-SQw"/>
-                                <constraint firstItem="fyO-N0-Nt3" firstAttribute="leading" secondItem="mHy-Ld-2Fh" secondAttribute="leading" constant="20" id="P1l-zK-kqR"/>
-                                <constraint firstItem="fyO-N0-Nt3" firstAttribute="top" secondItem="mHy-Ld-2Fh" secondAttribute="top" constant="49" id="xIJ-qr-y1U"/>
-                            </constraints>
                         </view>
                     </subviews>
                     <constraints>
@@ -74,8 +67,13 @@
             <constraints>
                 <constraint firstItem="hXz-TV-I9C" firstAttribute="leading" secondItem="fGZ-Fx-j3w" secondAttribute="leading" id="5aO-WO-rID"/>
                 <constraint firstItem="hXz-TV-I9C" firstAttribute="bottom" secondItem="fbL-KP-bjc" secondAttribute="bottom" id="8J0-o2-X4L"/>
+                <constraint firstItem="fyO-N0-Nt3" firstAttribute="leading" secondItem="fbL-KP-bjc" secondAttribute="leading" constant="20" id="Vbu-k2-I9B"/>
                 <constraint firstAttribute="trailing" secondItem="hXz-TV-I9C" secondAttribute="trailing" id="cJZ-qu-c9W"/>
+                <constraint firstItem="fyO-N0-Nt3" firstAttribute="height" secondItem="fGZ-Fx-j3w" secondAttribute="height" multiplier="0.0475543" id="coy-de-GFv"/>
+                <constraint firstItem="mHy-Ld-2Fh" firstAttribute="height" secondItem="fGZ-Fx-j3w" secondAttribute="height" multiplier="0.122283" id="eZh-yJ-huh"/>
                 <constraint firstItem="hXz-TV-I9C" firstAttribute="top" secondItem="fbL-KP-bjc" secondAttribute="top" id="rjQ-rf-WMn"/>
+                <constraint firstItem="fyO-N0-Nt3" firstAttribute="top" secondItem="fbL-KP-bjc" secondAttribute="top" constant="30" id="uON-EH-Qiw"/>
+                <constraint firstItem="fyO-N0-Nt3" firstAttribute="width" secondItem="fGZ-Fx-j3w" secondAttribute="width" multiplier="0.357488" id="y1f-vF-Bzi"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fbL-KP-bjc"/>
             <point key="canvasLocation" x="131.8840579710145" y="119.83695652173914"/>
@@ -96,7 +94,7 @@
                 <constraint firstItem="awu-bL-DK1" firstAttribute="bottom" secondItem="0X0-Fa-NPS" secondAttribute="bottom" id="iow-LE-WLP"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="awu-bL-DK1"/>
-            <point key="canvasLocation" x="-510" y="120"/>
+            <point key="canvasLocation" x="-472" y="103"/>
         </view>
     </objects>
     <resources>

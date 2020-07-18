@@ -15,11 +15,14 @@ class MainTabBarController: UITabBarController {
         super.viewDidLoad()
         
         
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
                 
         let home = HomeViewController()
         let chart = ChartViewController()

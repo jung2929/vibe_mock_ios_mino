@@ -34,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let mainTabBarController = MainTabBarController()
         self.window?.rootViewController = UINavigationController(rootViewController: mainTabBarController)
+        self.window?.rootViewController?.navigationController?.navigationBar.isTranslucent = false
         self.window?.rootViewController?.tabBarController?.navigationController?.navigationBar.isTranslucent = false
         self.window?.rootViewController?.tabBarController?.navigationController?.navigationBar.barTintColor = .clear
         self.window?.rootViewController?.navigationController?.navigationBar.isTranslucent = false
