@@ -16,6 +16,7 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var RecommendCollectionView: UICollectionView!
     @IBOutlet weak var RecentlyCollectionView: UICollectionView!
     @IBOutlet weak var HearCollectionView: UICollectionView!
+    @IBOutlet weak var NewCollectionView: UICollectionView!
     
     let data = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10"]
         
@@ -38,11 +39,15 @@ class HomeViewController: BaseViewController {
             RecentlyCollectionView.register(RecentlyNibName, forCellWithReuseIdentifier: "cell")
             let HearNibName = UINib(nibName: "HearCollectionViewCell", bundle: nil)
             HearCollectionView.register(HearNibName, forCellWithReuseIdentifier: "cell")
+            let NewNibName = UINib(nibName: "NewCollectionViewCell", bundle: nil)
+            NewCollectionView.register(NewNibName, forCellWithReuseIdentifier: "cell")
             
             TitleCollectionView.translatesAutoresizingMaskIntoConstraints = false
             RecommendCollectionView.translatesAutoresizingMaskIntoConstraints = false
             RecentlyCollectionView.translatesAutoresizingMaskIntoConstraints = false
             HearCollectionView.translatesAutoresizingMaskIntoConstraints = false
+            NewCollectionView.translatesAutoresizingMaskIntoConstraints = false
+
 
             // width, height 설정
             let cellWidth = floor(view.frame.width * cellRatio)
@@ -66,12 +71,16 @@ class HomeViewController: BaseViewController {
             RecentlyCollectionView.dataSource = self
             HearCollectionView.delegate = self
             HearCollectionView.dataSource = self
+            NewCollectionView.delegate = self
+            NewCollectionView.dataSource = self
             
             // 스크롤 시 빠르게 감속 되도록 설정
             TitleCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
             RecommendCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
             RecentlyCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
             HearCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
+            NewCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
+
 
         }
         
@@ -92,6 +101,9 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             if collectionView == HearCollectionView {
                 return 1
             }
+            if collectionView == NewCollectionView {
+                return 1
+            }
             
             return 0
         }
@@ -107,6 +119,9 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
                 return data.count
             }
             if collectionView == HearCollectionView {
+                return data.count
+            }
+            if collectionView == NewCollectionView {
                 return data.count
             }
             
@@ -156,6 +171,18 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
                 cell.HearImageView.image = UIImage(named: "hear_test2")
                 cell.backgroundColor = .white
                 cell.HearSubTitleLabel.text = data[indexPath.row]
+                cell.alpha = 0.5
+                cell.sizeToFit()
+                return cell
+            }
+            
+            if collectionView == NewCollectionView {
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as!
+                    NewCollectionViewCell
+                cell.NewTitleLabel.text = data[indexPath.row]
+                cell.NewImageView.image = UIImage(named: "new_test2")
+                cell.backgroundColor = .white
+                cell.NewSubTitleLabel.text = data[indexPath.row]
                 cell.alpha = 0.5
                 cell.sizeToFit()
                 return cell

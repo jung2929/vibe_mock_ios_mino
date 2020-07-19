@@ -50,7 +50,7 @@
                 <outlet property="RecommendSubTitleLabel" destination="ZJ5-N3-7Yy" id="SVl-7K-uS8"/>
                 <outlet property="RecommendTitleLabel" destination="Qu7-99-F71" id="lxz-5j-uy6"/>
             </connections>
-            <point key="canvasLocation" x="-1633" y="56"/>
+            <point key="canvasLocation" x="-1633.3333333333335" y="55.915178571428569"/>
         </collectionViewCell>
     </objects>
     <resources>
