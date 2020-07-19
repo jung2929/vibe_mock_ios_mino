@@ -33,7 +33,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lk3-Qe-Nnx">
+                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lk3-Qe-Nnx">
                                             <rect key="frame" x="335" y="30" width="59" height="27"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="59" id="4VU-hn-tWE"/>
@@ -99,7 +99,7 @@
                 <constraint firstAttribute="trailing" secondItem="9rZ-Mv-u4E" secondAttribute="trailing" id="XRY-nj-ZRr"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="B2g-Kb-gtA"/>
-            <point key="canvasLocation" x="248" y="83"/>
+            <point key="canvasLocation" x="242.0289855072464" y="76.630434782608702"/>
         </view>
         <view hidden="YES" contentMode="scaleToFill" id="G3M-7V-YO5">
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>

@@ -22,6 +22,12 @@
 		A18740CC24C19E21009E118D /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18740CA24C19E21009E118D /* SearchViewController.xib */; };
 		A18740CF24C19E30009E118D /* StorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18740CD24C19E30009E118D /* StorageViewController.swift */; };
 		A18740D024C19E30009E118D /* StorageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18740CE24C19E30009E118D /* StorageViewController.xib */; };
+		A199307424C487BE00EA3C46 /* Top100CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199307224C487BE00EA3C46 /* Top100CollectionViewCell.swift */; };
+		A199307524C487BE00EA3C46 /* Top100CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A199307324C487BE00EA3C46 /* Top100CollectionViewCell.xib */; };
+		A199307824C491D200EA3C46 /* LocalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199307624C491D200EA3C46 /* LocalCollectionViewCell.swift */; };
+		A199307924C491D200EA3C46 /* LocalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A199307724C491D200EA3C46 /* LocalCollectionViewCell.xib */; };
+		A199307C24C495B500EA3C46 /* BillboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199307A24C495B500EA3C46 /* BillboardCollectionViewCell.swift */; };
+		A199307D24C495B500EA3C46 /* BillboardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A199307B24C495B500EA3C46 /* BillboardCollectionViewCell.xib */; };
 		A1C6157324C42BC6005BCE5B /* NewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6157124C42BC6005BCE5B /* NewCollectionViewCell.swift */; };
 		A1C6157424C42BC6005BCE5B /* NewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C6157224C42BC6005BCE5B /* NewCollectionViewCell.xib */; };
 		A1C6157724C435B9005BCE5B /* MagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6157524C435B9005BCE5B /* MagCollectionViewCell.swift */; };
@@ -46,11 +52,12 @@
 		BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDEF323522F9B7CB00FEF8BD /* ios.xcdatamodeld */; };
 		BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEF323822F9B7CB00FEF8BD /* Assets.xcassets */; };
 		BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEF323A22F9B7CB00FEF8BD /* LaunchScreen.storyboard */; };
-		C7B0F461A33E2BA70527A7F9 /* Pods_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F13293A0F781AAAF1DC9C8A /* Pods_ios.framework */; };
+		DEE581ECCBBFD0C49936D448 /* Pods_VIBE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2288A33E9B03C27B7F987018 /* Pods_VIBE.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F13293A0F781AAAF1DC9C8A /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2288A33E9B03C27B7F987018 /* Pods_VIBE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIBE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23736EA25F11199105A12EFA /* Pods-VIBE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIBE.release.xcconfig"; path = "Target Support Files/Pods-VIBE/Pods-VIBE.release.xcconfig"; sourceTree = "<group>"; };
 		56DE891A8DE4AEB4ED1D1105 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
 		A12806AF24C4050B00EB9D5A /* RecentlyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyCollectionViewCell.swift; sourceTree = "<group>"; };
 		A12806B024C4050B00EB9D5A /* RecentlyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentlyCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -67,6 +74,12 @@
 		A18740CA24C19E21009E118D /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		A18740CD24C19E30009E118D /* StorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageViewController.swift; sourceTree = "<group>"; };
 		A18740CE24C19E30009E118D /* StorageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StorageViewController.xib; sourceTree = "<group>"; };
+		A199307224C487BE00EA3C46 /* Top100CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top100CollectionViewCell.swift; sourceTree = "<group>"; };
+		A199307324C487BE00EA3C46 /* Top100CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Top100CollectionViewCell.xib; sourceTree = "<group>"; };
+		A199307624C491D200EA3C46 /* LocalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCollectionViewCell.swift; sourceTree = "<group>"; };
+		A199307724C491D200EA3C46 /* LocalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalCollectionViewCell.xib; sourceTree = "<group>"; };
+		A199307A24C495B500EA3C46 /* BillboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardCollectionViewCell.swift; sourceTree = "<group>"; };
+		A199307B24C495B500EA3C46 /* BillboardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BillboardCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1C6157124C42BC6005BCE5B /* NewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1C6157224C42BC6005BCE5B /* NewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1C6157524C435B9005BCE5B /* MagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -94,6 +107,7 @@
 		BDEF323B22F9B7CB00FEF8BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDEF323D22F9B7CB00FEF8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D52E2D8320870120DBBF4DF3 /* Pods-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.debug.xcconfig"; path = "Target Support Files/Pods-ios/Pods-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		D6106D0FEC11802D81CF7AAA /* Pods-VIBE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIBE.debug.xcconfig"; path = "Target Support Files/Pods-VIBE/Pods-VIBE.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7B0F461A33E2BA70527A7F9 /* Pods_ios.framework in Frameworks */,
+				DEE581ECCBBFD0C49936D448 /* Pods_VIBE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +127,8 @@
 			children = (
 				D52E2D8320870120DBBF4DF3 /* Pods-ios.debug.xcconfig */,
 				56DE891A8DE4AEB4ED1D1105 /* Pods-ios.release.xcconfig */,
+				D6106D0FEC11802D81CF7AAA /* Pods-VIBE.debug.xcconfig */,
+				23736EA25F11199105A12EFA /* Pods-VIBE.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -120,7 +136,7 @@
 		596D99A16687EBAF37438401 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F13293A0F781AAAF1DC9C8A /* Pods_ios.framework */,
+				2288A33E9B03C27B7F987018 /* Pods_VIBE.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,6 +175,12 @@
 				A18740B924C19D98009E118D /* Entity */,
 				A18740C124C19DF5009E118D /* ChartViewController.swift */,
 				A18740C224C19DF5009E118D /* ChartViewController.xib */,
+				A199307224C487BE00EA3C46 /* Top100CollectionViewCell.swift */,
+				A199307324C487BE00EA3C46 /* Top100CollectionViewCell.xib */,
+				A199307624C491D200EA3C46 /* LocalCollectionViewCell.swift */,
+				A199307724C491D200EA3C46 /* LocalCollectionViewCell.xib */,
+				A199307A24C495B500EA3C46 /* BillboardCollectionViewCell.swift */,
+				A199307B24C495B500EA3C46 /* BillboardCollectionViewCell.xib */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -410,6 +432,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A199307524C487BE00EA3C46 /* Top100CollectionViewCell.xib in Resources */,
+				A199307D24C495B500EA3C46 /* BillboardCollectionViewCell.xib in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
 				A1F1D10524C2AAB600085DF9 /* TitleCollectionViewCell.xib in Resources */,
 				A12806B224C4050B00EB9D5A /* RecentlyCollectionViewCell.xib in Resources */,
@@ -423,6 +447,7 @@
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
 				A18740AF24C197CF009E118D /* HomeViewController.xib in Resources */,
+				A199307924C491D200EA3C46 /* LocalCollectionViewCell.xib in Resources */,
 				A18740CC24C19E21009E118D /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,7 +470,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ios-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-VIBE-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -458,15 +483,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ios/Pods-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-VIBE/Pods-VIBE-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ios/Pods-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-VIBE/Pods-VIBE-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios/Pods-ios-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIBE/Pods-VIBE-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -486,7 +511,9 @@
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
 				A1C6157724C435B9005BCE5B /* MagCollectionViewCell.swift in Sources */,
 				A18740CF24C19E30009E118D /* StorageViewController.swift in Sources */,
+				A199307424C487BE00EA3C46 /* Top100CollectionViewCell.swift in Sources */,
 				A18740AE24C197CF009E118D /* HomeViewController.swift in Sources */,
+				A199307824C491D200EA3C46 /* LocalCollectionViewCell.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
 				BD75ABDA2301B73400E0FC7A /* NoticePopUpDelegate.swift in Sources */,
 				BD9BF17522F9C494009E47EB /* CusomIndicatorView.swift in Sources */,
@@ -500,6 +527,7 @@
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
 				A1F1D10424C2AAB600085DF9 /* TitleCollectionViewCell.swift in Sources */,
 				A18740C724C19E0D009E118D /* DJViewController.swift in Sources */,
+				A199307C24C495B500EA3C46 /* BillboardCollectionViewCell.swift in Sources */,
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -636,7 +664,7 @@
 		};
 		BDEF325722F9B7CC00FEF8BD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D52E2D8320870120DBBF4DF3 /* Pods-ios.debug.xcconfig */;
+			baseConfigurationReference = D6106D0FEC11802D81CF7AAA /* Pods-VIBE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -656,7 +684,7 @@
 		};
 		BDEF325822F9B7CC00FEF8BD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56DE891A8DE4AEB4ED1D1105 /* Pods-ios.release.xcconfig */;
+			baseConfigurationReference = 23736EA25F11199105A12EFA /* Pods-VIBE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

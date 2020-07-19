@@ -13,7 +13,7 @@ class MainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tabBarController?.tabBar.barTintColor = .white
         
         
     }
@@ -23,6 +23,9 @@ class MainTabBarController: UITabBarController {
         super.viewWillAppear(animated)
         
         navigationController?.setNavigationBarHidden(true, animated: true)
+        tabBar.barTintColor = .white
+        tabBar.clipsToBounds = true
+        tabBar.itemPositioning = .centered
                 
         let home = HomeViewController()
         let chart = ChartViewController()

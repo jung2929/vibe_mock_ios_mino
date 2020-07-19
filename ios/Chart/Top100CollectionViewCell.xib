@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Rcq-dQ-pZ8" customClass="Top100CollectionViewCell" customModule="VIBE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mID-YT-tIT">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recently_test2" translatesAutoresizingMaskIntoConstraints="NO" id="uog-zt-Gjd">
+                        <rect key="frame" x="0.0" y="0.0" width="51" height="50"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efv-Vq-7IU">
+                        <rect key="frame" x="73" y="2" width="8" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiA-kU-C5n">
+                        <rect key="frame" x="101" y="2" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsH-S2-Hz7">
+                        <rect key="frame" x="101" y="22" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uog-zt-Gjd" firstAttribute="top" secondItem="mID-YT-tIT" secondAttribute="top" id="A41-Q1-OlM"/>
+                    <constraint firstItem="Efv-Vq-7IU" firstAttribute="leading" secondItem="uog-zt-Gjd" secondAttribute="trailing" constant="22" id="DpP-ra-szY"/>
+                    <constraint firstItem="Efv-Vq-7IU" firstAttribute="top" secondItem="mID-YT-tIT" secondAttribute="top" constant="2" id="KpS-HC-ZlL"/>
+                    <constraint firstItem="LiA-kU-C5n" firstAttribute="top" secondItem="mID-YT-tIT" secondAttribute="top" constant="2" id="NKx-Pq-3IW"/>
+                    <constraint firstItem="uog-zt-Gjd" firstAttribute="leading" secondItem="mID-YT-tIT" secondAttribute="leading" id="QOO-PG-di1"/>
+                    <constraint firstAttribute="bottom" secondItem="uog-zt-Gjd" secondAttribute="bottom" id="UWk-fM-4Yc"/>
+                    <constraint firstAttribute="trailing" secondItem="uog-zt-Gjd" secondAttribute="trailing" constant="309" id="Wl8-pN-Ie5"/>
+                    <constraint firstItem="LiA-kU-C5n" firstAttribute="leading" secondItem="Efv-Vq-7IU" secondAttribute="trailing" constant="20" id="eCk-vK-C4O"/>
+                    <constraint firstItem="vsH-S2-Hz7" firstAttribute="leading" secondItem="LiA-kU-C5n" secondAttribute="leading" id="euC-1g-3vs"/>
+                    <constraint firstItem="vsH-S2-Hz7" firstAttribute="top" secondItem="LiA-kU-C5n" secondAttribute="bottom" constant="-1" id="kNo-08-BGU"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="360" height="50"/>
+            <connections>
+                <outlet property="TopImageView" destination="uog-zt-Gjd" id="q8s-ee-iTB"/>
+                <outlet property="TopRankLabel" destination="Efv-Vq-7IU" id="0gR-Z0-Bgn"/>
+                <outlet property="TopSubTitleLabel" destination="vsH-S2-Hz7" id="bHM-EF-dIU"/>
+                <outlet property="TopTitleLabel" destination="LiA-kU-C5n" id="zKU-QY-0XS"/>
+            </connections>
+            <point key="canvasLocation" x="-906" y="-17"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="recently_test2" width="74" height="74"/>
+    </resources>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="yii-Vq-8rc" customClass="BillboardCollectionViewCell" customModule="VIBE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="z78-2z-H7f">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recently_test2" translatesAutoresizingMaskIntoConstraints="NO" id="pnI-CK-VWU">
+                        <rect key="frame" x="0.0" y="0.0" width="51" height="50"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUB-Fn-92i">
+                        <rect key="frame" x="73" y="2" width="8" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1i9-4N-qhH">
+                        <rect key="frame" x="101" y="2" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNE-dq-fP8">
+                        <rect key="frame" x="101" y="22" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1i9-4N-qhH" firstAttribute="leading" secondItem="rUB-Fn-92i" secondAttribute="trailing" constant="20" id="2By-2s-A4q"/>
+                    <constraint firstAttribute="trailing" secondItem="pnI-CK-VWU" secondAttribute="trailing" constant="309" id="O3L-iQ-0cl"/>
+                    <constraint firstItem="xNE-dq-fP8" firstAttribute="leading" secondItem="1i9-4N-qhH" secondAttribute="leading" id="OTm-Dl-6qg"/>
+                    <constraint firstItem="rUB-Fn-92i" firstAttribute="leading" secondItem="pnI-CK-VWU" secondAttribute="trailing" constant="22" id="SvB-OS-cI0"/>
+                    <constraint firstItem="pnI-CK-VWU" firstAttribute="leading" secondItem="z78-2z-H7f" secondAttribute="leading" id="TQP-y9-GFn"/>
+                    <constraint firstItem="1i9-4N-qhH" firstAttribute="top" secondItem="z78-2z-H7f" secondAttribute="top" constant="2" id="dWr-13-8Ai"/>
+                    <constraint firstItem="rUB-Fn-92i" firstAttribute="top" secondItem="z78-2z-H7f" secondAttribute="top" constant="2" id="lHW-NR-hMg"/>
+                    <constraint firstItem="pnI-CK-VWU" firstAttribute="top" secondItem="z78-2z-H7f" secondAttribute="top" id="ndw-SU-LWI"/>
+                    <constraint firstAttribute="bottom" secondItem="pnI-CK-VWU" secondAttribute="bottom" id="tsb-pS-sCE"/>
+                    <constraint firstItem="xNE-dq-fP8" firstAttribute="top" secondItem="1i9-4N-qhH" secondAttribute="bottom" constant="-1" id="x0e-V6-hBz"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="360" height="50"/>
+            <connections>
+                <outlet property="BillImageView" destination="pnI-CK-VWU" id="hm8-oH-n4M"/>
+                <outlet property="BillRankLabel" destination="rUB-Fn-92i" id="jLU-fT-TVt"/>
+                <outlet property="BillSubTitleLabel" destination="xNE-dq-fP8" id="kTO-I9-M3e"/>
+                <outlet property="BillTitleLabel" destination="1i9-4N-qhH" id="crE-59-KnO"/>
+            </connections>
+            <point key="canvasLocation" x="-906" y="-17"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="recently_test2" width="74" height="74"/>
+    </resources>
+</document>
