@@ -28,6 +28,8 @@
 		A199307924C491D200EA3C46 /* LocalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A199307724C491D200EA3C46 /* LocalCollectionViewCell.xib */; };
 		A199307C24C495B500EA3C46 /* BillboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199307A24C495B500EA3C46 /* BillboardCollectionViewCell.swift */; };
 		A199307D24C495B500EA3C46 /* BillboardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A199307B24C495B500EA3C46 /* BillboardCollectionViewCell.xib */; };
+		A199308324C49C5200EA3C46 /* GlobalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199308124C49C5200EA3C46 /* GlobalCollectionViewCell.swift */; };
+		A199308424C49C5200EA3C46 /* GlobalCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A199308224C49C5200EA3C46 /* GlobalCollectionViewCell.xib */; };
 		A1C6157324C42BC6005BCE5B /* NewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6157124C42BC6005BCE5B /* NewCollectionViewCell.swift */; };
 		A1C6157424C42BC6005BCE5B /* NewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C6157224C42BC6005BCE5B /* NewCollectionViewCell.xib */; };
 		A1C6157724C435B9005BCE5B /* MagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6157524C435B9005BCE5B /* MagCollectionViewCell.swift */; };
@@ -80,6 +82,8 @@
 		A199307724C491D200EA3C46 /* LocalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalCollectionViewCell.xib; sourceTree = "<group>"; };
 		A199307A24C495B500EA3C46 /* BillboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		A199307B24C495B500EA3C46 /* BillboardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BillboardCollectionViewCell.xib; sourceTree = "<group>"; };
+		A199308124C49C5200EA3C46 /* GlobalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalCollectionViewCell.swift; sourceTree = "<group>"; };
+		A199308224C49C5200EA3C46 /* GlobalCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GlobalCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1C6157124C42BC6005BCE5B /* NewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1C6157224C42BC6005BCE5B /* NewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1C6157524C435B9005BCE5B /* MagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -181,6 +185,8 @@
 				A199307724C491D200EA3C46 /* LocalCollectionViewCell.xib */,
 				A199307A24C495B500EA3C46 /* BillboardCollectionViewCell.swift */,
 				A199307B24C495B500EA3C46 /* BillboardCollectionViewCell.xib */,
+				A199308124C49C5200EA3C46 /* GlobalCollectionViewCell.swift */,
+				A199308224C49C5200EA3C46 /* GlobalCollectionViewCell.xib */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -437,6 +443,7 @@
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
 				A1F1D10524C2AAB600085DF9 /* TitleCollectionViewCell.xib in Resources */,
 				A12806B224C4050B00EB9D5A /* RecentlyCollectionViewCell.xib in Resources */,
+				A199308424C49C5200EA3C46 /* GlobalCollectionViewCell.xib in Resources */,
 				A18740C824C19E0D009E118D /* DJViewController.xib in Resources */,
 				A1F1D10924C331E200085DF9 /* RecommendCollectionViewCell.xib in Resources */,
 				A18740D024C19E30009E118D /* StorageViewController.xib in Resources */,
@@ -509,6 +516,7 @@
 				A1F1D10824C331E200085DF9 /* RecommendCollectionViewCell.swift in Sources */,
 				A18740C324C19DF5009E118D /* ChartViewController.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
+				A199308324C49C5200EA3C46 /* GlobalCollectionViewCell.swift in Sources */,
 				A1C6157724C435B9005BCE5B /* MagCollectionViewCell.swift in Sources */,
 				A18740CF24C19E30009E118D /* StorageViewController.swift in Sources */,
 				A199307424C487BE00EA3C46 /* Top100CollectionViewCell.swift in Sources */,

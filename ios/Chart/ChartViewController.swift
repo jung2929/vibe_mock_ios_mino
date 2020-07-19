@@ -13,6 +13,7 @@ class ChartViewController: UIViewController {
     @IBOutlet weak var TopCollectionView: UICollectionView!
     @IBOutlet weak var LocalCollectionView: UICollectionView!
     @IBOutlet weak var BillboardCollectionView: UICollectionView!
+    @IBOutlet weak var GlobalCollectionView: UICollectionView!
     
     let data = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10"]
     let rankData = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
@@ -27,11 +28,14 @@ class ChartViewController: UIViewController {
             LocalCollectionView.register(LocalibName, forCellWithReuseIdentifier: "cell")
             let BillibName = UINib(nibName: "BillboardCollectionViewCell", bundle: nil)
             BillboardCollectionView.register(BillibName, forCellWithReuseIdentifier: "cell")
+            let GlobalibName = UINib(nibName: "GlobalCollectionViewCell", bundle: nil)
+            GlobalCollectionView.register(GlobalibName, forCellWithReuseIdentifier: "cell")
                 
                 
             TopCollectionView.translatesAutoresizingMaskIntoConstraints = false
             LocalCollectionView.translatesAutoresizingMaskIntoConstraints = false
             BillboardCollectionView.translatesAutoresizingMaskIntoConstraints = false
+            GlobalCollectionView.translatesAutoresizingMaskIntoConstraints = false
 
 
             TopCollectionView.delegate = self
@@ -40,12 +44,15 @@ class ChartViewController: UIViewController {
             LocalCollectionView.dataSource = self
             BillboardCollectionView.delegate = self
             BillboardCollectionView.dataSource = self
+            GlobalCollectionView.delegate = self
+            GlobalCollectionView.dataSource = self
                 
                 
             // 스크롤 시 빠르게 감속 되도록 설정
             TopCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
             LocalCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
             BillboardCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
+            GlobalCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
                 
             }
             
@@ -62,6 +69,9 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                 if collectionView == BillboardCollectionView {
                     return 1
                 }
+                if collectionView == GlobalCollectionView {
+                    return 1
+                }
                 
                 return 0
             }
@@ -74,6 +84,9 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                     return data.count
                 }
                 if collectionView == BillboardCollectionView {
+                    return data.count
+                }
+                if collectionView == GlobalCollectionView {
                     return data.count
                 }
 
@@ -113,6 +126,18 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                     cell.backgroundColor = .white
                     cell.BillSubTitleLabel.text = data[indexPath.row]
                     cell.BillRankLabel.text = rankData[indexPath.row]
+                    cell.alpha = 0.5
+                    cell.sizeToFit()
+                    return cell
+                }
+                
+                if collectionView == GlobalCollectionView {
+                    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! GlobalCollectionViewCell
+                    cell.GlobalTitleLabel.text = data[indexPath.row]
+                    cell.GlobalImageView.image = UIImage(named: "recently_test2")
+                    cell.backgroundColor = .white
+                    cell.GlobalSubTitleLabel.text = data[indexPath.row]
+                    cell.GlobalRankLabel.text = rankData[indexPath.row]
                     cell.alpha = 0.5
                     cell.sizeToFit()
                     return cell
