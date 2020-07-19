@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="fS0-zj-2h1" customClass="MagCollectionViewCell" customModule="VIBE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="373"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5Wi-Kv-Nvv">
+                <rect key="frame" x="0.0" y="0.0" width="372" height="373"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mag_test2" id="Ptp-wO-nbi">
+                        <rect key="frame" x="0.0" y="0.0" width="372" height="373"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ptp-wO-nbi" firstAttribute="width" secondItem="5Wi-Kv-Nvv" secondAttribute="width" id="1iF-vR-FY9"/>
+                    <constraint firstItem="Ptp-wO-nbi" firstAttribute="height" secondItem="5Wi-Kv-Nvv" secondAttribute="height" id="NdS-kt-jI0"/>
+                    <constraint firstAttribute="bottom" secondItem="Ptp-wO-nbi" secondAttribute="bottom" id="T3E-Nw-4LM"/>
+                    <constraint firstItem="Ptp-wO-nbi" firstAttribute="top" secondItem="5Wi-Kv-Nvv" secondAttribute="top" id="VBf-fp-Ia9"/>
+                    <constraint firstItem="Ptp-wO-nbi" firstAttribute="leading" secondItem="5Wi-Kv-Nvv" secondAttribute="leading" id="Vi1-OP-cFb"/>
+                    <constraint firstAttribute="trailing" secondItem="Ptp-wO-nbi" secondAttribute="trailing" id="hKM-Rt-bol"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="372" height="373"/>
+            <connections>
+                <outlet property="MagImageView" destination="Ptp-wO-nbi" id="1h6-aX-jmZ"/>
+            </connections>
+            <point key="canvasLocation" x="-968.11594202898561" y="-83.559782608695656"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="mag_test2" width="443.5" height="443"/>
+    </resources>
+</document>

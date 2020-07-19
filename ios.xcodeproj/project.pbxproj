@@ -24,6 +24,8 @@
 		A18740D024C19E30009E118D /* StorageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18740CE24C19E30009E118D /* StorageViewController.xib */; };
 		A1C6157324C42BC6005BCE5B /* NewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6157124C42BC6005BCE5B /* NewCollectionViewCell.swift */; };
 		A1C6157424C42BC6005BCE5B /* NewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C6157224C42BC6005BCE5B /* NewCollectionViewCell.xib */; };
+		A1C6157724C435B9005BCE5B /* MagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6157524C435B9005BCE5B /* MagCollectionViewCell.swift */; };
+		A1C6157824C435B9005BCE5B /* MagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C6157624C435B9005BCE5B /* MagCollectionViewCell.xib */; };
 		A1F1D10424C2AAB600085DF9 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F1D10224C2AAB600085DF9 /* TitleCollectionViewCell.swift */; };
 		A1F1D10524C2AAB600085DF9 /* TitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F1D10324C2AAB600085DF9 /* TitleCollectionViewCell.xib */; };
 		A1F1D10824C331E200085DF9 /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F1D10624C331E200085DF9 /* RecommendCollectionViewCell.swift */; };
@@ -67,6 +69,8 @@
 		A18740CE24C19E30009E118D /* StorageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StorageViewController.xib; sourceTree = "<group>"; };
 		A1C6157124C42BC6005BCE5B /* NewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1C6157224C42BC6005BCE5B /* NewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewCollectionViewCell.xib; sourceTree = "<group>"; };
+		A1C6157524C435B9005BCE5B /* MagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1C6157624C435B9005BCE5B /* MagCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MagCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1F1D10224C2AAB600085DF9 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1F1D10324C2AAB600085DF9 /* TitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1F1D10624C331E200085DF9 /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 				A12806B424C417ED00EB9D5A /* HearCollectionViewCell.xib */,
 				A1C6157124C42BC6005BCE5B /* NewCollectionViewCell.swift */,
 				A1C6157224C42BC6005BCE5B /* NewCollectionViewCell.xib */,
+				A1C6157524C435B9005BCE5B /* MagCollectionViewCell.swift */,
+				A1C6157624C435B9005BCE5B /* MagCollectionViewCell.xib */,
 			);
 			path = InHomeViewController;
 			sourceTree = "<group>";
@@ -410,6 +416,7 @@
 				A18740C824C19E0D009E118D /* DJViewController.xib in Resources */,
 				A1F1D10924C331E200085DF9 /* RecommendCollectionViewCell.xib in Resources */,
 				A18740D024C19E30009E118D /* StorageViewController.xib in Resources */,
+				A1C6157824C435B9005BCE5B /* MagCollectionViewCell.xib in Resources */,
 				A12806B624C417ED00EB9D5A /* HearCollectionViewCell.xib in Resources */,
 				A1C6157424C42BC6005BCE5B /* NewCollectionViewCell.xib in Resources */,
 				A18740C424C19DF5009E118D /* ChartViewController.xib in Resources */,
@@ -477,6 +484,7 @@
 				A1F1D10824C331E200085DF9 /* RecommendCollectionViewCell.swift in Sources */,
 				A18740C324C19DF5009E118D /* ChartViewController.swift in Sources */,
 				BD9BF17322F9C3D5009E47EB /* BaseViewController.swift in Sources */,
+				A1C6157724C435B9005BCE5B /* MagCollectionViewCell.swift in Sources */,
 				A18740CF24C19E30009E118D /* StorageViewController.swift in Sources */,
 				A18740AE24C197CF009E118D /* HomeViewController.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
