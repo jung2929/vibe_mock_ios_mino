@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="yvI-3W-MGo" customClass="RecentlyCollectionViewCell" customModule="VIBE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YhS-GC-H3r">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recently_test2" translatesAutoresizingMaskIntoConstraints="NO" id="1g6-s9-gwW">
+                        <rect key="frame" x="0.0" y="0.0" width="51" height="50"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="빗소리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWe-uq-jxT">
+                        <rect key="frame" x="69" y="2" width="45" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="산들" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9j-he-ehL">
+                        <rect key="frame" x="69" y="23" width="26" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="1g6-s9-gwW" secondAttribute="bottom" id="2l3-TU-PaC"/>
+                    <constraint firstItem="aWe-uq-jxT" firstAttribute="height" secondItem="YhS-GC-H3r" secondAttribute="height" multiplier="0.396226" id="3zg-Bm-u7C"/>
+                    <constraint firstItem="aWe-uq-jxT" firstAttribute="top" secondItem="YhS-GC-H3r" secondAttribute="top" constant="2" id="DAw-Vx-swX"/>
+                    <constraint firstItem="aWe-uq-jxT" firstAttribute="width" relation="greaterThanOrEqual" secondItem="YhS-GC-H3r" secondAttribute="width" multiplier="0.121622" id="DcS-1H-k31"/>
+                    <constraint firstItem="1g6-s9-gwW" firstAttribute="width" secondItem="YhS-GC-H3r" secondAttribute="width" multiplier="0.137838" id="GR6-15-Ygf"/>
+                    <constraint firstItem="1g6-s9-gwW" firstAttribute="top" secondItem="YhS-GC-H3r" secondAttribute="top" id="QhP-mz-eQW"/>
+                    <constraint firstItem="L9j-he-ehL" firstAttribute="width" relation="greaterThanOrEqual" secondItem="YhS-GC-H3r" secondAttribute="width" multiplier="0.0702703" id="S2o-fK-2ZZ"/>
+                    <constraint firstItem="L9j-he-ehL" firstAttribute="top" secondItem="aWe-uq-jxT" secondAttribute="bottom" constant="1" id="Ucj-NV-obd"/>
+                    <constraint firstAttribute="trailing" secondItem="1g6-s9-gwW" secondAttribute="trailing" constant="319" id="Vgc-q6-Z68"/>
+                    <constraint firstItem="1g6-s9-gwW" firstAttribute="leading" secondItem="YhS-GC-H3r" secondAttribute="leading" id="VoG-US-Yq7"/>
+                    <constraint firstItem="L9j-he-ehL" firstAttribute="leading" secondItem="aWe-uq-jxT" secondAttribute="leading" id="ddN-Aj-Pym"/>
+                    <constraint firstItem="aWe-uq-jxT" firstAttribute="leading" secondItem="1g6-s9-gwW" secondAttribute="trailing" constant="18" id="h2i-Oy-bUx"/>
+                    <constraint firstItem="L9j-he-ehL" firstAttribute="height" secondItem="YhS-GC-H3r" secondAttribute="height" multiplier="0.339623" id="qOg-M0-7ce"/>
+                    <constraint firstItem="1g6-s9-gwW" firstAttribute="height" secondItem="YhS-GC-H3r" secondAttribute="height" id="qpp-kT-cq5"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="370" height="53"/>
+            <connections>
+                <outlet property="RecentlyImageView" destination="1g6-s9-gwW" id="oU1-3V-PFj"/>
+                <outlet property="RecentlySubTitleLabel" destination="L9j-he-ehL" id="s4L-pv-vDz"/>
+                <outlet property="RecentlyTitleLabel" destination="aWe-uq-jxT" id="Usd-zs-rEh"/>
+            </connections>
+            <point key="canvasLocation" x="-1336.2318840579712" y="-79.352678571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="recently_test2" width="74" height="74"/>
+    </resources>
+</document>

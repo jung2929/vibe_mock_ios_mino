@@ -19,7 +19,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="m8P-4P-3S1">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="735.99999999999989"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                     <subviews>
                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htu-ru-tFU">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="2400"/>
@@ -31,16 +31,16 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCl-OV-E5O">
-                                    <rect key="frame" x="20" y="150.66666666666666" width="42" height="38.666666666666657"/>
+                                    <rect key="frame" x="20" y="120.66666666666667" width="42" height="20.666666666666671"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view clipsSubviews="YES" contentMode="top" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="6ZK-4h-V3L" userLabel="네비게이션뷰">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="164.33333333333334"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="차트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcC-r6-W9t">
-                                            <rect key="frame" x="20" y="30" width="59" height="64.666666666666671"/>
+                                            <rect key="frame" x="20" y="29.999999999999996" width="59" height="34.666666666666657"/>
                                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -63,7 +63,6 @@
                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nDV-9K-csc" secondAttribute="trailing" constant="20" symbolic="YES" id="IHc-9F-YfN"/>
                                 <constraint firstItem="6ZK-4h-V3L" firstAttribute="width" secondItem="htu-ru-tFU" secondAttribute="width" id="JfB-yV-HAV"/>
                                 <constraint firstItem="KCl-OV-E5O" firstAttribute="height" secondItem="EcC-r6-W9t" secondAttribute="height" multiplier="0.6" id="QH6-3e-tzp"/>
-                                <constraint firstItem="6ZK-4h-V3L" firstAttribute="height" secondItem="htu-ru-tFU" secondAttribute="height" multiplier="0.0684791" id="R5K-Nt-F6h"/>
                                 <constraint firstAttribute="bottom" secondItem="nDV-9K-csc" secondAttribute="bottom" constant="27" id="X2d-Jy-RPm"/>
                                 <constraint firstItem="nDV-9K-csc" firstAttribute="leading" secondItem="htu-ru-tFU" secondAttribute="leading" constant="175" id="tQB-Ah-nNX"/>
                                 <constraint firstItem="KCl-OV-E5O" firstAttribute="top" secondItem="EcC-r6-W9t" secondAttribute="bottom" constant="56" id="ucn-CD-8YH"/>
