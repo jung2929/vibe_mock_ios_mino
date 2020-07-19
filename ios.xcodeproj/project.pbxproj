@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A12806B124C4050B00EB9D5A /* RecentlyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12806AF24C4050B00EB9D5A /* RecentlyCollectionViewCell.swift */; };
 		A12806B224C4050B00EB9D5A /* RecentlyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A12806B024C4050B00EB9D5A /* RecentlyCollectionViewCell.xib */; };
+		A12806B524C417ED00EB9D5A /* HearCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12806B324C417ED00EB9D5A /* HearCollectionViewCell.swift */; };
+		A12806B624C417ED00EB9D5A /* HearCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A12806B424C417ED00EB9D5A /* HearCollectionViewCell.xib */; };
 		A18740AE24C197CF009E118D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18740AC24C197CF009E118D /* HomeViewController.swift */; };
 		A18740AF24C197CF009E118D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A18740AD24C197CF009E118D /* HomeViewController.xib */; };
 		A18740B324C19860009E118D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18740B124C19860009E118D /* MainTabBarController.swift */; };
@@ -48,6 +50,8 @@
 		56DE891A8DE4AEB4ED1D1105 /* Pods-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.release.xcconfig"; path = "Target Support Files/Pods-ios/Pods-ios.release.xcconfig"; sourceTree = "<group>"; };
 		A12806AF24C4050B00EB9D5A /* RecentlyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyCollectionViewCell.swift; sourceTree = "<group>"; };
 		A12806B024C4050B00EB9D5A /* RecentlyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentlyCollectionViewCell.xib; sourceTree = "<group>"; };
+		A12806B324C417ED00EB9D5A /* HearCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearCollectionViewCell.swift; sourceTree = "<group>"; };
+		A12806B424C417ED00EB9D5A /* HearCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HearCollectionViewCell.xib; sourceTree = "<group>"; };
 		A18740AC24C197CF009E118D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A18740AD24C197CF009E118D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		A18740B124C19860009E118D /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -111,6 +115,21 @@
 				2F13293A0F781AAAF1DC9C8A /* Pods_ios.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A12806B724C4182000EB9D5A /* InHomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A1F1D10224C2AAB600085DF9 /* TitleCollectionViewCell.swift */,
+				A1F1D10324C2AAB600085DF9 /* TitleCollectionViewCell.xib */,
+				A1F1D10624C331E200085DF9 /* RecommendCollectionViewCell.swift */,
+				A1F1D10724C331E200085DF9 /* RecommendCollectionViewCell.xib */,
+				A12806AF24C4050B00EB9D5A /* RecentlyCollectionViewCell.swift */,
+				A12806B024C4050B00EB9D5A /* RecentlyCollectionViewCell.xib */,
+				A12806B324C417ED00EB9D5A /* HearCollectionViewCell.swift */,
+				A12806B424C417ED00EB9D5A /* HearCollectionViewCell.xib */,
+			);
+			path = InHomeViewController;
 			sourceTree = "<group>";
 		};
 		A18740B024C197F7009E118D /* TabBarController */ = {
@@ -254,12 +273,7 @@
 				BD75ABD62301B42900E0FC7A /* Entity */,
 				A18740AC24C197CF009E118D /* HomeViewController.swift */,
 				A18740AD24C197CF009E118D /* HomeViewController.xib */,
-				A1F1D10224C2AAB600085DF9 /* TitleCollectionViewCell.swift */,
-				A1F1D10324C2AAB600085DF9 /* TitleCollectionViewCell.xib */,
-				A1F1D10624C331E200085DF9 /* RecommendCollectionViewCell.swift */,
-				A1F1D10724C331E200085DF9 /* RecommendCollectionViewCell.xib */,
-				A12806AF24C4050B00EB9D5A /* RecentlyCollectionViewCell.swift */,
-				A12806B024C4050B00EB9D5A /* RecentlyCollectionViewCell.xib */,
+				A12806B724C4182000EB9D5A /* InHomeViewController */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -390,6 +404,7 @@
 				A18740C824C19E0D009E118D /* DJViewController.xib in Resources */,
 				A1F1D10924C331E200085DF9 /* RecommendCollectionViewCell.xib in Resources */,
 				A18740D024C19E30009E118D /* StorageViewController.xib in Resources */,
+				A12806B624C417ED00EB9D5A /* HearCollectionViewCell.xib in Resources */,
 				A18740C424C19DF5009E118D /* ChartViewController.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
@@ -465,6 +480,7 @@
 				A18740CB24C19E21009E118D /* SearchViewController.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
+				A12806B524C417ED00EB9D5A /* HearCollectionViewCell.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
 				A1F1D10424C2AAB600085DF9 /* TitleCollectionViewCell.swift in Sources */,
 				A18740C724C19E0D009E118D /* DJViewController.swift in Sources */,
