@@ -10,6 +10,12 @@ import UIKit
 
 class DJRecentlyCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var DJRecentlyImageView: UIImageView!
+    
+
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

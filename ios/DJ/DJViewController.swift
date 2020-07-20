@@ -12,12 +12,14 @@ class DJViewController: UIViewController {
     
     
     @IBOutlet weak var DJRecentlyCollectionView: UICollectionView!
-    @IBOutlet weak var DJFeelCollectionView: UICollectionView!
-    @IBOutlet weak var DjGenreCollectionView: UICollectionView!
-    
+
+    @IBAction func addRecently(_ sender: Any) {
+        recentData.insert(contentsOf: [""], at: 0)
+        DJRecentlyCollectionView.reloadData()
+    }
     
     let data = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10"]
-        let rankData = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    var recentData = [""]
                 
             override func viewDidLoad() {
                     super.viewDidLoad()
@@ -25,52 +27,43 @@ class DJViewController: UIViewController {
                     
                 let DJRecentlyNibName = UINib(nibName: "DJRecentlyCollectionViewCell", bundle: nil)
                 DJRecentlyCollectionView.register(DJRecentlyNibName, forCellWithReuseIdentifier: "cell")
-                    
-                    
-                DJRecentlyCollectionView.translatesAutoresizingMaskIntoConstraints = false
 
+                DJRecentlyCollectionView.translatesAutoresizingMaskIntoConstraints = false
 
                 DJRecentlyCollectionView.delegate = self
                 DJRecentlyCollectionView.dataSource = self
-                    
-                    
+   
                 // 스크롤 시 빠르게 감속 되도록 설정
                 DJRecentlyCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
         }
-                
 }
 
-    extension DJViewController: UICollectionViewDataSource, UICollectionViewDelegate {
-                func numberOfSections(in collectionView: UICollectionView) -> Int {
-                    if collectionView == DJRecentlyCollectionView {
-                        return 1
-                    }
-                    
-                    return 0
-    }
-                
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-                    if collectionView == DJRecentlyCollectionView {
-                        return data.count
-                    }
-                    
-                    return 0
+extension DJViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+        func numberOfSections(in collectionView: UICollectionView) -> Int {
+            if collectionView == DJRecentlyCollectionView {
+                return 1
+            }
+            return 0
 }
                 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == DJRecentlyCollectionView {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! DJRecentlyCollectionViewCell
-//                        cell.TopTitleLabel.text = data[indexPath.row]
-//                        cell.TopImageView.image = UIImage(named: "recently_test2")
-//                        cell.backgroundColor = .white
-//                        cell.TopSubTitleLabel.text = data[indexPath.row]
-//                        cell.TopRankLabel.text = rankData[indexPath.row]
-//                        cell.alpha = 0.5
-//                        cell.sizeToFit()
-                return cell
-                }
-                return cell
+            return recentData.count
+        }
+            return 0
+}
+                
+func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+    if collectionView == DJRecentlyCollectionView {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! DJRecentlyCollectionViewCell
+            cell.DJRecentlyImageView.image = UIImage(named: "DJ_test")
+            cell.backgroundColor = .white
+            cell.alpha = 0.5
+            cell.sizeToFit()
+            return cell
+        }
+            return cell
         }
 }
 
