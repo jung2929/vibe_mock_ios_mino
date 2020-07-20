@@ -14,6 +14,8 @@ class ChartViewController: UIViewController {
     @IBOutlet weak var LocalCollectionView: UICollectionView!
     @IBOutlet weak var BillboardCollectionView: UICollectionView!
     @IBOutlet weak var GlobalCollectionView: UICollectionView!
+    @IBOutlet weak var LocalHipHopCollectionView: UICollectionView!
+    @IBOutlet weak var LocalBaladCollectionView: UICollectionView!
     
     let data = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10"]
     let rankData = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
@@ -30,12 +32,18 @@ class ChartViewController: UIViewController {
             BillboardCollectionView.register(BillibName, forCellWithReuseIdentifier: "cell")
             let GlobalibName = UINib(nibName: "GlobalCollectionViewCell", bundle: nil)
             GlobalCollectionView.register(GlobalibName, forCellWithReuseIdentifier: "cell")
+            let LocalHipHoplibName = UINib(nibName: "LocalHipHopCollectionViewCell", bundle: nil)
+            LocalHipHopCollectionView.register(LocalHipHoplibName, forCellWithReuseIdentifier: "cell")
+            let LocalBaladlibName = UINib(nibName: "LocalBaladCollectionViewCell", bundle: nil)
+            LocalBaladCollectionView.register(LocalBaladlibName, forCellWithReuseIdentifier: "cell")
                 
                 
             TopCollectionView.translatesAutoresizingMaskIntoConstraints = false
             LocalCollectionView.translatesAutoresizingMaskIntoConstraints = false
             BillboardCollectionView.translatesAutoresizingMaskIntoConstraints = false
             GlobalCollectionView.translatesAutoresizingMaskIntoConstraints = false
+            LocalHipHopCollectionView.translatesAutoresizingMaskIntoConstraints = false
+            LocalBaladCollectionView.translatesAutoresizingMaskIntoConstraints = false
 
 
             TopCollectionView.delegate = self
@@ -46,6 +54,10 @@ class ChartViewController: UIViewController {
             BillboardCollectionView.dataSource = self
             GlobalCollectionView.delegate = self
             GlobalCollectionView.dataSource = self
+            LocalHipHopCollectionView.delegate = self
+            LocalHipHopCollectionView.dataSource = self
+            LocalBaladCollectionView.delegate = self
+            LocalBaladCollectionView.dataSource = self
                 
                 
             // 스크롤 시 빠르게 감속 되도록 설정
@@ -53,6 +65,8 @@ class ChartViewController: UIViewController {
             LocalCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
             BillboardCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
             GlobalCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
+            LocalHipHopCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
+            LocalBaladCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
                 
             }
             
@@ -72,6 +86,12 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                 if collectionView == GlobalCollectionView {
                     return 1
                 }
+                if collectionView == LocalHipHopCollectionView {
+                    return 1
+                }
+                if collectionView == LocalBaladCollectionView {
+                    return 1
+                }
                 
                 return 0
             }
@@ -87,6 +107,12 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                     return data.count
                 }
                 if collectionView == GlobalCollectionView {
+                    return data.count
+                }
+                if collectionView == LocalHipHopCollectionView {
+                    return data.count
+                }
+                if collectionView == LocalBaladCollectionView {
                     return data.count
                 }
 
@@ -138,6 +164,29 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                     cell.backgroundColor = .white
                     cell.GlobalSubTitleLabel.text = data[indexPath.row]
                     cell.GlobalRankLabel.text = rankData[indexPath.row]
+                    cell.alpha = 0.5
+                    cell.sizeToFit()
+                    return cell
+                }
+                
+                if collectionView == LocalHipHopCollectionView {
+                                   let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! LocalHipHopCollectionViewCell
+                                   cell.LocalHipHopTitleLabel.text = data[indexPath.row]
+                                   cell.LocalHipHopImageView.image = UIImage(named: "recently_test2")
+                                   cell.backgroundColor = .white
+                                   cell.LocalHipHopSubTitleLabel.text = data[indexPath.row]
+                                   cell.LocalHipHopRankLabel.text = rankData[indexPath.row]
+                                   cell.alpha = 0.5
+                                   cell.sizeToFit()
+                                   return cell
+                               }
+                if collectionView == LocalBaladCollectionView {
+                    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! LocalBaladCollectionViewCell
+                    cell.LocalBaladTitleLabel.text = data[indexPath.row]
+                    cell.LocalBaladImageView.image = UIImage(named: "recently_test2")
+                    cell.backgroundColor = .white
+                    cell.LocalBaladSubTitleLabel.text = data[indexPath.row]
+                    cell.LocalBaladRankLabel.text = rankData[indexPath.row]
                     cell.alpha = 0.5
                     cell.sizeToFit()
                     return cell
