@@ -38,6 +38,16 @@
 		A1E2DAD724C5502100B1C0FC /* LocalHipHopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E2DAD524C5502100B1C0FC /* LocalHipHopCollectionViewCell.xib */; };
 		A1E2DADA24C5535A00B1C0FC /* LocalBaladCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2DAD824C5535A00B1C0FC /* LocalBaladCollectionViewCell.swift */; };
 		A1E2DADB24C5535A00B1C0FC /* LocalBaladCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E2DAD924C5535A00B1C0FC /* LocalBaladCollectionViewCell.xib */; };
+		A1E2DADE24C5556900B1C0FC /* MusicVideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2DADC24C5556900B1C0FC /* MusicVideoCollectionViewCell.swift */; };
+		A1E2DADF24C5556900B1C0FC /* MusicVideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E2DADD24C5556900B1C0FC /* MusicVideoCollectionViewCell.xib */; };
+		A1E2DAE224C55FBC00B1C0FC /* LeagueCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2DAE024C55FBC00B1C0FC /* LeagueCollectionViewCell.swift */; };
+		A1E2DAE324C55FBC00B1C0FC /* LeagueCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E2DAE124C55FBC00B1C0FC /* LeagueCollectionViewCell.xib */; };
+		A1E2DAE624C561E100B1C0FC /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2DAE424C561E100B1C0FC /* SearchCollectionViewCell.swift */; };
+		A1E2DAE724C561E100B1C0FC /* SearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E2DAE524C561E100B1C0FC /* SearchCollectionViewCell.xib */; };
+		A1E2DAEA24C563E000B1C0FC /* SixYearCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2DAE824C563E000B1C0FC /* SixYearCollectionViewCell.swift */; };
+		A1E2DAEB24C563E000B1C0FC /* SixYearCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E2DAE924C563E000B1C0FC /* SixYearCollectionViewCell.xib */; };
+		A1E2DAEE24C5669900B1C0FC /* NewAlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2DAEC24C5669900B1C0FC /* NewAlbumCollectionViewCell.swift */; };
+		A1E2DAEF24C5669900B1C0FC /* NewAlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E2DAED24C5669900B1C0FC /* NewAlbumCollectionViewCell.xib */; };
 		A1F1D10424C2AAB600085DF9 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F1D10224C2AAB600085DF9 /* TitleCollectionViewCell.swift */; };
 		A1F1D10524C2AAB600085DF9 /* TitleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1F1D10324C2AAB600085DF9 /* TitleCollectionViewCell.xib */; };
 		A1F1D10824C331E200085DF9 /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F1D10624C331E200085DF9 /* RecommendCollectionViewCell.swift */; };
@@ -96,6 +106,16 @@
 		A1E2DAD524C5502100B1C0FC /* LocalHipHopCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalHipHopCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1E2DAD824C5535A00B1C0FC /* LocalBaladCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBaladCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1E2DAD924C5535A00B1C0FC /* LocalBaladCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalBaladCollectionViewCell.xib; sourceTree = "<group>"; };
+		A1E2DADC24C5556900B1C0FC /* MusicVideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1E2DADD24C5556900B1C0FC /* MusicVideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicVideoCollectionViewCell.xib; sourceTree = "<group>"; };
+		A1E2DAE024C55FBC00B1C0FC /* LeagueCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1E2DAE124C55FBC00B1C0FC /* LeagueCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeagueCollectionViewCell.xib; sourceTree = "<group>"; };
+		A1E2DAE424C561E100B1C0FC /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1E2DAE524C561E100B1C0FC /* SearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		A1E2DAE824C563E000B1C0FC /* SixYearCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixYearCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1E2DAE924C563E000B1C0FC /* SixYearCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SixYearCollectionViewCell.xib; sourceTree = "<group>"; };
+		A1E2DAEC24C5669900B1C0FC /* NewAlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1E2DAED24C5669900B1C0FC /* NewAlbumCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewAlbumCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1F1D10224C2AAB600085DF9 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1F1D10324C2AAB600085DF9 /* TitleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1F1D10624C331E200085DF9 /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -199,6 +219,16 @@
 				A1E2DAD524C5502100B1C0FC /* LocalHipHopCollectionViewCell.xib */,
 				A1E2DAD824C5535A00B1C0FC /* LocalBaladCollectionViewCell.swift */,
 				A1E2DAD924C5535A00B1C0FC /* LocalBaladCollectionViewCell.xib */,
+				A1E2DADC24C5556900B1C0FC /* MusicVideoCollectionViewCell.swift */,
+				A1E2DADD24C5556900B1C0FC /* MusicVideoCollectionViewCell.xib */,
+				A1E2DAE024C55FBC00B1C0FC /* LeagueCollectionViewCell.swift */,
+				A1E2DAE124C55FBC00B1C0FC /* LeagueCollectionViewCell.xib */,
+				A1E2DAE424C561E100B1C0FC /* SearchCollectionViewCell.swift */,
+				A1E2DAE524C561E100B1C0FC /* SearchCollectionViewCell.xib */,
+				A1E2DAE824C563E000B1C0FC /* SixYearCollectionViewCell.swift */,
+				A1E2DAE924C563E000B1C0FC /* SixYearCollectionViewCell.xib */,
+				A1E2DAEC24C5669900B1C0FC /* NewAlbumCollectionViewCell.swift */,
+				A1E2DAED24C5669900B1C0FC /* NewAlbumCollectionViewCell.xib */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -450,7 +480,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E2DADF24C5556900B1C0FC /* MusicVideoCollectionViewCell.xib in Resources */,
 				A199307524C487BE00EA3C46 /* Top100CollectionViewCell.xib in Resources */,
+				A1E2DAEB24C563E000B1C0FC /* SixYearCollectionViewCell.xib in Resources */,
+				A1E2DAE724C561E100B1C0FC /* SearchCollectionViewCell.xib in Resources */,
 				A199307D24C495B500EA3C46 /* BillboardCollectionViewCell.xib in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
 				A1F1D10524C2AAB600085DF9 /* TitleCollectionViewCell.xib in Resources */,
@@ -463,7 +496,9 @@
 				A12806B624C417ED00EB9D5A /* HearCollectionViewCell.xib in Resources */,
 				A1C6157424C42BC6005BCE5B /* NewCollectionViewCell.xib in Resources */,
 				A18740C424C19DF5009E118D /* ChartViewController.xib in Resources */,
+				A1E2DAEF24C5669900B1C0FC /* NewAlbumCollectionViewCell.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
+				A1E2DAE324C55FBC00B1C0FC /* LeagueCollectionViewCell.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
 				A18740AF24C197CF009E118D /* HomeViewController.xib in Resources */,
 				A1E2DAD724C5502100B1C0FC /* LocalHipHopCollectionViewCell.xib in Resources */,
@@ -534,6 +569,7 @@
 				A1C6157724C435B9005BCE5B /* MagCollectionViewCell.swift in Sources */,
 				A18740CF24C19E30009E118D /* StorageViewController.swift in Sources */,
 				A199307424C487BE00EA3C46 /* Top100CollectionViewCell.swift in Sources */,
+				A1E2DADE24C5556900B1C0FC /* MusicVideoCollectionViewCell.swift in Sources */,
 				A18740AE24C197CF009E118D /* HomeViewController.swift in Sources */,
 				A199307824C491D200EA3C46 /* LocalCollectionViewCell.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
@@ -549,9 +585,13 @@
 				A12806B524C417ED00EB9D5A /* HearCollectionViewCell.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
 				A1F1D10424C2AAB600085DF9 /* TitleCollectionViewCell.swift in Sources */,
+				A1E2DAE624C561E100B1C0FC /* SearchCollectionViewCell.swift in Sources */,
 				A18740C724C19E0D009E118D /* DJViewController.swift in Sources */,
+				A1E2DAEE24C5669900B1C0FC /* NewAlbumCollectionViewCell.swift in Sources */,
+				A1E2DAEA24C563E000B1C0FC /* SixYearCollectionViewCell.swift in Sources */,
 				A199307C24C495B500EA3C46 /* BillboardCollectionViewCell.swift in Sources */,
 				A1E2DAD624C5502100B1C0FC /* LocalHipHopCollectionViewCell.swift in Sources */,
+				A1E2DAE224C55FBC00B1C0FC /* LeagueCollectionViewCell.swift in Sources */,
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
