@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="AZY-Lh-SRI" customClass="NewsCollectionViewCell" customModule="VIBE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="214"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="yRf-bt-cSc">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="214"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_test" translatesAutoresizingMaskIntoConstraints="NO" id="aet-YL-IEn">
+                        <rect key="frame" x="0.0" y="0.0" width="372" height="105"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HMq-E3-NzF">
+                        <rect key="frame" x="20" y="115" width="333" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="관련 뉴스 보기 &gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgf-8H-3NS">
+                        <rect key="frame" x="20" y="178" width="99" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="음악듣기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYn-Tt-3De">
+                        <rect key="frame" x="301" y="178" width="52" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKM-rP-Mro">
+                        <rect key="frame" x="279" y="176" width="20" height="22"/>
+                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" image="play.circle" catalog="system"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RYn-Tt-3De" firstAttribute="top" secondItem="HMq-E3-NzF" secondAttribute="bottom" constant="40" id="0kd-gX-cMC"/>
+                    <constraint firstItem="RYn-Tt-3De" firstAttribute="leading" secondItem="bKM-rP-Mro" secondAttribute="trailing" constant="2" id="13l-J9-QWU"/>
+                    <constraint firstItem="bKM-rP-Mro" firstAttribute="centerY" secondItem="RYn-Tt-3De" secondAttribute="centerY" id="4IU-ex-yiL"/>
+                    <constraint firstItem="HMq-E3-NzF" firstAttribute="trailing" secondItem="RYn-Tt-3De" secondAttribute="trailing" id="GHl-Ie-4sP"/>
+                    <constraint firstItem="aet-YL-IEn" firstAttribute="top" secondItem="yRf-bt-cSc" secondAttribute="top" id="TA7-Vb-lPh"/>
+                    <constraint firstItem="aet-YL-IEn" firstAttribute="width" secondItem="yRf-bt-cSc" secondAttribute="width" multiplier="0.997319" id="V7m-Gj-mPo"/>
+                    <constraint firstItem="aet-YL-IEn" firstAttribute="leading" secondItem="yRf-bt-cSc" secondAttribute="leading" id="ZUG-QX-VBi"/>
+                    <constraint firstAttribute="trailing" secondItem="RYn-Tt-3De" secondAttribute="trailing" constant="20" id="bsE-BW-7WS"/>
+                    <constraint firstItem="Hgf-8H-3NS" firstAttribute="leading" secondItem="HMq-E3-NzF" secondAttribute="leading" id="f97-Ls-yKI"/>
+                    <constraint firstItem="HMq-E3-NzF" firstAttribute="top" secondItem="aet-YL-IEn" secondAttribute="bottom" constant="10" id="g9F-of-2NM"/>
+                    <constraint firstItem="Hgf-8H-3NS" firstAttribute="top" secondItem="HMq-E3-NzF" secondAttribute="bottom" constant="40" id="omf-tk-Xd5"/>
+                    <constraint firstItem="aet-YL-IEn" firstAttribute="height" secondItem="yRf-bt-cSc" secondAttribute="height" multiplier="0.490654" id="u5S-Zb-h0l"/>
+                    <constraint firstItem="HMq-E3-NzF" firstAttribute="leading" secondItem="yRf-bt-cSc" secondAttribute="leading" constant="20" id="vKV-Qf-v8E"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="373" height="214"/>
+            <connections>
+                <outlet property="NewsImageView" destination="aet-YL-IEn" id="9fz-On-nAj"/>
+                <outlet property="NewsLookLabel" destination="Hgf-8H-3NS" id="huG-Uf-ekn"/>
+                <outlet property="NewsPlayButton" destination="bKM-rP-Mro" id="mZ2-gc-vdZ"/>
+                <outlet property="NewsPlayLabel" destination="RYn-Tt-3De" id="2ZF-Q7-POQ"/>
+                <outlet property="NewsTitleLabel" destination="HMq-E3-NzF" id="wYi-tg-zsh"/>
+            </connections>
+            <point key="canvasLocation" x="-1011" y="-14"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play.circle" catalog="system" width="128" height="121"/>
+        <image name="search_test" width="557" height="157.5"/>
+    </resources>
+</document>
