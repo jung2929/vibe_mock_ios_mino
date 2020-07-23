@@ -34,7 +34,7 @@ class MainTabBarController: UITabBarController {
 
         let icon1 = UITabBarItem(title: nil, image: UIImage(named: "Home"), selectedImage: UIImage(named: "Home_selected"))
         let icon2 = UITabBarItem(title: nil, image: UIImage(named: "Chart"), selectedImage: UIImage(named: "Chart_selected"))
-        let icon3 = UITabBarItem(title: nil, image: UIImage(named: "DJ"), selectedImage: UIImage(named: "DJ_selected"))
+        let icon3 = UITabBarItem(title: nil, image: UIImage(named: "DJ"), selectedImage: UIImage(named: "DJ_selected")) // 네이밍 
         let icon4 = UITabBarItem(title: nil, image: UIImage(named: "Search"), selectedImage: UIImage(named: "Search_selected"))
         let icon5 = UITabBarItem(title: nil, image: UIImage(named: "Storage"), selectedImage: UIImage(named: "Storage_selected"))
 

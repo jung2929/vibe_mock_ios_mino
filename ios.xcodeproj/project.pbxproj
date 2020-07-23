@@ -189,6 +189,195 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A12916EB24C9B262000B11FF /* Title */ = {
+			isa = PBXGroup;
+			children = (
+				A1F1D10224C2AAB600085DF9 /* TitleCollectionViewCell.swift */,
+				A1F1D10324C2AAB600085DF9 /* TitleCollectionViewCell.xib */,
+			);
+			path = Title;
+			sourceTree = "<group>";
+		};
+		A12916EC24C9B26E000B11FF /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				A1F1D10624C331E200085DF9 /* RecommendCollectionViewCell.swift */,
+				A1F1D10724C331E200085DF9 /* RecommendCollectionViewCell.xib */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		A12916ED24C9B276000B11FF /* Recently */ = {
+			isa = PBXGroup;
+			children = (
+				A12806AF24C4050B00EB9D5A /* RecentlyCollectionViewCell.swift */,
+				A12806B024C4050B00EB9D5A /* RecentlyCollectionViewCell.xib */,
+			);
+			path = Recently;
+			sourceTree = "<group>";
+		};
+		A12916EE24C9B27D000B11FF /* Hear */ = {
+			isa = PBXGroup;
+			children = (
+				A12806B324C417ED00EB9D5A /* HearCollectionViewCell.swift */,
+				A12806B424C417ED00EB9D5A /* HearCollectionViewCell.xib */,
+			);
+			path = Hear;
+			sourceTree = "<group>";
+		};
+		A12916EF24C9B284000B11FF /* New */ = {
+			isa = PBXGroup;
+			children = (
+				A1C6157124C42BC6005BCE5B /* NewCollectionViewCell.swift */,
+				A1C6157224C42BC6005BCE5B /* NewCollectionViewCell.xib */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		A12916F024C9B28C000B11FF /* Mag */ = {
+			isa = PBXGroup;
+			children = (
+				A1C6157524C435B9005BCE5B /* MagCollectionViewCell.swift */,
+				A1C6157624C435B9005BCE5B /* MagCollectionViewCell.xib */,
+			);
+			path = Mag;
+			sourceTree = "<group>";
+		};
+		A12916F124C9B2B3000B11FF /* Top100 */ = {
+			isa = PBXGroup;
+			children = (
+				A199307224C487BE00EA3C46 /* Top100CollectionViewCell.swift */,
+				A199307324C487BE00EA3C46 /* Top100CollectionViewCell.xib */,
+			);
+			path = Top100;
+			sourceTree = "<group>";
+		};
+		A12916F224C9B2BC000B11FF /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				A199307624C491D200EA3C46 /* LocalCollectionViewCell.swift */,
+				A199307724C491D200EA3C46 /* LocalCollectionViewCell.xib */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		A12916F324C9B2C3000B11FF /* Billboard */ = {
+			isa = PBXGroup;
+			children = (
+				A199307A24C495B500EA3C46 /* BillboardCollectionViewCell.swift */,
+				A199307B24C495B500EA3C46 /* BillboardCollectionViewCell.xib */,
+			);
+			path = Billboard;
+			sourceTree = "<group>";
+		};
+		A12916F424C9B2CA000B11FF /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				A199308124C49C5200EA3C46 /* GlobalCollectionViewCell.swift */,
+				A199308224C49C5200EA3C46 /* GlobalCollectionViewCell.xib */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		A12916F524C9B2D2000B11FF /* LocalHipHop */ = {
+			isa = PBXGroup;
+			children = (
+				A1E2DAD424C5502100B1C0FC /* LocalHipHopCollectionViewCell.swift */,
+				A1E2DAD524C5502100B1C0FC /* LocalHipHopCollectionViewCell.xib */,
+			);
+			path = LocalHipHop;
+			sourceTree = "<group>";
+		};
+		A12916F624C9B2DA000B11FF /* LocalBalad */ = {
+			isa = PBXGroup;
+			children = (
+				A1E2DAD824C5535A00B1C0FC /* LocalBaladCollectionViewCell.swift */,
+				A1E2DAD924C5535A00B1C0FC /* LocalBaladCollectionViewCell.xib */,
+			);
+			path = LocalBalad;
+			sourceTree = "<group>";
+		};
+		A12916F724C9B2E2000B11FF /* MusicVideo */ = {
+			isa = PBXGroup;
+			children = (
+				A1E2DADC24C5556900B1C0FC /* MusicVideoCollectionViewCell.swift */,
+				A1E2DADD24C5556900B1C0FC /* MusicVideoCollectionViewCell.xib */,
+			);
+			path = MusicVideo;
+			sourceTree = "<group>";
+		};
+		A12916F824C9B2ED000B11FF /* League */ = {
+			isa = PBXGroup;
+			children = (
+				A1E2DAE024C55FBC00B1C0FC /* LeagueCollectionViewCell.swift */,
+				A1E2DAE124C55FBC00B1C0FC /* LeagueCollectionViewCell.xib */,
+			);
+			path = League;
+			sourceTree = "<group>";
+		};
+		A12916F924C9B2F6000B11FF /* SearchRank */ = {
+			isa = PBXGroup;
+			children = (
+				A1E2DAE424C561E100B1C0FC /* SearchCollectionViewCell.swift */,
+				A1E2DAE524C561E100B1C0FC /* SearchCollectionViewCell.xib */,
+			);
+			path = SearchRank;
+			sourceTree = "<group>";
+		};
+		A12916FA24C9B31D000B11FF /* SixYear */ = {
+			isa = PBXGroup;
+			children = (
+				A1E2DAE824C563E000B1C0FC /* SixYearCollectionViewCell.swift */,
+				A1E2DAE924C563E000B1C0FC /* SixYearCollectionViewCell.xib */,
+			);
+			path = SixYear;
+			sourceTree = "<group>";
+		};
+		A12916FB24C9B326000B11FF /* NewAlbum */ = {
+			isa = PBXGroup;
+			children = (
+				A1E2DAEC24C5669900B1C0FC /* NewAlbumCollectionViewCell.swift */,
+				A1E2DAED24C5669900B1C0FC /* NewAlbumCollectionViewCell.xib */,
+			);
+			path = NewAlbum;
+			sourceTree = "<group>";
+		};
+		A12916FC24C9B361000B11FF /* DJRecently */ = {
+			isa = PBXGroup;
+			children = (
+				A1DCB09E24C57C0C0009B57C /* DJRecentlyCollectionViewCell.swift */,
+				A1DCB09F24C57C0C0009B57C /* DJRecentlyCollectionViewCell.xib */,
+			);
+			path = DJRecently;
+			sourceTree = "<group>";
+		};
+		A12916FD24C9B36D000B11FF /* News */ = {
+			isa = PBXGroup;
+			children = (
+				A168251C24C6B33F00DAEE83 /* NewsCollectionViewCell.swift */,
+				A168251D24C6B33F00DAEE83 /* NewsCollectionViewCell.xib */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		A12916FE24C9B37B000B11FF /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A168252024C72B3200DAEE83 /* TabBarCollectionViewCell.swift */,
+				A168252124C72B3200DAEE83 /* TabBarCollectionViewCell.xib */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		A12916FF24C9B386000B11FF /* TabPage */ = {
+			isa = PBXGroup;
+			children = (
+				A168252424C72F2000DAEE83 /* TabPageCollectionViewCell.swift */,
+				A168252524C72F2000DAEE83 /* TabPageCollectionViewCell.xib */,
+			);
+			path = TabPage;
+			sourceTree = "<group>";
+		};
 		A18740B024C197F7009E118D /* TabBarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,32 +389,21 @@
 		A18740B524C19CFC009E118D /* Chart */ = {
 			isa = PBXGroup;
 			children = (
+				A12916FB24C9B326000B11FF /* NewAlbum */,
+				A12916FA24C9B31D000B11FF /* SixYear */,
+				A12916F924C9B2F6000B11FF /* SearchRank */,
+				A12916F824C9B2ED000B11FF /* League */,
+				A12916F724C9B2E2000B11FF /* MusicVideo */,
+				A12916F624C9B2DA000B11FF /* LocalBalad */,
+				A12916F524C9B2D2000B11FF /* LocalHipHop */,
+				A12916F424C9B2CA000B11FF /* Global */,
+				A12916F324C9B2C3000B11FF /* Billboard */,
+				A12916F224C9B2BC000B11FF /* Local */,
+				A12916F124C9B2B3000B11FF /* Top100 */,
 				A18740BA24C19D9F009E118D /* DataManager */,
 				A18740B924C19D98009E118D /* Entity */,
 				A18740C124C19DF5009E118D /* ChartViewController.swift */,
 				A18740C224C19DF5009E118D /* ChartViewController.xib */,
-				A199307224C487BE00EA3C46 /* Top100CollectionViewCell.swift */,
-				A199307324C487BE00EA3C46 /* Top100CollectionViewCell.xib */,
-				A199307624C491D200EA3C46 /* LocalCollectionViewCell.swift */,
-				A199307724C491D200EA3C46 /* LocalCollectionViewCell.xib */,
-				A199307A24C495B500EA3C46 /* BillboardCollectionViewCell.swift */,
-				A199307B24C495B500EA3C46 /* BillboardCollectionViewCell.xib */,
-				A199308124C49C5200EA3C46 /* GlobalCollectionViewCell.swift */,
-				A199308224C49C5200EA3C46 /* GlobalCollectionViewCell.xib */,
-				A1E2DAD424C5502100B1C0FC /* LocalHipHopCollectionViewCell.swift */,
-				A1E2DAD524C5502100B1C0FC /* LocalHipHopCollectionViewCell.xib */,
-				A1E2DAD824C5535A00B1C0FC /* LocalBaladCollectionViewCell.swift */,
-				A1E2DAD924C5535A00B1C0FC /* LocalBaladCollectionViewCell.xib */,
-				A1E2DADC24C5556900B1C0FC /* MusicVideoCollectionViewCell.swift */,
-				A1E2DADD24C5556900B1C0FC /* MusicVideoCollectionViewCell.xib */,
-				A1E2DAE024C55FBC00B1C0FC /* LeagueCollectionViewCell.swift */,
-				A1E2DAE124C55FBC00B1C0FC /* LeagueCollectionViewCell.xib */,
-				A1E2DAE424C561E100B1C0FC /* SearchCollectionViewCell.swift */,
-				A1E2DAE524C561E100B1C0FC /* SearchCollectionViewCell.xib */,
-				A1E2DAE824C563E000B1C0FC /* SixYearCollectionViewCell.swift */,
-				A1E2DAE924C563E000B1C0FC /* SixYearCollectionViewCell.xib */,
-				A1E2DAEC24C5669900B1C0FC /* NewAlbumCollectionViewCell.swift */,
-				A1E2DAED24C5669900B1C0FC /* NewAlbumCollectionViewCell.xib */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -233,12 +411,11 @@
 		A18740B624C19D75009E118D /* DJ */ = {
 			isa = PBXGroup;
 			children = (
+				A12916FC24C9B361000B11FF /* DJRecently */,
 				A18740BC24C19DAB009E118D /* DataManger */,
 				A18740BB24C19DA5009E118D /* Entity */,
 				A18740C524C19E0D009E118D /* DJViewController.swift */,
 				A18740C624C19E0D009E118D /* DJViewController.xib */,
-				A1DCB09E24C57C0C0009B57C /* DJRecentlyCollectionViewCell.swift */,
-				A1DCB09F24C57C0C0009B57C /* DJRecentlyCollectionViewCell.xib */,
 			);
 			path = DJ;
 			sourceTree = "<group>";
@@ -246,12 +423,11 @@
 		A18740B724C19D7C009E118D /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				A12916FD24C9B36D000B11FF /* News */,
 				A18740BE24C19DB9009E118D /* DataManager */,
 				A18740BD24C19DB4009E118D /* Entity */,
 				A18740C924C19E21009E118D /* SearchViewController.swift */,
 				A18740CA24C19E21009E118D /* SearchViewController.xib */,
-				A168251C24C6B33F00DAEE83 /* NewsCollectionViewCell.swift */,
-				A168251D24C6B33F00DAEE83 /* NewsCollectionViewCell.xib */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -259,14 +435,12 @@
 		A18740B824C19D84009E118D /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				A12916FF24C9B386000B11FF /* TabPage */,
+				A12916FE24C9B37B000B11FF /* TabBar */,
 				A18740C024C19DC3009E118D /* DataManager */,
 				A18740BF24C19DBF009E118D /* Entity */,
 				A18740CD24C19E30009E118D /* StorageViewController.swift */,
 				A18740CE24C19E30009E118D /* StorageViewController.xib */,
-				A168252024C72B3200DAEE83 /* TabBarCollectionViewCell.swift */,
-				A168252124C72B3200DAEE83 /* TabBarCollectionViewCell.xib */,
-				A168252424C72F2000DAEE83 /* TabPageCollectionViewCell.swift */,
-				A168252524C72F2000DAEE83 /* TabPageCollectionViewCell.xib */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -356,22 +530,16 @@
 		BD9BF16F22F9C314009E47EB /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A12916F024C9B28C000B11FF /* Mag */,
+				A12916EF24C9B284000B11FF /* New */,
+				A12916EE24C9B27D000B11FF /* Hear */,
+				A12916ED24C9B276000B11FF /* Recently */,
+				A12916EC24C9B26E000B11FF /* Recommend */,
+				A12916EB24C9B262000B11FF /* Title */,
 				BD75ABD52301B40B00E0FC7A /* DataManager */,
 				BD75ABD62301B42900E0FC7A /* Entity */,
 				A18740AC24C197CF009E118D /* HomeViewController.swift */,
 				A18740AD24C197CF009E118D /* HomeViewController.xib */,
-				A1F1D10224C2AAB600085DF9 /* TitleCollectionViewCell.swift */,
-				A1F1D10324C2AAB600085DF9 /* TitleCollectionViewCell.xib */,
-				A1F1D10624C331E200085DF9 /* RecommendCollectionViewCell.swift */,
-				A1F1D10724C331E200085DF9 /* RecommendCollectionViewCell.xib */,
-				A12806AF24C4050B00EB9D5A /* RecentlyCollectionViewCell.swift */,
-				A12806B024C4050B00EB9D5A /* RecentlyCollectionViewCell.xib */,
-				A12806B324C417ED00EB9D5A /* HearCollectionViewCell.swift */,
-				A12806B424C417ED00EB9D5A /* HearCollectionViewCell.xib */,
-				A1C6157124C42BC6005BCE5B /* NewCollectionViewCell.swift */,
-				A1C6157224C42BC6005BCE5B /* NewCollectionViewCell.xib */,
-				A1C6157524C435B9005BCE5B /* MagCollectionViewCell.swift */,
-				A1C6157624C435B9005BCE5B /* MagCollectionViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";

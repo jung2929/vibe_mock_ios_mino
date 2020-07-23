@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+@available(iOS 13.0, *)
 class DJViewController: UIViewController {
     
     
@@ -37,7 +37,7 @@ class DJViewController: UIViewController {
                 DJRecentlyCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
         }
 }
-
+@available(iOS 13.0, *)
 extension DJViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         func numberOfSections(in collectionView: UICollectionView) -> Int {
             if collectionView == DJRecentlyCollectionView {
@@ -67,4 +67,15 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
         }
 }
 
-
+@available(iOS 13.0, *)
+extension DJViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if collectionView == DJRecentlyCollectionView {
+            let width = DJRecentlyCollectionView.bounds.width * 0.5
+            let height = DJRecentlyCollectionView.bounds.height
+            return CGSize(width: width, height: height)
+        }
+       
+        return collectionView.bounds.size
+    }
+}

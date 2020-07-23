@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+@available(iOS 13.0, *)
 class ChartViewController: UIViewController {
 
     @IBOutlet weak var TopCollectionView: UICollectionView!
@@ -109,6 +109,7 @@ class ChartViewController: UIViewController {
             
         }
 
+@available(iOS 13.0, *)
 extension ChartViewController: UICollectionViewDataSource, UICollectionViewDelegate {
             func numberOfSections(in collectionView: UICollectionView) -> Int {
                 if collectionView == TopCollectionView {
@@ -195,8 +196,6 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                     cell.backgroundColor = .white
                     cell.TopSubTitleLabel.text = data[indexPath.row]
                     cell.TopRankLabel.text = rankData[indexPath.row]
-                    cell.alpha = 0.5
-                    cell.sizeToFit()
                     return cell
                 }
                 
@@ -207,8 +206,6 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                     cell.backgroundColor = .white
                     cell.LocalSubTitleLabel.text = data[indexPath.row]
                     cell.LocalRankLabel.text = rankData[indexPath.row]
-                    cell.alpha = 0.5
-                    cell.sizeToFit()
                     return cell
                 }
                 
@@ -219,8 +216,6 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                     cell.backgroundColor = .white
                     cell.BillSubTitleLabel.text = data[indexPath.row]
                     cell.BillRankLabel.text = rankData[indexPath.row]
-                    cell.alpha = 0.5
-                    cell.sizeToFit()
                     return cell
                 }
                 
@@ -231,8 +226,6 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                     cell.backgroundColor = .white
                     cell.GlobalSubTitleLabel.text = data[indexPath.row]
                     cell.GlobalRankLabel.text = rankData[indexPath.row]
-                    cell.alpha = 0.5
-                    cell.sizeToFit()
                     return cell
                 }
                 
@@ -243,8 +236,6 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                                    cell.backgroundColor = .white
                                    cell.LocalHipHopSubTitleLabel.text = data[indexPath.row]
                                    cell.LocalHipHopRankLabel.text = rankData[indexPath.row]
-                                   cell.alpha = 0.5
-                                   cell.sizeToFit()
                                    return cell
                                }
                 if collectionView == LocalBaladCollectionView {
@@ -254,8 +245,6 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                     cell.backgroundColor = .white
                     cell.LocalBaladSubTitleLabel.text = data[indexPath.row]
                     cell.LocalBaladRankLabel.text = rankData[indexPath.row]
-                    cell.alpha = 0.5
-                    cell.sizeToFit()
                     return cell
                 }
                 
@@ -265,8 +254,6 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                     cell.MusicVideoImageView.image = UIImage(named: "musicvideo_test2")
                     cell.backgroundColor = .white
                     cell.MusicVideoSubTitleLabel.text = data[indexPath.row]
-                    cell.alpha = 0.5
-                    cell.sizeToFit()
                     return cell
                 }
                 
@@ -277,8 +264,6 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                     cell.backgroundColor = .white
                     cell.LeagueSubTitleLabel.text = data[indexPath.row]
                     cell.LeagueRankLabel.text = rankData[indexPath.row]
-                    cell.alpha = 0.5
-                    cell.sizeToFit()
                     return cell
                 }
                 
@@ -289,8 +274,6 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                     cell.backgroundColor = .white
                     cell.SearchSubTitleLabel.text = data[indexPath.row]
                     cell.SearchRankLabel.text = rankData[indexPath.row]
-                    cell.alpha = 0.5
-                    cell.sizeToFit()
                     return cell
                 }
                 
@@ -301,8 +284,6 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                     cell.backgroundColor = .white
                     cell.SixYearSubTitleLabel.text = data[indexPath.row]
                     cell.SixYearRankLabel.text = rankData[indexPath.row]
-                    cell.alpha = 0.5
-                    cell.sizeToFit()
                     return cell
                 }
                 
@@ -312,10 +293,70 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                     cell.NewAlbumImageView.image = UIImage(named: "like_test")
                     cell.backgroundColor = .white
                     cell.NewAlbumSubTitleLabel.text = data[indexPath.row]
-                    cell.alpha = 0.5
-                    cell.sizeToFit()
                     return cell
                 }
                 return cell
         }
+}
+
+@available(iOS 13.0, *)
+extension ChartViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if collectionView == TopCollectionView {
+            let width = TopCollectionView.bounds.width
+            let height = TopCollectionView.bounds.height * 0.17
+            return CGSize(width: width, height: height)
+        }
+        if collectionView == LocalCollectionView {
+            let width = LocalCollectionView.bounds.width
+            let height = LocalCollectionView.bounds.height * 0.17
+            return CGSize(width: width, height: height)
+        }
+        if collectionView == BillboardCollectionView {
+            let width = BillboardCollectionView.bounds.width
+            let height = BillboardCollectionView.bounds.height * 0.17
+            return CGSize(width: width, height: height)
+        }
+        if collectionView == GlobalCollectionView {
+            let width = GlobalCollectionView.bounds.width
+            let height = GlobalCollectionView.bounds.height * 0.17
+            return CGSize(width: width, height: height)
+        }
+        if collectionView == LocalHipHopCollectionView {
+            let width = LocalHipHopCollectionView.bounds.width
+            let height = LocalHipHopCollectionView.bounds.height * 0.17
+            return CGSize(width: width, height: height)
+        }
+        if collectionView == LocalBaladCollectionView {
+            let width = LocalBaladCollectionView.bounds.width
+            let height = LocalBaladCollectionView.bounds.height * 0.17
+            return CGSize(width: width, height: height)
+        }
+        if collectionView == LeagueCollectionView {
+            let width = LeagueCollectionView.bounds.width
+            let height = LeagueCollectionView.bounds.height * 0.17
+            return CGSize(width: width, height: height)
+        }
+        if collectionView == SearchCollectionView {
+            let width = SearchCollectionView.bounds.width
+            let height = SearchCollectionView.bounds.height * 0.17
+            return CGSize(width: width, height: height)
+        }
+        if collectionView == SixYearCollectionView {
+            let width = SixYearCollectionView.bounds.width
+            let height = SixYearCollectionView.bounds.height * 0.17
+            return CGSize(width: width, height: height)
+        }
+        if collectionView == NewAlbumCollectionView {
+            let width = NewAlbumCollectionView.bounds.width * 0.5
+            let height = NewAlbumCollectionView.bounds.height
+            return CGSize(width: width, height: height)
+        }
+        if collectionView == MusicVideoCollectionView {
+            let width = MusicVideoCollectionView.bounds.width * 0.75
+            let height = MusicVideoCollectionView.bounds.height
+            return CGSize(width: width, height: height)
+        }
+        return collectionView.bounds.size
+    }
 }

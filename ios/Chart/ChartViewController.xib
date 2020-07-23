@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -26,32 +26,26 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="klA-l6-sKf">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="m8P-4P-3S1">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                     <subviews>
                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htu-ru-tFU">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="4265.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="4310.666666666667"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDV-9K-csc">
-                                    <rect key="frame" x="175" y="4218" width="42" height="20.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 Top 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCl-OV-E5O">
-                                    <rect key="frame" x="16" y="90.5" width="108.5" height="23"/>
+                                    <rect key="frame" x="20" y="89.666666666666671" width="109" height="23"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view clipsSubviews="YES" contentMode="top" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="6ZK-4h-V3L" userLabel="네비게이션뷰">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="차트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcC-r6-W9t">
-                                            <rect key="frame" x="16" y="30" width="50.5" height="35"/>
+                                            <rect key="frame" x="20" y="29.999999999999996" width="51" height="34.666666666666657"/>
                                             <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -65,21 +59,21 @@
                                     </constraints>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKR-Sx-5BN">
-                                    <rect key="frame" x="16" y="113.5" width="42" height="21"/>
+                                    <rect key="frame" x="20" y="112.66666666666667" width="42" height="21.000000000000014"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzf-4j-pcT">
-                                    <rect key="frame" x="316" y="91" width="39" height="18"/>
+                                    <rect key="frame" x="355" y="90" width="39" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="x4h-qg-JWb" userLabel="Top100CollectionView">
-                                    <rect key="frame" x="16" y="149.5" width="339" height="272"/>
+                                    <rect key="frame" x="20" y="148.66666666666663" width="374" height="300"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QLW-vR-e0T">
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="5" id="QLW-vR-e0T">
                                         <size key="itemSize" width="50" height="50"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -87,27 +81,27 @@
                                     </collectionViewFlowLayout>
                                 </collectionView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="국내 급상승 🔥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4K-As-xQd">
-                                    <rect key="frame" x="16" y="456.5" width="116" height="23"/>
+                                    <rect key="frame" x="20" y="483.66666666666669" width="116" height="23"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHB-he-nfL">
-                                    <rect key="frame" x="16" y="479.5" width="42" height="21"/>
+                                    <rect key="frame" x="20" y="506.66666666666674" width="42" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hqm-QE-g46">
-                                    <rect key="frame" x="316" y="456.5" width="39" height="18"/>
+                                    <rect key="frame" x="355" y="483.66666666666669" width="39" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="F9s-fu-0XU" userLabel="LocalCollectionView">
-                                    <rect key="frame" x="16" y="515.5" width="339" height="272"/>
+                                    <rect key="frame" x="20" y="542.66666666666663" width="374" height="300"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tdH-TL-5RQ">
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tdH-TL-5RQ">
                                         <size key="itemSize" width="50" height="50"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -115,27 +109,27 @@
                                     </collectionViewFlowLayout>
                                 </collectionView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Billboard HOT 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96b-eV-mnb">
-                                    <rect key="frame" x="16" y="822.5" width="161.5" height="23"/>
+                                    <rect key="frame" x="20" y="877.66666666666663" width="162" height="23"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MS4-a1-tPH">
-                                    <rect key="frame" x="16" y="845.5" width="42" height="21"/>
+                                    <rect key="frame" x="20" y="900.66666666666663" width="42" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8e-g3-7Ri">
-                                    <rect key="frame" x="316" y="822.5" width="39" height="18"/>
+                                    <rect key="frame" x="355" y="877.66666666666663" width="39" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pYK-Js-5gq" userLabel="BillboardCollectionView">
-                                    <rect key="frame" x="16" y="881.5" width="339" height="271.5"/>
+                                    <rect key="frame" x="20" y="936.66666666666652" width="374" height="300"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BE0-4j-yJo">
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BE0-4j-yJo">
                                         <size key="itemSize" width="50" height="50"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -143,27 +137,27 @@
                                     </collectionViewFlowLayout>
                                 </collectionView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="해외 급상승 🔥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="of2-ws-6RJ">
-                                    <rect key="frame" x="16" y="1188" width="116" height="23"/>
+                                    <rect key="frame" x="20" y="1271.6666666666667" width="116" height="23"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dib-23-3sR">
-                                    <rect key="frame" x="16" y="1211" width="42" height="21"/>
+                                    <rect key="frame" x="20" y="1294.6666666666667" width="42" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0q3-Sc-48w">
-                                    <rect key="frame" x="316" y="1188" width="39" height="18"/>
+                                    <rect key="frame" x="355" y="1271.6666666666667" width="39" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="JDL-uq-fd2" userLabel="GlobalCollectionView">
-                                    <rect key="frame" x="16" y="1247" width="339" height="272"/>
+                                    <rect key="frame" x="20" y="1330.6666666666667" width="374" height="300"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4k0-3w-4cE">
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4k0-3w-4cE">
                                         <size key="itemSize" width="50" height="50"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -171,27 +165,27 @@
                                     </collectionViewFlowLayout>
                                 </collectionView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="국내 랩/힙합 Top 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzn-hP-eTe">
-                                    <rect key="frame" x="16" y="1554" width="169" height="23"/>
+                                    <rect key="frame" x="20" y="1665.6666666666667" width="169" height="23"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vpz-ja-b13">
-                                    <rect key="frame" x="16" y="1577" width="42" height="21"/>
+                                    <rect key="frame" x="20" y="1688.6666666666667" width="42" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wu-6q-c74">
-                                    <rect key="frame" x="316" y="1554" width="39" height="18"/>
+                                    <rect key="frame" x="355" y="1665.6666666666667" width="39" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Mlh-T8-vLC" userLabel="LocalHipHopCollectionView">
-                                    <rect key="frame" x="16" y="1613" width="339" height="272"/>
+                                    <rect key="frame" x="20" y="1724.6666666666667" width="374" height="300"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uOb-9g-Deu">
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uOb-9g-Deu">
                                         <size key="itemSize" width="50" height="50"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -199,45 +193,45 @@
                                     </collectionViewFlowLayout>
                                 </collectionView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="국내 발라드 Top 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUW-Cg-ImG">
-                                    <rect key="frame" x="16" y="1920" width="162" height="23"/>
+                                    <rect key="frame" x="20" y="2059.6666666666665" width="162" height="23"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWh-z5-olP">
-                                    <rect key="frame" x="16" y="1943" width="42" height="21"/>
+                                    <rect key="frame" x="20" y="2082.6666666666665" width="42" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qie-nB-sPB">
-                                    <rect key="frame" x="316" y="1920" width="39" height="18"/>
+                                    <rect key="frame" x="355" y="2059.6666666666665" width="39" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="뮤직비디오 Top 50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViG-BH-eal">
-                                    <rect key="frame" x="16" y="2286" width="148.5" height="23"/>
+                                    <rect key="frame" x="20" y="2453.6666666666665" width="149" height="23"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjy-Db-KeS">
-                                    <rect key="frame" x="16" y="2309" width="42" height="21"/>
+                                    <rect key="frame" x="20" y="2476.6666666666665" width="42" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMI-20-vno">
-                                    <rect key="frame" x="316" y="2286" width="39" height="18"/>
+                                    <rect key="frame" x="355" y="2453.6666666666665" width="39" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Vw1-IT-QWg" userLabel="LocalBaladCollectionView">
-                                    <rect key="frame" x="16" y="1979" width="339" height="272"/>
+                                    <rect key="frame" x="20" y="2118.6666666666665" width="374" height="300"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FwF-j3-R1j">
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FwF-j3-R1j">
                                         <size key="itemSize" width="50" height="50"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -245,9 +239,9 @@
                                     </collectionViewFlowLayout>
                                 </collectionView>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ogW-IY-FLi" userLabel="MusicVideoCollectionView">
-                                    <rect key="frame" x="16" y="2345" width="339" height="193"/>
+                                    <rect key="frame" x="20" y="2512.6666666666665" width="374" height="213"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nap-1d-z6v">
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Nap-1d-z6v">
                                         <size key="itemSize" width="128" height="128"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -255,27 +249,27 @@
                                     </collectionViewFlowLayout>
                                 </collectionView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="뮤지션리그 Top 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPu-MD-08r">
-                                    <rect key="frame" x="16" y="2573" width="158" height="23"/>
+                                    <rect key="frame" x="20" y="2760.6666666666665" width="158" height="23"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXJ-rk-CrX">
-                                    <rect key="frame" x="16" y="2596" width="42" height="21"/>
+                                    <rect key="frame" x="20" y="2783.6666666666665" width="42" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLk-zE-O5y">
-                                    <rect key="frame" x="316" y="2573" width="39" height="18"/>
+                                    <rect key="frame" x="355" y="2760.6666666666665" width="39" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ydV-ms-1xu" userLabel="LeagueCollectionView">
-                                    <rect key="frame" x="16" y="2632" width="339" height="271.5"/>
+                                    <rect key="frame" x="20" y="2819.6666666666665" width="374" height="300"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HPW-3a-PTE">
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HPW-3a-PTE">
                                         <size key="itemSize" width="50" height="50"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -283,27 +277,27 @@
                                     </collectionViewFlowLayout>
                                 </collectionView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="음악검색 Top 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiY-2p-Mno">
-                                    <rect key="frame" x="16" y="2938.5" width="141" height="23"/>
+                                    <rect key="frame" x="20" y="3154.6666666666665" width="141" height="23"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsD-cJ-hCY">
-                                    <rect key="frame" x="16" y="2961.5" width="42" height="21"/>
+                                    <rect key="frame" x="20" y="3177.6666666666665" width="42" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7c5-Go-0ED">
-                                    <rect key="frame" x="316" y="2938.5" width="39" height="18"/>
+                                    <rect key="frame" x="355" y="3154.6666666666665" width="39" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bXO-SQ-2QF" userLabel="SearchCollectionView">
-                                    <rect key="frame" x="16" y="2997.5" width="339" height="272"/>
+                                    <rect key="frame" x="20" y="3213.6666666666665" width="374" height="300"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ypD-mp-rGq">
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ypD-mp-rGq">
                                         <size key="itemSize" width="50" height="50"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -311,27 +305,27 @@
                                     </collectionViewFlowLayout>
                                 </collectionView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6년 전 오늘, 해외 Top 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIr-Tp-eec">
-                                    <rect key="frame" x="16" y="3304.5" width="206" height="23"/>
+                                    <rect key="frame" x="20" y="3548.6666666666665" width="206" height="23"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1L6-Ue-gpk">
-                                    <rect key="frame" x="16" y="3327.5" width="42" height="21"/>
+                                    <rect key="frame" x="20" y="3571.6666666666665" width="42" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9i-iZ-5Zm">
-                                    <rect key="frame" x="316" y="3304.5" width="39" height="18"/>
+                                    <rect key="frame" x="355" y="3548.6666666666665" width="39" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="gWX-jW-fcF" userLabel="SixYearCollectionView">
-                                    <rect key="frame" x="16" y="3363.5" width="339" height="272"/>
+                                    <rect key="frame" x="20" y="3607.6666666666665" width="374" height="300"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dgV-7e-ifr">
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dgV-7e-ifr">
                                         <size key="itemSize" width="50" height="50"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -339,21 +333,21 @@
                                     </collectionViewFlowLayout>
                                 </collectionView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최신앨범" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jj-Zf-UOw">
-                                    <rect key="frame" x="16" y="3670.5" width="66" height="23"/>
+                                    <rect key="frame" x="20" y="3942.6666666666665" width="66" height="23"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAh-2i-SYh">
-                                    <rect key="frame" x="316" y="3670.5" width="39" height="18"/>
+                                    <rect key="frame" x="355" y="3942.6666666666665" width="39" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="rsQ-Ks-Y2q" userLabel="NewAlbumCollectionView">
-                                    <rect key="frame" x="16" y="3708.5" width="339" height="208.5"/>
+                                    <rect key="frame" x="20" y="3980.6666666666665" width="374" height="229.99999999999955"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CCI-kI-xzd">
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CCI-kI-xzd">
                                         <size key="itemSize" width="128" height="128"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -396,7 +390,6 @@
                                 <constraint firstItem="JDL-uq-fd2" firstAttribute="top" secondItem="Dib-23-3sR" secondAttribute="bottom" constant="15" id="Gev-pt-4tC"/>
                                 <constraint firstItem="zWh-z5-olP" firstAttribute="leading" secondItem="qUW-Cg-ImG" secondAttribute="leading" id="HSz-kc-iga"/>
                                 <constraint firstItem="zWh-z5-olP" firstAttribute="top" secondItem="qUW-Cg-ImG" secondAttribute="bottom" id="IG1-sm-Hrb"/>
-                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nDV-9K-csc" secondAttribute="trailing" constant="20" symbolic="YES" id="IHc-9F-YfN"/>
                                 <constraint firstItem="Qzn-hP-eTe" firstAttribute="leading" secondItem="of2-ws-6RJ" secondAttribute="leading" id="Icy-aj-UUj"/>
                                 <constraint firstItem="Vw1-IT-QWg" firstAttribute="trailing" secondItem="qie-nB-sPB" secondAttribute="trailing" id="JEP-bG-Mqf"/>
                                 <constraint firstItem="qie-nB-sPB" firstAttribute="trailing" secondItem="6Wu-6q-c74" secondAttribute="trailing" id="JGv-Bb-v25"/>
@@ -415,13 +408,14 @@
                                 <constraint firstItem="7c5-Go-0ED" firstAttribute="top" secondItem="ydV-ms-1xu" secondAttribute="bottom" constant="35" id="Qgj-ma-d9n"/>
                                 <constraint firstItem="bXO-SQ-2QF" firstAttribute="top" secondItem="lsD-cJ-hCY" secondAttribute="bottom" constant="15" id="Qlw-3d-VYJ"/>
                                 <constraint firstItem="1L6-Ue-gpk" firstAttribute="top" secondItem="EIr-Tp-eec" secondAttribute="bottom" id="Rj8-QN-X2G"/>
+                                <constraint firstAttribute="bottom" secondItem="rsQ-Ks-Y2q" secondAttribute="bottom" constant="100" id="SJv-cM-bQ3"/>
                                 <constraint firstItem="MS4-a1-tPH" firstAttribute="top" secondItem="96b-eV-mnb" secondAttribute="bottom" id="Tq3-mo-HjG"/>
                                 <constraint firstItem="0q3-Sc-48w" firstAttribute="trailing" secondItem="v8e-g3-7Ri" secondAttribute="trailing" id="UkA-rV-ekL"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" secondItem="rsQ-Ks-Y2q" secondAttribute="height" multiplier="19.1847" priority="250" id="UtL-BI-Nd1"/>
                                 <constraint firstItem="qUW-Cg-ImG" firstAttribute="leading" secondItem="Mlh-T8-vLC" secondAttribute="leading" id="VM6-ju-UYd"/>
                                 <constraint firstItem="v8e-g3-7Ri" firstAttribute="trailing" secondItem="Hqm-QE-g46" secondAttribute="trailing" id="VwY-aM-5ew"/>
                                 <constraint firstItem="bXO-SQ-2QF" firstAttribute="leading" secondItem="lsD-cJ-hCY" secondAttribute="leading" id="WDf-Wv-o4P"/>
                                 <constraint firstItem="Vpz-ja-b13" firstAttribute="leading" secondItem="Qzn-hP-eTe" secondAttribute="leading" id="WT7-ZQ-mhZ"/>
-                                <constraint firstAttribute="bottom" secondItem="nDV-9K-csc" secondAttribute="bottom" constant="27" id="X2d-Jy-RPm"/>
                                 <constraint firstItem="x4h-qg-JWb" firstAttribute="trailing" secondItem="Pzf-4j-pcT" secondAttribute="trailing" id="YqK-47-sff"/>
                                 <constraint firstItem="pYK-Js-5gq" firstAttribute="leading" secondItem="MS4-a1-tPH" secondAttribute="leading" id="ZTS-HQ-PZZ"/>
                                 <constraint firstItem="R9i-iZ-5Zm" firstAttribute="top" secondItem="bXO-SQ-2QF" secondAttribute="bottom" constant="35" id="Zkm-X9-cDs"/>
@@ -437,7 +431,6 @@
                                 <constraint firstItem="x4h-qg-JWb" firstAttribute="leading" secondItem="mKR-Sx-5BN" secondAttribute="leading" id="eEx-dW-EDe"/>
                                 <constraint firstItem="wjy-Db-KeS" firstAttribute="top" secondItem="ViG-BH-eal" secondAttribute="bottom" id="ebZ-AK-uw4"/>
                                 <constraint firstItem="qUW-Cg-ImG" firstAttribute="top" secondItem="Mlh-T8-vLC" secondAttribute="bottom" constant="35" id="emc-qM-QGN"/>
-                                <constraint firstItem="nDV-9K-csc" firstAttribute="height" secondItem="htu-ru-tFU" secondAttribute="height" multiplier="0.0048062" id="fgK-jZ-rYI"/>
                                 <constraint firstItem="1L6-Ue-gpk" firstAttribute="leading" secondItem="EIr-Tp-eec" secondAttribute="leading" id="ftl-Ry-b0Z"/>
                                 <constraint firstItem="nAh-2i-SYh" firstAttribute="trailing" secondItem="gWX-jW-fcF" secondAttribute="trailing" id="g1H-Ff-6hy"/>
                                 <constraint firstItem="jPu-MD-08r" firstAttribute="top" secondItem="ogW-IY-FLi" secondAttribute="bottom" constant="35" id="gGY-FD-ZWU"/>
@@ -453,7 +446,6 @@
                                 <constraint firstItem="ydV-ms-1xu" firstAttribute="trailing" secondItem="fLk-zE-O5y" secondAttribute="trailing" id="pF2-yG-IzI"/>
                                 <constraint firstItem="rsQ-Ks-Y2q" firstAttribute="leading" secondItem="9jj-Zf-UOw" secondAttribute="leading" id="pJK-5W-4ki"/>
                                 <constraint firstItem="gWX-jW-fcF" firstAttribute="leading" secondItem="1L6-Ue-gpk" secondAttribute="leading" id="q8f-WU-yHy"/>
-                                <constraint firstItem="nDV-9K-csc" firstAttribute="leading" secondItem="htu-ru-tFU" secondAttribute="leading" constant="175" id="tQB-Ah-nNX"/>
                                 <constraint firstItem="EIr-Tp-eec" firstAttribute="top" secondItem="bXO-SQ-2QF" secondAttribute="bottom" constant="35" id="ths-L8-4ME"/>
                                 <constraint firstItem="6Wu-6q-c74" firstAttribute="trailing" secondItem="0q3-Sc-48w" secondAttribute="trailing" id="v2w-4a-52E"/>
                                 <constraint firstItem="nAh-2i-SYh" firstAttribute="top" secondItem="gWX-jW-fcF" secondAttribute="bottom" constant="35" id="wF8-Rn-q62"/>
@@ -497,6 +489,7 @@
                 <constraint firstItem="F9s-fu-0XU" firstAttribute="height" secondItem="klA-l6-sKf" secondAttribute="height" multiplier="0.407609" id="cDf-L1-TQ5"/>
                 <constraint firstItem="ogW-IY-FLi" firstAttribute="width" secondItem="klA-l6-sKf" secondAttribute="width" multiplier="0.903382" id="dfA-Ab-lBg"/>
                 <constraint firstItem="x4h-qg-JWb" firstAttribute="height" secondItem="klA-l6-sKf" secondAttribute="height" multiplier="0.407609" id="eji-4q-qgv"/>
+                <constraint firstItem="6ZK-4h-V3L" firstAttribute="height" secondItem="klA-l6-sKf" secondAttribute="height" multiplier="0.119565" id="g55-cg-Wgf"/>
                 <constraint firstItem="m8P-4P-3S1" firstAttribute="top" secondItem="hAu-Q5-cbU" secondAttribute="top" id="jwX-mx-MFM"/>
                 <constraint firstItem="m8P-4P-3S1" firstAttribute="leading" secondItem="klA-l6-sKf" secondAttribute="leading" id="lHI-FX-Lj3"/>
                 <constraint firstItem="bXO-SQ-2QF" firstAttribute="height" secondItem="klA-l6-sKf" secondAttribute="height" multiplier="0.407609" id="lKq-Ti-rX7"/>

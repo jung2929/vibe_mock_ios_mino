@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+@available(iOS 13.0, *)
 class SearchViewController: UIViewController {
 
 
@@ -34,7 +34,7 @@ class SearchViewController: UIViewController {
         NewsCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
         }
 }
-
+@available(iOS 13.0, *)
 extension SearchViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         func numberOfSections(in collectionView: UICollectionView) -> Int {
             if collectionView == NewsCollectionView {
@@ -57,8 +57,6 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
             cell.NewsTitleLabel.text = data[indexPath.row]
             cell.NewsImageView.image = UIImage(named: "search_test")
             cell.backgroundColor = .white
-            cell.alpha = 0.5
-            cell.sizeToFit()
             cell.layer.borderColor = UIColor.lightGray.cgColor
             cell.layer.borderWidth = 0.2
             return cell
@@ -67,3 +65,15 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
         }
 }
 
+@available(iOS 13.0, *)
+extension SearchViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if collectionView == NewsCollectionView {
+            let width = NewsCollectionView.bounds.width
+            let height = NewsCollectionView.bounds.height
+            return CGSize(width: width, height: height)
+        }
+       
+        return collectionView.bounds.size
+    }
+}
