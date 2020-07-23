@@ -15,5 +15,5 @@ target 'VIBE' do
   pod 'Fabric', '~> 1.7.5'
   pod 'Crashlytics', '~> 3.10.1'
   pod 'KYDrawerController'
-
+  pod 'PagingCollectionViewLayout'
 end

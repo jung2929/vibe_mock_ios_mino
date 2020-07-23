@@ -11,6 +11,7 @@
 		A12806B224C4050B00EB9D5A /* RecentlyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A12806B024C4050B00EB9D5A /* RecentlyCollectionViewCell.xib */; };
 		A12806B524C417ED00EB9D5A /* HearCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12806B324C417ED00EB9D5A /* HearCollectionViewCell.swift */; };
 		A12806B624C417ED00EB9D5A /* HearCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A12806B424C417ED00EB9D5A /* HearCollectionViewCell.xib */; };
+		A129170124C9DE7E000B11FF /* PagingCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A129170024C9DE7E000B11FF /* PagingCollectionViewLayout.swift */; };
 		A168251E24C6B33F00DAEE83 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A168251C24C6B33F00DAEE83 /* NewsCollectionViewCell.swift */; };
 		A168251F24C6B33F00DAEE83 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A168251D24C6B33F00DAEE83 /* NewsCollectionViewCell.xib */; };
 		A168252224C72B3200DAEE83 /* TabBarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A168252024C72B3200DAEE83 /* TabBarCollectionViewCell.swift */; };
@@ -87,6 +88,7 @@
 		A12806B024C4050B00EB9D5A /* RecentlyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentlyCollectionViewCell.xib; sourceTree = "<group>"; };
 		A12806B324C417ED00EB9D5A /* HearCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearCollectionViewCell.swift; sourceTree = "<group>"; };
 		A12806B424C417ED00EB9D5A /* HearCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HearCollectionViewCell.xib; sourceTree = "<group>"; };
+		A129170024C9DE7E000B11FF /* PagingCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PagingCollectionViewLayout.swift; path = ../../Pods/PagingCollectionViewLayout/PagingCollectionViewLayout.swift; sourceTree = "<group>"; };
 		A168251C24C6B33F00DAEE83 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		A168251D24C6B33F00DAEE83 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
 		A168252024C72B3200DAEE83 /* TabBarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -540,6 +542,7 @@
 				BD75ABD62301B42900E0FC7A /* Entity */,
 				A18740AC24C197CF009E118D /* HomeViewController.swift */,
 				A18740AD24C197CF009E118D /* HomeViewController.xib */,
+				A129170024C9DE7E000B11FF /* PagingCollectionViewLayout.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -766,6 +769,7 @@
 				BD9BF17A22F9C6FF009E47EB /* UIButton.swift in Sources */,
 				A12806B124C4050B00EB9D5A /* RecentlyCollectionViewCell.swift in Sources */,
 				A1C6157324C42BC6005BCE5B /* NewCollectionViewCell.swift in Sources */,
+				A129170124C9DE7E000B11FF /* PagingCollectionViewLayout.swift in Sources */,
 				A18740CB24C19E21009E118D /* SearchViewController.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
 				A168251E24C6B33F00DAEE83 /* NewsCollectionViewCell.swift in Sources */,
