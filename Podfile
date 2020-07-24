@@ -16,4 +16,5 @@ target 'VIBE' do
   pod 'Crashlytics', '~> 3.10.1'
   pod 'KYDrawerController'
   pod 'PagingCollectionViewLayout'
+  pod 'Tabman', '~> 2.9'
 end

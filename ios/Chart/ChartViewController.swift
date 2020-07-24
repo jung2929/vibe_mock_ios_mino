@@ -297,6 +297,12 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                 }
                 return cell
         }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            let detailVC = ChartDetailViewController()
+            self.navigationController?.pushViewController(detailVC, animated: true)
+            
+    }
+    
 }
 
 @available(iOS 13.0, *)

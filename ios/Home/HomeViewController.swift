@@ -33,8 +33,8 @@ class HomeViewController: BaseViewController {
             super.viewDidLoad()
             
             // width, height 설정
-            let cellWidth = floor(TitleCollectionView.frame.width)
-            let cellHeight = floor(TitleCollectionView.frame.height)
+            let cellWidth = floor(TitleCollectionView.bounds.width * cellRatio)
+            let cellHeight = floor(TitleCollectionView.bounds.height * cellRatio)
 
             // 상하, 좌우 inset value 설정
             let insetX = 0
@@ -58,6 +58,8 @@ class HomeViewController: BaseViewController {
             NewCollectionView.register(NewNibName, forCellWithReuseIdentifier: "cell")
             let MagNibName = UINib(nibName: "MagCollectionViewCell", bundle: nil)
             MagCollectionView.register(MagNibName, forCellWithReuseIdentifier: "cell")
+            
+            
             
             TitleCollectionView.translatesAutoresizingMaskIntoConstraints = false
             RecommendCollectionView.translatesAutoresizingMaskIntoConstraints = false

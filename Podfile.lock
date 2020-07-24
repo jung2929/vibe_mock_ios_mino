@@ -74,9 +74,12 @@ PODS:
   - nanopb/decode (1.30905.0)
   - nanopb/encode (1.30905.0)
   - ObjectMapper (3.5.3)
+  - Pageboy (3.6.1)
   - PagingCollectionViewLayout (0.0.4)
   - PromisesObjC (1.2.9)
   - SnapKit (4.0.1)
+  - Tabman (2.9.1):
+    - Pageboy (~> 3.6.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -89,6 +92,7 @@ DEPENDENCIES:
   - KYDrawerController
   - PagingCollectionViewLayout
   - SnapKit (~> 4.0.0)
+  - Tabman (~> 2.9)
 
 SPEC REPOS:
   trunk:
@@ -109,9 +113,11 @@ SPEC REPOS:
     - KYDrawerController
     - nanopb
     - ObjectMapper
+    - Pageboy
     - PagingCollectionViewLayout
     - PromisesObjC
     - SnapKit
+    - Tabman
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
@@ -131,10 +137,12 @@ SPEC CHECKSUMS:
   KYDrawerController: baad0e63b09c0cb564bd48f0f7f70f45d9176ebc
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  Pageboy: 29a2d474ad99404b4d77f325e0ab6d705930a4fb
   PagingCollectionViewLayout: a75339d9fe45affc116b6770f37c884a8a5e9cd9
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  Tabman: 085d89c65be9e883629bdaf5b1453a6397e57846
 
-PODFILE CHECKSUM: 1528669f21b28ea16625ed14ccc8d393e7069774
+PODFILE CHECKSUM: 1773a1a9cabc1c9ab3bd1a530c36ba21feb2efd7
 
 COCOAPODS: 1.9.3
