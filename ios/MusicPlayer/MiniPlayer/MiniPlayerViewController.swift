@@ -10,24 +10,25 @@ import UIKit
 
 class MiniPlayerViewController: UIViewController {
 
+
     @IBOutlet weak var MiniPlayerImageView: UIImageView!
     @IBOutlet weak var MiniPlayerTitleLabel: UILabel!
-    @IBOutlet weak var MiniPlayerArtistName: UILabel!
-    @IBOutlet weak var MiniPlayerPlayButton: UIButton!
+    @IBOutlet weak var MiniPlayerArtistNameLabel: UILabel!
     @IBOutlet weak var MiniPlayerForwardButton: UIButton!
-    @IBOutlet weak var MiniPlayerPlayListButton: UIButton!
-    @IBOutlet weak var MiniPlayerPresentModalButton: UIButton!
-    
-    
+    @IBOutlet weak var MiniPlayerMusicListButton: UIButton!
+    @IBOutlet weak var MusicPlayerPlayButton: UIButton!
+    @IBAction func MiniPlayerPresentModalButton(_ sender: Any) {
+        
+        let musicPlayerViewController = MusicPlayerViewController(nibName: "MusicPlayerViewController", bundle: nil)
+        self.present(musicPlayerViewController, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    func instanceFromNib() -> UIView {
-        return UINib(nibName: "MiniViewController", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! UIView
-    }
+
 
     /*
     // MARK: - Navigation
@@ -40,3 +41,5 @@ class MiniPlayerViewController: UIViewController {
     */
 
 }
+
+

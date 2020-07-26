@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SongViewController" customModule="VIBE" customModuleProvider="target">
             <connections>
-                <outlet property="SongCollectionView" destination="i3k-S4-n3J" id="YZ5-cB-NCF"/>
+                <outlet property="SongCollectionView" destination="i3k-S4-n3J" id="WKr-EA-Fjj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -53,7 +53,7 @@
                     <rect key="frame" x="311" y="85.666666666666671" width="83" height="22"/>
                     <state key="normal" image="addRecently"/>
                 </button>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="i3k-S4-n3J">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="i3k-S4-n3J">
                     <rect key="frame" x="20" y="125.66666666666669" width="374" height="576"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SGJ-5o-XcQ">

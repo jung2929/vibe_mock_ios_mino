@@ -15,7 +15,8 @@
 		A12806B224C4050B00EB9D5A /* RecentlyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A12806B024C4050B00EB9D5A /* RecentlyCollectionViewCell.xib */; };
 		A12806B524C417ED00EB9D5A /* HearCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12806B324C417ED00EB9D5A /* HearCollectionViewCell.swift */; };
 		A12806B624C417ED00EB9D5A /* HearCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A12806B424C417ED00EB9D5A /* HearCollectionViewCell.xib */; };
-		A129170124C9DE7E000B11FF /* PagingCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A129170024C9DE7E000B11FF /* PagingCollectionViewLayout.swift */; };
+		A1536D1324CD39FD00D15F6B /* MiniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1536D1224CD39FD00D15F6B /* MiniView.swift */; };
+		A1536D1524CD44AD00D15F6B /* MiniView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1536D1424CD44AD00D15F6B /* MiniView.xib */; };
 		A168251E24C6B33F00DAEE83 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A168251C24C6B33F00DAEE83 /* NewsCollectionViewCell.swift */; };
 		A168251F24C6B33F00DAEE83 /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A168251D24C6B33F00DAEE83 /* NewsCollectionViewCell.xib */; };
 		A18740AE24C197CF009E118D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18740AC24C197CF009E118D /* HomeViewController.swift */; };
@@ -100,7 +101,8 @@
 		A12806B024C4050B00EB9D5A /* RecentlyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecentlyCollectionViewCell.xib; sourceTree = "<group>"; };
 		A12806B324C417ED00EB9D5A /* HearCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HearCollectionViewCell.swift; sourceTree = "<group>"; };
 		A12806B424C417ED00EB9D5A /* HearCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HearCollectionViewCell.xib; sourceTree = "<group>"; };
-		A129170024C9DE7E000B11FF /* PagingCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PagingCollectionViewLayout.swift; path = ../../Pods/PagingCollectionViewLayout/PagingCollectionViewLayout.swift; sourceTree = "<group>"; };
+		A1536D1224CD39FD00D15F6B /* MiniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniView.swift; sourceTree = "<group>"; };
+		A1536D1424CD44AD00D15F6B /* MiniView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniView.xib; sourceTree = "<group>"; };
 		A168251C24C6B33F00DAEE83 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		A168251D24C6B33F00DAEE83 /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
 		A18740AC24C197CF009E118D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -538,6 +540,8 @@
 			children = (
 				A1F6C7D824CACC4A0076F103 /* MiniPlayerViewController.swift */,
 				A1F6C7D924CACC4A0076F103 /* MiniPlayerViewController.xib */,
+				A1536D1224CD39FD00D15F6B /* MiniView.swift */,
+				A1536D1424CD44AD00D15F6B /* MiniView.xib */,
 			);
 			path = MiniPlayer;
 			sourceTree = "<group>";
@@ -581,7 +585,6 @@
 				BD75ABD62301B42900E0FC7A /* Entity */,
 				A18740AC24C197CF009E118D /* HomeViewController.swift */,
 				A18740AD24C197CF009E118D /* HomeViewController.xib */,
-				A129170024C9DE7E000B11FF /* PagingCollectionViewLayout.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -708,6 +711,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1E2DADF24C5556900B1C0FC /* MusicVideoCollectionViewCell.xib in Resources */,
+				A1536D1524CD44AD00D15F6B /* MiniView.xib in Resources */,
 				A199307524C487BE00EA3C46 /* Top100CollectionViewCell.xib in Resources */,
 				A1DCB0A124C57C0C0009B57C /* DJRecentlyCollectionViewCell.xib in Resources */,
 				A1E2DAEB24C563E000B1C0FC /* SixYearCollectionViewCell.xib in Resources */,
@@ -816,8 +820,8 @@
 				A12806B124C4050B00EB9D5A /* RecentlyCollectionViewCell.swift in Sources */,
 				A1C6157324C42BC6005BCE5B /* NewCollectionViewCell.swift in Sources */,
 				A1F6C7D424CAA47C0076F103 /* SongCollectionViewCell.swift in Sources */,
-				A129170124C9DE7E000B11FF /* PagingCollectionViewLayout.swift in Sources */,
 				A18740CB24C19E21009E118D /* SearchViewController.swift in Sources */,
+				A1536D1324CD39FD00D15F6B /* MiniView.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
 				A1F6C7DA24CACC4A0076F103 /* MiniPlayerViewController.swift in Sources */,
 				A168251E24C6B33F00DAEE83 /* NewsCollectionViewCell.swift in Sources */,

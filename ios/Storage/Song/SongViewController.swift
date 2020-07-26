@@ -7,7 +7,7 @@
 //
 
 import UIKit
-@available(iOS 13.0, *)
+
 class SongViewController: UIViewController {
     
     @IBOutlet weak var SongCollectionView: UICollectionView!
@@ -19,16 +19,9 @@ class SongViewController: UIViewController {
     }
     
     let data = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10"]
-                    
-    var pageScroll:UIScrollView!
-    
+                        
     override func viewDidLoad() {
         super.viewDidLoad()
-                    
-        pageScroll = UIScrollView(frame: CGRect(x: 0, y: 0, width: self.view.layer.bounds.width, height: self.view.layer.bounds.height + 40))
-        
-        self.view.addSubview(pageScroll)
-        pageScroll.addSubview(SongCollectionView)
                         
         let SongNibName = UINib(nibName: "SongCollectionViewCell", bundle: nil)
         SongCollectionView.register(SongNibName, forCellWithReuseIdentifier: "cell")
@@ -41,7 +34,6 @@ class SongViewController: UIViewController {
         // 스크롤 시 빠르게 감속 되도록 설정
         }
 }
-@available(iOS 13.0, *)
 extension SongViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         func numberOfSections(in collectionView: UICollectionView) -> Int {
             if collectionView == SongCollectionView {
@@ -71,7 +63,6 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
         }
 }
 
-@available(iOS 13.0, *)
 extension SongViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == SongCollectionView {

@@ -36,6 +36,12 @@ class DJViewController: UIViewController {
                 // 스크롤 시 빠르게 감속 되도록 설정
                 DJRecentlyCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
         }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        tabBarController!.tabBar.barTintColor = .white
+        tabBarController!.tabBar.clipsToBounds = true
+    }
 }
 @available(iOS 13.0, *)
 extension DJViewController: UICollectionViewDataSource, UICollectionViewDelegate {

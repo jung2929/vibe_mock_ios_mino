@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import PagingCollectionViewLayout
 
 @available(iOS 13.0, *)
 class HomeViewController: BaseViewController {
@@ -90,6 +89,11 @@ class HomeViewController: BaseViewController {
             MagCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
         }
         
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        tabBarController!.tabBar.barTintColor = .white
+        tabBarController!.tabBar.clipsToBounds = true
+    }
     }
 
 @available(iOS 13.0, *)
@@ -213,7 +217,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: width, height: height)
         }
         if collectionView == RecommendCollectionView {
-            let width = RecommendCollectionView.bounds.width * 0.5
+            let width = TitleCollectionView.bounds.width * 0.5
             let height = RecommendCollectionView.bounds.height
             return CGSize(width: width, height: height)
         }
@@ -223,7 +227,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: width, height: height)
         }
         if collectionView == HearCollectionView {
-            let width = HearCollectionView.bounds.width
+            let width = TitleCollectionView.bounds.width
             let height = HearCollectionView.bounds.height
             return CGSize(width: width, height: height)
         }
@@ -233,7 +237,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: width, height: height)
         }
         if collectionView == MagCollectionView {
-            let width = MagCollectionView.bounds.width
+            let width = TitleCollectionView.bounds.width
             let height = MagCollectionView.bounds.height
             return CGSize(width: width, height: height)
         }
@@ -250,7 +254,7 @@ extension HomeViewController : UIScrollViewDelegate {
 
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>)
     {
-
+ 
         // item의 사이즈와 item 간의 간격 사이즈를 구해서 하나의 item 크기로 설정.
         let layout = self.TitleCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
         let cellWidthIncludingSpacing = layout.itemSize.width + layout.minimumLineSpacing

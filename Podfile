@@ -10,11 +10,10 @@ target 'VIBE' do
   pod 'AlamofireNetworkActivityIndicator', '~> 2.3'
   pod 'AlamofireObjectMapper', '~> 5.2'
   pod 'AlamofireImage', '~> 3.5'
-  pod 'SnapKit', '~> 4.0.0'
   pod 'Firebase/Analytics'
   pod 'Fabric', '~> 1.7.5'
   pod 'Crashlytics', '~> 3.10.1'
   pod 'KYDrawerController'
-  pod 'PagingCollectionViewLayout'
   pod 'Tabman', '~> 2.9'
+  pod 'SnapKit', '~> 5.0.0'
 end

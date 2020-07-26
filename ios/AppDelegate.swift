@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Production 서버
 //    let baseUrl = "https://beluv.softsquared.com"
     // Dev 서버
-    let baseUrl = "http://13.124.75.140"
+    let baseUrl = "http://54.180.159.77"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -34,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let mainTabBarController = MainTabBarController()
         self.window?.rootViewController = UINavigationController(rootViewController: mainTabBarController)
+        
         self.window?.rootViewController?.navigationController?.navigationBar.isTranslucent = false
         self.window?.rootViewController?.tabBarController?.navigationController?.navigationBar.isTranslucent = false
         self.window?.rootViewController?.tabBarController?.navigationController?.navigationBar.barTintColor = .clear

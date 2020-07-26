@@ -64,12 +64,6 @@
                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="더보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzf-4j-pcT">
-                                    <rect key="frame" x="355" y="90" width="39" height="18"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="x4h-qg-JWb" userLabel="Top100CollectionView">
                                     <rect key="frame" x="20" y="148.66666666666663" width="374" height="300"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -354,6 +348,14 @@
                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </collectionViewFlowLayout>
                                 </collectionView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8NR-Tj-aJt">
+                                    <rect key="frame" x="355" y="86.333333333333329" width="39" height="30"/>
+                                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="더보기"/>
+                                    <connections>
+                                        <action selector="top100MoreButton:" destination="-1" eventType="touchUpInside" id="uMw-nC-jWe"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="HHB-he-nfL" firstAttribute="top" secondItem="g4K-As-xQd" secondAttribute="bottom" id="0Hm-fI-2nz"/>
@@ -364,6 +366,7 @@
                                 <constraint firstItem="KCl-OV-E5O" firstAttribute="top" secondItem="6ZK-4h-V3L" secondAttribute="bottom" constant="1.6666666666666714" id="3ly-Lf-w6U"/>
                                 <constraint firstItem="g4K-As-xQd" firstAttribute="top" secondItem="x4h-qg-JWb" secondAttribute="bottom" constant="35" id="45o-DH-UKh"/>
                                 <constraint firstItem="rXJ-rk-CrX" firstAttribute="leading" secondItem="jPu-MD-08r" secondAttribute="leading" id="48y-0Q-ybk"/>
+                                <constraint firstItem="8NR-Tj-aJt" firstAttribute="centerY" secondItem="KCl-OV-E5O" secondAttribute="centerY" id="4Ja-Lc-NNv"/>
                                 <constraint firstItem="uiY-2p-Mno" firstAttribute="leading" secondItem="ydV-ms-1xu" secondAttribute="leading" id="4O3-ML-YmX"/>
                                 <constraint firstItem="KCl-OV-E5O" firstAttribute="leading" secondItem="EcC-r6-W9t" secondAttribute="leading" id="4Pa-b8-lPy"/>
                                 <constraint firstItem="Dib-23-3sR" firstAttribute="top" secondItem="of2-ws-6RJ" secondAttribute="bottom" id="5OY-CP-QEr"/>
@@ -416,7 +419,6 @@
                                 <constraint firstItem="v8e-g3-7Ri" firstAttribute="trailing" secondItem="Hqm-QE-g46" secondAttribute="trailing" id="VwY-aM-5ew"/>
                                 <constraint firstItem="bXO-SQ-2QF" firstAttribute="leading" secondItem="lsD-cJ-hCY" secondAttribute="leading" id="WDf-Wv-o4P"/>
                                 <constraint firstItem="Vpz-ja-b13" firstAttribute="leading" secondItem="Qzn-hP-eTe" secondAttribute="leading" id="WT7-ZQ-mhZ"/>
-                                <constraint firstItem="x4h-qg-JWb" firstAttribute="trailing" secondItem="Pzf-4j-pcT" secondAttribute="trailing" id="YqK-47-sff"/>
                                 <constraint firstItem="pYK-Js-5gq" firstAttribute="leading" secondItem="MS4-a1-tPH" secondAttribute="leading" id="ZTS-HQ-PZZ"/>
                                 <constraint firstItem="R9i-iZ-5Zm" firstAttribute="top" secondItem="bXO-SQ-2QF" secondAttribute="bottom" constant="35" id="Zkm-X9-cDs"/>
                                 <constraint firstItem="F9s-fu-0XU" firstAttribute="trailing" secondItem="Hqm-QE-g46" secondAttribute="trailing" id="aHm-N6-Nf8"/>
@@ -431,10 +433,10 @@
                                 <constraint firstItem="x4h-qg-JWb" firstAttribute="leading" secondItem="mKR-Sx-5BN" secondAttribute="leading" id="eEx-dW-EDe"/>
                                 <constraint firstItem="wjy-Db-KeS" firstAttribute="top" secondItem="ViG-BH-eal" secondAttribute="bottom" id="ebZ-AK-uw4"/>
                                 <constraint firstItem="qUW-Cg-ImG" firstAttribute="top" secondItem="Mlh-T8-vLC" secondAttribute="bottom" constant="35" id="emc-qM-QGN"/>
+                                <constraint firstAttribute="trailing" secondItem="8NR-Tj-aJt" secondAttribute="trailing" constant="20" id="fa0-6L-wys"/>
                                 <constraint firstItem="1L6-Ue-gpk" firstAttribute="leading" secondItem="EIr-Tp-eec" secondAttribute="leading" id="ftl-Ry-b0Z"/>
                                 <constraint firstItem="nAh-2i-SYh" firstAttribute="trailing" secondItem="gWX-jW-fcF" secondAttribute="trailing" id="g1H-Ff-6hy"/>
                                 <constraint firstItem="jPu-MD-08r" firstAttribute="top" secondItem="ogW-IY-FLi" secondAttribute="bottom" constant="35" id="gGY-FD-ZWU"/>
-                                <constraint firstItem="Pzf-4j-pcT" firstAttribute="top" secondItem="6ZK-4h-V3L" secondAttribute="bottom" constant="2" id="gev-AE-6z8"/>
                                 <constraint firstItem="6ZK-4h-V3L" firstAttribute="top" secondItem="htu-ru-tFU" secondAttribute="top" id="hfV-FO-Dvt"/>
                                 <constraint firstItem="JDL-uq-fd2" firstAttribute="leading" secondItem="Dib-23-3sR" secondAttribute="leading" id="hkR-DS-HZw"/>
                                 <constraint firstItem="pYK-Js-5gq" firstAttribute="trailing" secondItem="v8e-g3-7Ri" secondAttribute="trailing" id="hub-ea-RyE"/>
@@ -495,7 +497,6 @@
                 <constraint firstItem="bXO-SQ-2QF" firstAttribute="height" secondItem="klA-l6-sKf" secondAttribute="height" multiplier="0.407609" id="lKq-Ti-rX7"/>
                 <constraint firstItem="JDL-uq-fd2" firstAttribute="width" secondItem="klA-l6-sKf" secondAttribute="width" multiplier="0.903382" id="nuy-Vk-f5l"/>
                 <constraint firstItem="ydV-ms-1xu" firstAttribute="width" secondItem="klA-l6-sKf" secondAttribute="width" multiplier="0.903382" id="oEr-nQ-KVc"/>
-                <constraint firstItem="hAu-Q5-cbU" firstAttribute="trailing" secondItem="Pzf-4j-pcT" secondAttribute="trailing" constant="20" id="qe0-km-BbM"/>
                 <constraint firstItem="Mlh-T8-vLC" firstAttribute="width" secondItem="klA-l6-sKf" secondAttribute="width" multiplier="0.903382" id="qm9-ik-B0r"/>
                 <constraint firstItem="rsQ-Ks-Y2q" firstAttribute="width" secondItem="klA-l6-sKf" secondAttribute="width" multiplier="0.903382" id="sJz-B9-BPX"/>
             </constraints>

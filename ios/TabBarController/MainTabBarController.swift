@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 @available(iOS 13.0, *)
 class MainTabBarController: UITabBarController {
@@ -14,9 +15,12 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        tabBar.barTintColor = .white
+        tabBar.clipsToBounds = true
+        
     }
     
-
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
@@ -45,12 +49,40 @@ class MainTabBarController: UITabBarController {
         search.tabBarItem = icon4
         storage.tabBarItem = icon5
         let controllers = [home,chart,dj,search,storage]
-        self.viewControllers = controllers
+        self.viewControllers = controllers.map { UINavigationController(rootViewController: $0) }
+        
+        let view = MiniView(frame: self.view.frame)
+        self.view.addSubview(view)
+        view.snp.makeConstraints { make in
+            make.bottomMargin.equalTo(tabBar.snp.top).offset(-5)
+            make.size.equalTo(CGSize(width: 414, height: 50))
+            
+        }
+        
+//        let name = String(describing: MiniPlayerViewController.self)
+//        guard let loadedNib = Bundle.main.loadNibNamed(name, owner: self, options: nil) else { return }
+//        guard (loadedNib.first as? MiniPlayerViewController) != nil else { return }
+        
+        
+//        instantiateFromNib()
+        
+
+//      let miniPlayerViewController = MiniPlayerViewController(nibName: "MiniPlayerViewController", bundle: nil)
+//        miniPlayerViewController.modalPresentationStyle = .fullScreen
+//
+//      self.present(miniPlayerViewController, animated: true, completion: nil)
 
         
-        // todo
-        // 바이브 앱처럼 탭바 아이템들 y값 정 가운데로 정렬 가능한지 찾아보고 적용시키기
-        // 위에 망할 네비게이션 바 없애기
+
     }
+    
+    
+    
+//    func instantiateFromNib() -> MiniPlayerViewController {
+//        let nib = UINib(nibName: "MiniPlayerViewController", bundle: nil)
+//        let vc = nib.instantiate(withOwner: nil, options: nil).first as! MiniPlayerViewController
+//        return vc
+//    }
 
 }
+

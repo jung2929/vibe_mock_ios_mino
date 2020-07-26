@@ -1,11 +1,3 @@
-//
-//  StorageViewController.swift
-//  ios
-//
-//  Created by 조민호 on 2020/07/17.
-//  Copyright © 2020 Jerry Jung. All rights reserved.
-//
-
 import UIKit
 import Tabman
 import Pageboy
@@ -13,11 +5,13 @@ import Pageboy
 @available(iOS 13.0, *)
 class StorageViewController: TabmanViewController {
     
-    private var views = [SongViewController(),SongViewController(), SongViewController(), SongViewController(), SongViewController(), SongViewController(), SongViewController(), SongViewController() ]
+    private var viewControllers: Array<UIViewController> = [SongViewController(),SongViewController(),SongViewController(),SongViewController(),SongViewController(),SongViewController(),SongViewController(),SongViewController(),]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.delegate = self
+        
+        
+        
         self.dataSource = self
         let bar = TMBar.ButtonBar()
         bar.layout.transitionStyle = .snap // Customize
@@ -33,24 +27,24 @@ class StorageViewController: TabmanViewController {
         bar.indicator.tintColor = .red
         bar.indicator.weight = .light
         addBar(bar, dataSource: self, at: .top)
-   }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-
-        
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        tabBarController!.tabBar.barTintColor = .white
+        tabBarController!.tabBar.clipsToBounds = true
     }
 
-    
 }
 @available(iOS 13.0, *)
 extension StorageViewController : PageboyViewControllerDataSource , TMBarDataSource {
     func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
-        return views.count
+        return viewControllers.count
     }
     
-    func viewController(for pageboyViewController: PageboyViewController, at index: PageboyViewController.PageIndex) -> UIViewController? {
-        return views[index]
+    func viewController(for pageboyViewController: PageboyViewController,
+                        at index: PageboyViewController.PageIndex) -> UIViewController? {
+        return viewControllers[index]
     }
     
     func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
@@ -77,8 +71,6 @@ extension StorageViewController : PageboyViewControllerDataSource , TMBarDataSou
             title = "저장한 플레이리스트"
         }
         
-        
         return TMBarItem(title: title)
     }
 }
-
