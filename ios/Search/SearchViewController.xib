@@ -22,11 +22,11 @@
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="WvM-4f-3HN">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
-                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZSp-k5-UIy">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="4265.5"/>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="1300" translatesAutoresizingMaskIntoConstraints="NO" id="ZSp-k5-UIy">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ro-0g-J94">
-                                    <rect key="frame" x="175" y="4218" width="42" height="20.5"/>
+                                    <rect key="frame" x="175" y="1252.5" width="42" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -46,15 +46,15 @@
                                     <gestureRecognizers/>
                                     <constraints>
                                         <constraint firstItem="CgK-2b-YvM" firstAttribute="top" secondItem="4Xe-EV-tn1" secondAttribute="top" constant="29.999999999999996" id="G0X-RJ-avY"/>
-                                        <constraint firstItem="CgK-2b-YvM" firstAttribute="height" secondItem="4Xe-EV-tn1" secondAttribute="height" multiplier="0.393939" id="OYR-vK-BiK"/>
+                                        <constraint firstAttribute="height" constant="89" id="Khu-6x-Lyo"/>
                                     </constraints>
                                 </view>
                                 <searchBar clipsSubviews="YES" contentMode="center" searchBarStyle="minimal" placeholder="검색어를 입력해 주세요." showsSearchResultsButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zkw-Qr-Q3k">
-                                    <rect key="frame" x="20" y="89" width="334" height="51"/>
+                                    <rect key="frame" x="20" y="89" width="334" height="56"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vwH-9a-51h">
-                                    <rect key="frame" x="20" y="160" width="334" height="195.5"/>
+                                    <rect key="frame" x="20" y="165" width="334" height="212"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MmF-Ts-C1c">
@@ -65,48 +65,307 @@
                                     </collectionViewFlowLayout>
                                 </collectionView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="장르" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvT-fZ-RWx">
-                                    <rect key="frame" x="20" y="390.5" width="33" height="23"/>
+                                    <rect key="frame" x="20" y="412" width="33" height="23"/>
                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVz-Xb-u1J">
-                                    <rect key="frame" x="20" y="428.5" width="163" height="54.5"/>
-                                    <color key="backgroundColor" red="0.96864062549999996" green="0.97259014840000002" blue="0.96862822770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                    <state key="normal" title="국내 힙합">
-                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQC-Jg-LAJ">
+                                    <rect key="frame" x="20" y="453.5" width="158" height="49.5"/>
+                                    <color key="backgroundColor" red="0.91207724560922665" green="0.90648694536252483" blue="0.93548967173756348" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="국내 알앤비/소울">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="firstButton:" destination="-1" eventType="touchUpInside" id="jiW-lA-wMI"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSa-I4-Wu5">
+                                    <rect key="frame" x="192" y="454.5" width="158" height="49.5"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="해외 힙합">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
-                                <button clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvl-G5-MvB">
-                                    <rect key="frame" x="193" y="428.5" width="163" height="54.5"/>
-                                    <color key="backgroundColor" red="0.96864062549999996" green="0.97259014840000002" blue="0.96862822770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40Q-aG-4J4">
+                                    <rect key="frame" x="20" y="515" width="158" height="50"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="국내 발라드">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSP-UX-klR">
+                                    <rect key="frame" x="191" y="516" width="158" height="50"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="K-Pop">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azO-zE-Eoe">
+                                    <rect key="frame" x="20" y="577" width="158" height="50"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="국내 댄스">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A84-pX-rld">
+                                    <rect key="frame" x="192" y="578" width="158" height="50"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="국내 일렉트로닉">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5a-6w-IAo">
+                                    <rect key="frame" x="20" y="637" width="158" height="49.5"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="국내 힙합">
-                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWw-vn-scP">
+                                    <rect key="frame" x="191" y="638" width="158" height="49.5"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="국내 락/메탈">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAP-D5-NH3">
+                                    <rect key="frame" x="20" y="694.5" width="158" height="50"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="국내 재즈">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2E-gI-1zp">
+                                    <rect key="frame" x="190" y="695.5" width="158" height="50"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="국내 인디">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkW-o1-MBY">
+                                    <rect key="frame" x="20" y="755.5" width="158" height="50"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="국내 포크/어쿠스틱">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dK-Fi-fL4">
+                                    <rect key="frame" x="191" y="756.5" width="158" height="50"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="트로트">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3g7-7g-KLG">
+                                    <rect key="frame" x="20" y="815.5" width="158" height="49.5"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="Pop">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3l-nH-QNj">
+                                    <rect key="frame" x="190" y="816.5" width="158" height="49.5"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="해외 댄스">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oD3-GO-riy">
+                                    <rect key="frame" x="20" y="875" width="158" height="50"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="해외 일렉트로닉">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNt-pp-NsM">
+                                    <rect key="frame" x="189" y="876" width="158" height="50"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="해외 알앤비/소울">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwr-y4-S4l">
+                                    <rect key="frame" x="20" y="933" width="158" height="50"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="해외 락/메탈">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6o2-le-pLg">
+                                    <rect key="frame" x="188" y="934" width="158" height="50"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="해외 재즈">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhV-Qy-auh">
+                                    <rect key="frame" x="20" y="993" width="158" height="49.5"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="해외 인디">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hK-XN-Wkf">
+                                    <rect key="frame" x="187" y="994" width="158" height="49.5"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="해외 포크/어쿠스틱">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzp-n0-7Pg">
+                                    <rect key="frame" x="20" y="1053.5" width="158" height="50"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="OST">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KX-E7-def">
+                                    <rect key="frame" x="188" y="1054.5" width="158" height="50"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="클래식">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvH-Uc-tcj">
+                                    <rect key="frame" x="20" y="1110.5" width="158" height="50"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="뉴에이지/연주곡">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfA-oe-0ps">
+                                    <rect key="frame" x="187" y="1111.5" width="158" height="50"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="J-Pop">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isU-4a-PsC">
+                                    <rect key="frame" x="20" y="1170.5" width="158" height="49.5"/>
+                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="CCM">
+                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                             </subviews>
                             <gestureRecognizers/>
                             <constraints>
                                 <constraint firstItem="4Xe-EV-tn1" firstAttribute="top" secondItem="ZSp-k5-UIy" secondAttribute="top" id="0Bq-9g-D1f"/>
+                                <constraint firstItem="3g7-7g-KLG" firstAttribute="top" secondItem="CkW-o1-MBY" secondAttribute="bottom" constant="10" id="0gc-Pv-Wac"/>
+                                <constraint firstItem="vSa-I4-Wu5" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="0go-mw-Esc"/>
+                                <constraint firstItem="YQC-Jg-LAJ" firstAttribute="leading" secondItem="UvT-fZ-RWx" secondAttribute="leading" id="2KW-Dt-SpF"/>
+                                <constraint firstItem="DfA-oe-0ps" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="3AB-xw-i6T"/>
+                                <constraint firstItem="oD3-GO-riy" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="3DN-0Q-maa"/>
+                                <constraint firstItem="qWw-vn-scP" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="3GM-eu-dvN"/>
+                                <constraint firstItem="qWw-vn-scP" firstAttribute="leading" secondItem="I5a-6w-IAo" secondAttribute="trailing" constant="13" id="3PI-cj-VsT"/>
                                 <constraint firstItem="zkw-Qr-Q3k" firstAttribute="top" secondItem="CgK-2b-YvM" secondAttribute="bottom" constant="24" id="3Xr-J3-ZM5"/>
+                                <constraint firstItem="4dK-Fi-fL4" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="4HO-bw-D99"/>
+                                <constraint firstItem="40Q-aG-4J4" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="4sA-cX-Xb4"/>
+                                <constraint firstItem="m2E-gI-1zp" firstAttribute="leading" secondItem="DAP-D5-NH3" secondAttribute="trailing" constant="12" id="5Xi-er-0d8"/>
                                 <constraint firstItem="vwH-9a-51h" firstAttribute="trailing" secondItem="zkw-Qr-Q3k" secondAttribute="trailing" id="6d8-U8-zCi"/>
-                                <constraint firstItem="rvl-G5-MvB" firstAttribute="top" secondItem="UvT-fZ-RWx" secondAttribute="bottom" constant="15" id="BwX-xx-GrF"/>
+                                <constraint firstItem="Nzp-n0-7Pg" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="6lU-Yi-8s9"/>
+                                <constraint firstItem="YQC-Jg-LAJ" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="6pg-C2-xsD"/>
+                                <constraint firstItem="azO-zE-Eoe" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="6rA-Zh-x9x"/>
+                                <constraint firstItem="I5a-6w-IAo" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="6rv-PB-nq8"/>
+                                <constraint firstItem="GSP-UX-klR" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="7OC-ks-z0P"/>
+                                <constraint firstItem="oD3-GO-riy" firstAttribute="leading" secondItem="3g7-7g-KLG" secondAttribute="leading" id="7Pa-aL-5w6"/>
+                                <constraint firstItem="uwr-y4-S4l" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="7lp-Cb-lzd"/>
+                                <constraint firstItem="uwr-y4-S4l" firstAttribute="leading" secondItem="oD3-GO-riy" secondAttribute="leading" id="7sx-xI-STn"/>
+                                <constraint firstItem="DfA-oe-0ps" firstAttribute="leading" secondItem="VvH-Uc-tcj" secondAttribute="trailing" constant="9" id="86k-aU-CMG"/>
+                                <constraint firstItem="YQC-Jg-LAJ" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="8Eo-VK-IuC"/>
+                                <constraint firstItem="CkW-o1-MBY" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="9w4-VU-KlA"/>
+                                <constraint firstItem="F3l-nH-QNj" firstAttribute="leading" secondItem="3g7-7g-KLG" secondAttribute="trailing" constant="12" id="B1d-HE-P1s"/>
+                                <constraint firstItem="oD3-GO-riy" firstAttribute="top" secondItem="3g7-7g-KLG" secondAttribute="bottom" constant="10" id="B2i-nl-iQW"/>
+                                <constraint firstItem="GSP-UX-klR" firstAttribute="top" secondItem="vSa-I4-Wu5" secondAttribute="bottom" constant="12" id="BCy-Z5-Y71"/>
+                                <constraint firstItem="uwr-y4-S4l" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="BDl-MW-GjO"/>
+                                <constraint firstItem="JNt-pp-NsM" firstAttribute="top" secondItem="F3l-nH-QNj" secondAttribute="bottom" constant="10" id="BUK-ec-PCb"/>
                                 <constraint firstItem="UvT-fZ-RWx" firstAttribute="top" secondItem="vwH-9a-51h" secondAttribute="bottom" constant="35" id="ChK-Ut-yPi"/>
-                                <constraint firstItem="6ro-0g-J94" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0048062" id="ESg-La-7bt"/>
+                                <constraint firstItem="F3l-nH-QNj" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="Ct8-B3-f5P"/>
+                                <constraint firstItem="vhV-Qy-auh" firstAttribute="top" secondItem="uwr-y4-S4l" secondAttribute="bottom" constant="10" id="DFD-jv-jxz"/>
+                                <constraint firstItem="oD3-GO-riy" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="E7N-px-dS7"/>
+                                <constraint firstItem="3g7-7g-KLG" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="EAm-H1-9dz"/>
+                                <constraint firstItem="6o2-le-pLg" firstAttribute="leading" secondItem="uwr-y4-S4l" secondAttribute="trailing" constant="10" id="Efq-L2-DCG"/>
+                                <constraint firstItem="6o2-le-pLg" firstAttribute="top" secondItem="JNt-pp-NsM" secondAttribute="bottom" constant="8" id="FN9-Xy-Sff"/>
+                                <constraint firstItem="6o2-le-pLg" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="FRm-u2-eZG"/>
+                                <constraint firstItem="A84-pX-rld" firstAttribute="top" secondItem="GSP-UX-klR" secondAttribute="bottom" constant="12" id="FYA-Cz-7Ew"/>
+                                <constraint firstItem="vhV-Qy-auh" firstAttribute="leading" secondItem="uwr-y4-S4l" secondAttribute="leading" id="FwI-IS-CuQ"/>
+                                <constraint firstItem="4dK-Fi-fL4" firstAttribute="leading" secondItem="CkW-o1-MBY" secondAttribute="trailing" constant="13" id="Gwc-zg-ley"/>
+                                <constraint firstItem="40Q-aG-4J4" firstAttribute="leading" secondItem="YQC-Jg-LAJ" secondAttribute="leading" id="HAa-ay-3n2"/>
+                                <constraint firstItem="vhV-Qy-auh" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="Hbk-KN-6s6"/>
                                 <constraint firstAttribute="bottom" secondItem="6ro-0g-J94" secondAttribute="bottom" constant="27" id="IEZ-Aa-0VL"/>
-                                <constraint firstItem="rvl-G5-MvB" firstAttribute="leading" secondItem="pVz-Xb-u1J" secondAttribute="trailing" constant="10" id="Ifo-gb-7fV"/>
+                                <constraint firstItem="4KX-E7-def" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="IY4-LP-2dD"/>
+                                <constraint firstItem="DfA-oe-0ps" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="IZG-Up-308"/>
+                                <constraint firstItem="uwr-y4-S4l" firstAttribute="top" secondItem="oD3-GO-riy" secondAttribute="bottom" constant="8" id="IjW-b3-bwj"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="isU-4a-PsC" secondAttribute="bottom" constant="70" id="ImT-X9-FI6"/>
+                                <constraint firstItem="Nzp-n0-7Pg" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="IsD-av-MI6"/>
+                                <constraint firstItem="GSP-UX-klR" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="IxO-QU-tXg"/>
+                                <constraint firstItem="I5a-6w-IAo" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="IxZ-9u-4uw"/>
+                                <constraint firstItem="40Q-aG-4J4" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="J6l-It-Giz"/>
                                 <constraint firstItem="vwH-9a-51h" firstAttribute="top" secondItem="zkw-Qr-Q3k" secondAttribute="bottom" constant="20" id="JDf-5U-eBO"/>
-                                <constraint firstItem="pVz-Xb-u1J" firstAttribute="top" secondItem="UvT-fZ-RWx" secondAttribute="bottom" constant="15" id="Wc7-Sd-MUx"/>
+                                <constraint firstItem="Nzp-n0-7Pg" firstAttribute="top" secondItem="vhV-Qy-auh" secondAttribute="bottom" constant="11" id="KKu-kv-YI1"/>
+                                <constraint firstItem="VvH-Uc-tcj" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="L6C-kH-cPY"/>
+                                <constraint firstItem="CkW-o1-MBY" firstAttribute="leading" secondItem="DAP-D5-NH3" secondAttribute="leading" id="LGj-yU-TU3"/>
+                                <constraint firstItem="2hK-XN-Wkf" firstAttribute="leading" secondItem="vhV-Qy-auh" secondAttribute="trailing" constant="9" id="LGz-Dh-MC0"/>
+                                <constraint firstItem="YQC-Jg-LAJ" firstAttribute="top" secondItem="UvT-fZ-RWx" secondAttribute="bottom" constant="18.5" id="LX0-UG-KY9"/>
+                                <constraint firstItem="VvH-Uc-tcj" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="Mh2-Nr-Y0m"/>
+                                <constraint firstItem="2hK-XN-Wkf" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="NvJ-Fr-Kr9"/>
+                                <constraint firstItem="vSa-I4-Wu5" firstAttribute="leading" secondItem="YQC-Jg-LAJ" secondAttribute="trailing" constant="14" id="O0T-7l-Zl9"/>
+                                <constraint firstItem="2hK-XN-Wkf" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="QtY-LA-cu4"/>
+                                <constraint firstItem="VvH-Uc-tcj" firstAttribute="leading" secondItem="Nzp-n0-7Pg" secondAttribute="leading" id="Qz0-ys-bm2"/>
+                                <constraint firstItem="JNt-pp-NsM" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="SDl-n9-RSn"/>
+                                <constraint firstItem="DfA-oe-0ps" firstAttribute="top" secondItem="4KX-E7-def" secondAttribute="bottom" constant="7" id="Sqh-qf-OpG"/>
+                                <constraint firstItem="GSP-UX-klR" firstAttribute="leading" secondItem="40Q-aG-4J4" secondAttribute="trailing" constant="13" id="UZa-0V-FGe"/>
+                                <constraint firstItem="isU-4a-PsC" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="Ui2-pw-Gny"/>
+                                <constraint firstItem="4dK-Fi-fL4" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="W2N-nA-YvB"/>
+                                <constraint firstItem="m2E-gI-1zp" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="X5p-Ym-cT2"/>
+                                <constraint firstItem="F3l-nH-QNj" firstAttribute="top" secondItem="4dK-Fi-fL4" secondAttribute="bottom" constant="10" id="XCJ-w4-JXe"/>
+                                <constraint firstItem="3g7-7g-KLG" firstAttribute="leading" secondItem="CkW-o1-MBY" secondAttribute="leading" id="XX8-Q5-QY7"/>
+                                <constraint firstItem="4KX-E7-def" firstAttribute="leading" secondItem="Nzp-n0-7Pg" secondAttribute="trailing" constant="10" id="Xw5-0h-Ey6"/>
+                                <constraint firstItem="CkW-o1-MBY" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="YIZ-IM-vBW"/>
                                 <constraint firstAttribute="trailing" secondItem="4Xe-EV-tn1" secondAttribute="trailing" id="YXD-2n-41z"/>
-                                <constraint firstItem="pVz-Xb-u1J" firstAttribute="leading" secondItem="UvT-fZ-RWx" secondAttribute="leading" id="YjZ-I3-iLY"/>
+                                <constraint firstItem="isU-4a-PsC" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="YdS-xa-jJu"/>
+                                <constraint firstItem="m2E-gI-1zp" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="ZFk-VB-Sqs"/>
+                                <constraint firstItem="qWw-vn-scP" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="ZwS-WS-hKe"/>
+                                <constraint firstItem="Nzp-n0-7Pg" firstAttribute="leading" secondItem="vhV-Qy-auh" secondAttribute="leading" id="Zy2-C5-heq"/>
                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6ro-0g-J94" secondAttribute="trailing" constant="20" symbolic="YES" id="Zz2-Hb-pjb"/>
+                                <constraint firstItem="DAP-D5-NH3" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="bje-bY-mxM"/>
+                                <constraint firstItem="DAP-D5-NH3" firstAttribute="top" secondItem="I5a-6w-IAo" secondAttribute="bottom" constant="8" id="bky-z1-2uw"/>
                                 <constraint firstItem="6ro-0g-J94" firstAttribute="leading" secondItem="ZSp-k5-UIy" secondAttribute="leading" constant="175" id="bl1-ZO-StS"/>
+                                <constraint firstItem="A84-pX-rld" firstAttribute="leading" secondItem="azO-zE-Eoe" secondAttribute="trailing" constant="14" id="ccY-Yf-yX4"/>
+                                <constraint firstItem="I5a-6w-IAo" firstAttribute="top" secondItem="azO-zE-Eoe" secondAttribute="bottom" constant="10" id="dJM-4G-WEN"/>
+                                <constraint firstItem="A84-pX-rld" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="e1f-p5-w5f"/>
+                                <constraint firstItem="DAP-D5-NH3" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="eDM-lV-q5d"/>
+                                <constraint firstItem="4KX-E7-def" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="eXI-kp-9vK"/>
                                 <constraint firstItem="UvT-fZ-RWx" firstAttribute="leading" secondItem="vwH-9a-51h" secondAttribute="leading" id="eXY-rK-Ttx"/>
+                                <constraint firstItem="JNt-pp-NsM" firstAttribute="leading" secondItem="oD3-GO-riy" secondAttribute="trailing" constant="11" id="ens-Ki-JZ9"/>
+                                <constraint firstItem="4dK-Fi-fL4" firstAttribute="top" secondItem="m2E-gI-1zp" secondAttribute="bottom" constant="11" id="f6o-8K-zrB"/>
+                                <constraint firstItem="3g7-7g-KLG" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="fxh-B9-qe3"/>
+                                <constraint firstItem="6o2-le-pLg" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="gPC-KQ-0Xx"/>
+                                <constraint firstItem="azO-zE-Eoe" firstAttribute="top" secondItem="40Q-aG-4J4" secondAttribute="bottom" constant="12" id="gSn-lS-JvG"/>
+                                <constraint firstItem="CkW-o1-MBY" firstAttribute="top" secondItem="DAP-D5-NH3" secondAttribute="bottom" constant="11" id="h63-fv-s4z"/>
+                                <constraint firstItem="isU-4a-PsC" firstAttribute="leading" secondItem="VvH-Uc-tcj" secondAttribute="leading" id="hsu-NZ-fgE"/>
+                                <constraint firstItem="4KX-E7-def" firstAttribute="top" secondItem="2hK-XN-Wkf" secondAttribute="bottom" constant="11" id="i66-2H-Unc"/>
+                                <constraint firstItem="qWw-vn-scP" firstAttribute="top" secondItem="A84-pX-rld" secondAttribute="bottom" constant="10" id="iK2-IB-M3B"/>
+                                <constraint firstItem="VvH-Uc-tcj" firstAttribute="top" secondItem="Nzp-n0-7Pg" secondAttribute="bottom" constant="7" id="jW3-oO-lsR"/>
+                                <constraint firstItem="A84-pX-rld" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="jWP-nq-Se7"/>
+                                <constraint firstItem="I5a-6w-IAo" firstAttribute="leading" secondItem="azO-zE-Eoe" secondAttribute="leading" id="lDq-g8-skX"/>
+                                <constraint firstItem="40Q-aG-4J4" firstAttribute="top" secondItem="YQC-Jg-LAJ" secondAttribute="bottom" constant="12" id="liW-Wc-40U"/>
                                 <constraint firstItem="4Xe-EV-tn1" firstAttribute="leading" secondItem="ZSp-k5-UIy" secondAttribute="leading" id="lsz-m6-MX4"/>
                                 <constraint firstItem="zkw-Qr-Q3k" firstAttribute="leading" secondItem="CgK-2b-YvM" secondAttribute="leading" id="mqC-Vq-9g1"/>
                                 <constraint firstItem="vwH-9a-51h" firstAttribute="leading" secondItem="zkw-Qr-Q3k" secondAttribute="leading" id="mvw-4R-CEf"/>
+                                <constraint firstItem="vSa-I4-Wu5" firstAttribute="top" secondItem="UvT-fZ-RWx" secondAttribute="bottom" constant="19.5" id="phZ-rq-rtl"/>
+                                <constraint firstItem="vhV-Qy-auh" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="pmt-Vf-1Fa"/>
+                                <constraint firstItem="vSa-I4-Wu5" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="sjU-z2-P4s"/>
+                                <constraint firstItem="azO-zE-Eoe" firstAttribute="leading" secondItem="40Q-aG-4J4" secondAttribute="leading" id="sqJ-EX-FQt"/>
+                                <constraint firstItem="JNt-pp-NsM" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.0383333" id="vi8-LG-sy2"/>
+                                <constraint firstItem="m2E-gI-1zp" firstAttribute="top" secondItem="qWw-vn-scP" secondAttribute="bottom" constant="8" id="wpk-nQ-ybs"/>
+                                <constraint firstItem="isU-4a-PsC" firstAttribute="top" secondItem="VvH-Uc-tcj" secondAttribute="bottom" constant="10" id="wuk-bw-Oua"/>
+                                <constraint firstItem="F3l-nH-QNj" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="xkL-rq-1kb"/>
+                                <constraint firstItem="DAP-D5-NH3" firstAttribute="leading" secondItem="I5a-6w-IAo" secondAttribute="leading" id="yWj-QP-OmL"/>
+                                <constraint firstItem="2hK-XN-Wkf" firstAttribute="top" secondItem="6o2-le-pLg" secondAttribute="bottom" constant="10" id="ybR-6b-uW7"/>
+                                <constraint firstItem="azO-zE-Eoe" firstAttribute="width" secondItem="ZSp-k5-UIy" secondAttribute="width" multiplier="0.421333" id="zYY-N6-Fdd"/>
+                                <constraint firstItem="vwH-9a-51h" firstAttribute="height" secondItem="ZSp-k5-UIy" secondAttribute="height" multiplier="0.162917" id="zuX-qE-CLi"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -121,23 +380,18 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="ZSp-k5-UIy" firstAttribute="width" secondItem="aKc-Qe-Lo3" secondAttribute="width" id="1LJ-ay-Jto"/>
-                <constraint firstItem="zkw-Qr-Q3k" firstAttribute="height" secondItem="aKc-Qe-Lo3" secondAttribute="height" multiplier="0.076087" id="4iX-hK-csO"/>
-                <constraint firstItem="vwH-9a-51h" firstAttribute="height" secondItem="aKc-Qe-Lo3" secondAttribute="height" multiplier="0.293478" id="Bwm-ry-BCR"/>
-                <constraint firstItem="pVz-Xb-u1J" firstAttribute="height" secondItem="aKc-Qe-Lo3" secondAttribute="height" multiplier="0.0815217" id="E9S-Zc-Z4I"/>
                 <constraint firstItem="zkw-Qr-Q3k" firstAttribute="width" secondItem="aKc-Qe-Lo3" secondAttribute="width" multiplier="0.891304" id="MMp-SU-APR"/>
                 <constraint firstItem="vwH-9a-51h" firstAttribute="width" secondItem="aKc-Qe-Lo3" secondAttribute="width" multiplier="0.891304" id="Nu6-dj-Wgc"/>
                 <constraint firstItem="WvM-4f-3HN" firstAttribute="bottom" secondItem="k5v-XV-0PD" secondAttribute="bottom" id="U58-q4-8rb"/>
                 <constraint firstItem="WvM-4f-3HN" firstAttribute="leading" secondItem="aKc-Qe-Lo3" secondAttribute="leading" id="XtM-8T-2ZS"/>
                 <constraint firstItem="WvM-4f-3HN" firstAttribute="top" secondItem="k5v-XV-0PD" secondAttribute="top" id="b1x-Wf-4sZ"/>
-                <constraint firstItem="rvl-G5-MvB" firstAttribute="width" secondItem="aKc-Qe-Lo3" secondAttribute="width" multiplier="0.434783" id="bAK-pC-QLB"/>
+                <constraint firstItem="WvM-4f-3HN" firstAttribute="width" secondItem="aKc-Qe-Lo3" secondAttribute="width" id="kCZ-bN-cIp"/>
                 <constraint firstItem="CgK-2b-YvM" firstAttribute="width" relation="greaterThanOrEqual" secondItem="aKc-Qe-Lo3" secondAttribute="width" multiplier="0.120773" id="o69-M5-sjX"/>
                 <constraint firstAttribute="trailing" secondItem="WvM-4f-3HN" secondAttribute="trailing" id="ooG-9Q-hq0"/>
-                <constraint firstItem="pVz-Xb-u1J" firstAttribute="width" secondItem="aKc-Qe-Lo3" secondAttribute="width" multiplier="0.434783" id="qyB-mc-GYz"/>
                 <constraint firstItem="CgK-2b-YvM" firstAttribute="leading" secondItem="k5v-XV-0PD" secondAttribute="leading" constant="20" id="s84-0m-5dx"/>
-                <constraint firstItem="rvl-G5-MvB" firstAttribute="height" secondItem="aKc-Qe-Lo3" secondAttribute="height" multiplier="0.0815217" id="xOh-Zd-ws7"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="k5v-XV-0PD"/>
-            <point key="canvasLocation" x="240.57971014492756" y="89.673913043478265"/>
+            <point key="canvasLocation" x="239.19999999999999" y="89.505247376311857"/>
         </view>
     </objects>
 </document>

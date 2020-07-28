@@ -8,6 +8,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class MiniView: UIView {
     private let xibName = "MiniView"
     
@@ -18,17 +19,10 @@ class MiniView: UIView {
     @IBOutlet weak var miniForwardButton: UIButton!
     @IBOutlet weak var miniMusicListButton: UIButton!
     @IBAction func miniPresentModalButton(_ sender: Any) {
-//            let musicPlayerViewController = MusicPlayerViewController(nibName: "MusicPlayerViewController", bundle: nil)
-//            self.present(musicPlayerViewController, animated: true, completion: nil)
+
         
     }
-    
-    
-    
-    
-    
-    
-    
+
 //    let musicPlayerViewController = MusicPlayerViewController(nibName: "MusicPlayerViewController", bundle: nil)
 //    MiniView.present(musicPlayerViewController, animated: true, completion: nil)
 

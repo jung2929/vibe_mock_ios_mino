@@ -59,9 +59,7 @@ class MainTabBarController: UITabBarController {
             
         }
         
-//        let name = String(describing: MiniPlayerViewController.self)
-//        guard let loadedNib = Bundle.main.loadNibNamed(name, owner: self, options: nil) else { return }
-//        guard (loadedNib.first as? MiniPlayerViewController) != nil else { return }
+
         
         
 //        instantiateFromNib()

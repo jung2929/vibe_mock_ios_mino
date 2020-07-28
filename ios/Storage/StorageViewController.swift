@@ -11,7 +11,7 @@ class StorageViewController: TabmanViewController {
         super.viewDidLoad()
         
         
-        
+        self.delegate = self
         self.dataSource = self
         let bar = TMBar.ButtonBar()
         bar.layout.transitionStyle = .snap // Customize
@@ -44,11 +44,14 @@ extension StorageViewController : PageboyViewControllerDataSource , TMBarDataSou
     
     func viewController(for pageboyViewController: PageboyViewController,
                         at index: PageboyViewController.PageIndex) -> UIViewController? {
+        guard viewControllers.isEmpty == false else {
+            return nil
+        }
         return viewControllers[index]
     }
     
     func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
-        return .at(index: 0)
+        return nil
     }
     
     func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
@@ -73,4 +76,5 @@ extension StorageViewController : PageboyViewControllerDataSource , TMBarDataSou
         
         return TMBarItem(title: title)
     }
+    
 }

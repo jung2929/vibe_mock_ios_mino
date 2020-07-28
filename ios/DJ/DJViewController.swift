@@ -16,6 +16,10 @@ class DJViewController: UIViewController {
     @IBAction func addRecently(_ sender: Any) {
         recentData.insert(contentsOf: [""], at: 0)
         DJRecentlyCollectionView.reloadData()
+        let musicPlayerViewController = MusicPlayerViewController(nibName: "MusicPlayerViewController", bundle: nil)
+            self.present(musicPlayerViewController, animated: true, completion: nil)
+
+        
     }
     
     let data = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10"]

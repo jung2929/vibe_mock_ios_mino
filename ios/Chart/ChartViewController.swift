@@ -22,10 +22,17 @@ class ChartViewController: UIViewController {
     @IBOutlet weak var SixYearCollectionView: UICollectionView!
     @IBOutlet weak var NewAlbumCollectionView: UICollectionView!
     @IBAction func top100MoreButton(_ sender: Any) {
-        let detailVC = ChartDetailViewController()
-        self.navigationController?.pushViewController(detailVC, animated:
+        let chartDetailVC = ChartDetailViewController()
+        self.navigationController?.pushViewController(chartDetailVC, animated:
         true)
     }
+    @IBAction func newAlbumMoreButton(_ sender: Any) {
+        let albumDetailVC = NewAlbumDetailViewController()
+        self.navigationController?.pushViewController(albumDetailVC, animated:
+        true)
+    }
+    
+    
     
     var currentIndex: CGFloat = 0
 

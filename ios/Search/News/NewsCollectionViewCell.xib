@@ -26,12 +26,6 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="관련 뉴스 보기 &gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgf-8H-3NS">
-                        <rect key="frame" x="20" y="178" width="99" height="18"/>
-                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
-                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="음악듣기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYn-Tt-3De">
                         <rect key="frame" x="301" y="178" width="52" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -43,6 +37,13 @@
                         <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <state key="normal" image="play.circle" catalog="system"/>
                     </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXc-J9-WFs">
+                        <rect key="frame" x="20" y="170" width="100" height="30"/>
+                        <state key="normal" title="관련 뉴스 보기 &gt;"/>
+                        <connections>
+                            <action selector="NewsLookButton:" destination="AZY-Lh-SRI" eventType="touchUpInside" id="tDW-14-1Dr"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="RYn-Tt-3De" firstAttribute="top" secondItem="HMq-E3-NzF" secondAttribute="bottom" constant="40" id="0kd-gX-cMC"/>
@@ -53,9 +54,9 @@
                     <constraint firstItem="aet-YL-IEn" firstAttribute="width" secondItem="yRf-bt-cSc" secondAttribute="width" multiplier="0.997319" id="V7m-Gj-mPo"/>
                     <constraint firstItem="aet-YL-IEn" firstAttribute="leading" secondItem="yRf-bt-cSc" secondAttribute="leading" id="ZUG-QX-VBi"/>
                     <constraint firstAttribute="trailing" secondItem="RYn-Tt-3De" secondAttribute="trailing" constant="20" id="bsE-BW-7WS"/>
-                    <constraint firstItem="Hgf-8H-3NS" firstAttribute="leading" secondItem="HMq-E3-NzF" secondAttribute="leading" id="f97-Ls-yKI"/>
+                    <constraint firstItem="LXc-J9-WFs" firstAttribute="top" secondItem="HMq-E3-NzF" secondAttribute="bottom" constant="32" id="fXw-E9-JRe"/>
                     <constraint firstItem="HMq-E3-NzF" firstAttribute="top" secondItem="aet-YL-IEn" secondAttribute="bottom" constant="10" id="g9F-of-2NM"/>
-                    <constraint firstItem="Hgf-8H-3NS" firstAttribute="top" secondItem="HMq-E3-NzF" secondAttribute="bottom" constant="40" id="omf-tk-Xd5"/>
+                    <constraint firstItem="LXc-J9-WFs" firstAttribute="leading" secondItem="HMq-E3-NzF" secondAttribute="leading" id="noF-y7-58F"/>
                     <constraint firstItem="aet-YL-IEn" firstAttribute="height" secondItem="yRf-bt-cSc" secondAttribute="height" multiplier="0.490654" id="u5S-Zb-h0l"/>
                     <constraint firstItem="HMq-E3-NzF" firstAttribute="leading" secondItem="yRf-bt-cSc" secondAttribute="leading" constant="20" id="vKV-Qf-v8E"/>
                 </constraints>
@@ -64,7 +65,6 @@
             <size key="customSize" width="373" height="214"/>
             <connections>
                 <outlet property="NewsImageView" destination="aet-YL-IEn" id="9fz-On-nAj"/>
-                <outlet property="NewsLookLabel" destination="Hgf-8H-3NS" id="huG-Uf-ekn"/>
                 <outlet property="NewsPlayButton" destination="bKM-rP-Mro" id="mZ2-gc-vdZ"/>
                 <outlet property="NewsPlayLabel" destination="RYn-Tt-3De" id="2ZF-Q7-POQ"/>
                 <outlet property="NewsTitleLabel" destination="HMq-E3-NzF" id="wYi-tg-zsh"/>

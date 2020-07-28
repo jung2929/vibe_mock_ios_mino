@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Production 서버
 //    let baseUrl = "https://beluv.softsquared.com"
     // Dev 서버
-    let baseUrl = "http://54.180.159.77"
+    let baseUrl = "http://54.180.153.77"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

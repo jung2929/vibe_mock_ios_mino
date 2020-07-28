@@ -94,7 +94,7 @@ class HomeViewController: BaseViewController {
         tabBarController!.tabBar.barTintColor = .white
         tabBarController!.tabBar.clipsToBounds = true
     }
-    }
+}
 
 @available(iOS 13.0, *)
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {

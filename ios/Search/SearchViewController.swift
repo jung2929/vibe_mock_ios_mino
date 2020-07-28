@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import SnapKit
+
 @available(iOS 13.0, *)
 class SearchViewController: UIViewController {
 
 
     @IBOutlet weak var NewsCollectionView: UICollectionView!
     
+    @IBAction func firstButton(_ sender: Any) {
+        
+    }
     
     
     let data = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10"]
@@ -29,12 +34,13 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         // width, height 설정
         let cellWidth = floor(NewsCollectionView.bounds.width * cellRatio)
         let cellHeight = floor(NewsCollectionView.bounds.height * cellRatio)
 
         // 상하, 좌우 inset value 설정
-        let insetX = 10
+        let insetX = 0
         let insetY = 0
 
         let layout = NewsCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
@@ -91,6 +97,10 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
         }
             return cell
         }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let newsDetailViewController = NewsDetailViewController(nibName: "NewsDetailViewController", bundle: nil)
+        self.present(newsDetailViewController, animated: true, completion: nil)
+    }
 }
 
 @available(iOS 13.0, *)

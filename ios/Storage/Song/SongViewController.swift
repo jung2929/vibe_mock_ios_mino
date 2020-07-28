@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SongViewController: UIViewController {
+class SongViewController: BaseViewController {
     
     @IBOutlet weak var SongCollectionView: UICollectionView!
     @IBAction func playButton(_ sender: Any) {
@@ -17,6 +17,8 @@ class SongViewController: UIViewController {
     @IBAction func shuffleButton(_ sender: Any) {
         print("shuffle")
     }
+    
+    
     
     let data = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10"]
                         
@@ -33,6 +35,10 @@ class SongViewController: UIViewController {
            
         // 스크롤 시 빠르게 감속 되도록 설정
         }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
 }
 extension SongViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         func numberOfSections(in collectionView: UICollectionView) -> Int {

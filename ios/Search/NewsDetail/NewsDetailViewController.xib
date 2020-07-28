@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewsDetailViewController" customModule="VIBE" customModuleProvider="target">
+            <connections>
+                <outlet property="toolBar" destination="zd5-vQ-vAq" id="HRj-nY-OwD"/>
+                <outlet property="view" destination="xYD-mn-ulQ" id="kGh-7j-w63"/>
+                <outlet property="webView" destination="0kT-AD-E7J" id="iwu-Xh-1Lj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="xYD-mn-ulQ">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zd5-vQ-vAq">
+                    <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                    <items>
+                        <barButtonItem title="back" image="arrow.left" catalog="system" id="B1y-Ed-6Me">
+                            <connections>
+                                <action selector="back:" destination="-1" id="a5i-Ok-2KI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="forward" image="arrow.right" catalog="system" id="Xzf-5B-Pvx">
+                            <connections>
+                                <action selector="go:" destination="-1" id="PQM-T2-aIG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="289" style="plain" systemItem="fixedSpace" id="57O-7E-56a"/>
+                        <barButtonItem title="safari" image="safari" catalog="system" width="113" id="2Le-G3-fCc">
+                            <inset key="largeContentSizeImageInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                            <connections>
+                                <action selector="oepnSFSafariViewControllerAction:" destination="-1" id="TqV-hq-vra"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0kT-AD-E7J">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zd5-vQ-vAq" firstAttribute="leading" secondItem="kb5-ph-bjx" secondAttribute="leading" id="OJ5-re-Br0"/>
+                <constraint firstItem="zd5-vQ-vAq" firstAttribute="top" secondItem="0kT-AD-E7J" secondAttribute="bottom" id="PQY-Cd-ySy"/>
+                <constraint firstItem="kb5-ph-bjx" firstAttribute="trailing" secondItem="0kT-AD-E7J" secondAttribute="trailing" id="boH-Jq-4JF"/>
+                <constraint firstItem="0kT-AD-E7J" firstAttribute="leading" secondItem="kb5-ph-bjx" secondAttribute="leading" id="dFJ-2A-UZl"/>
+                <constraint firstItem="kb5-ph-bjx" firstAttribute="trailing" secondItem="zd5-vQ-vAq" secondAttribute="trailing" id="jKt-lR-c8S"/>
+                <constraint firstItem="kb5-ph-bjx" firstAttribute="top" secondItem="0kT-AD-E7J" secondAttribute="top" id="oxc-N5-pfh"/>
+                <constraint firstItem="zd5-vQ-vAq" firstAttribute="bottom" secondItem="kb5-ph-bjx" secondAttribute="bottom" id="u9a-gI-CU2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="kb5-ph-bjx"/>
+            <point key="canvasLocation" x="59" y="42"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="arrow.right" catalog="system" width="128" height="98"/>
+        <image name="safari" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewAlbumDetailViewController" customModule="VIBE" customModuleProvider="target">
+            <connections>
+                <outlet property="NewAlbumDetailCollectionView" destination="f0H-gA-1Cm" id="Ey0-V6-v3a"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="f0H-gA-1Cm">
+                    <rect key="frame" x="20" y="65" width="374" height="670"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mEh-oU-Q6g">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5s-1F-b21">
+                    <rect key="frame" x="20" y="25" width="30" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="국내">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqs-Q7-ncI">
+                    <rect key="frame" x="60" y="25" width="30" height="30"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="해외">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="f0H-gA-1Cm" firstAttribute="top" secondItem="I5s-1F-b21" secondAttribute="bottom" constant="10" id="BsQ-Aa-JNe"/>
+                <constraint firstItem="Yqs-Q7-ncI" firstAttribute="leading" secondItem="I5s-1F-b21" secondAttribute="trailing" constant="10" id="HOS-dx-uu5"/>
+                <constraint firstItem="f0H-gA-1Cm" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.910326" id="ItD-y8-2tt"/>
+                <constraint firstItem="I5s-1F-b21" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="TsU-Pq-JFm"/>
+                <constraint firstItem="f0H-gA-1Cm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fnr-2S-7EX"/>
+                <constraint firstItem="I5s-1F-b21" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="hPx-XJ-WS7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f0H-gA-1Cm" secondAttribute="trailing" constant="20" id="kI9-6e-7OO"/>
+                <constraint firstItem="Yqs-Q7-ncI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="qIM-dz-V2r"/>
+                <constraint firstItem="f0H-gA-1Cm" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.903382" id="xu9-S6-S3O"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="116.57608695652175"/>
+        </view>
+    </objects>
+</document>

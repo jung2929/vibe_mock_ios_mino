@@ -16,4 +16,5 @@ target 'VIBE' do
   pod 'KYDrawerController'
   pod 'Tabman', '~> 2.9'
   pod 'SnapKit', '~> 5.0.0'
+  pod 'Kingfisher', '~> 5.0'
 end
