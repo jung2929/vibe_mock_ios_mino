@@ -34,6 +34,7 @@ class ChartViewController: UIViewController {
         true)
     }
     @IBOutlet weak var topDate: UILabel!
+    @IBOutlet weak var localDate: UILabel!
     
     
     
@@ -50,7 +51,8 @@ class ChartViewController: UIViewController {
     
     
     var topChart:[Music] = []
-    var imageUrl: URL?
+//    var localChart:[localInfo] = []
+//    var imageUrl: URL?
             
         override func viewDidLoad() {
                 super.viewDidLoad()
@@ -151,11 +153,12 @@ class ChartViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: true)
         tabBarController!.tabBar.barTintColor = .white
         tabBarController!.tabBar.clipsToBounds = true
-        ChartDataManager().getChart(self, page: 1)
-        ChartDataManager().getChart(self, page: 2)
-        ChartDataManager().getChart(self, page: 3)
-        ChartDataManager().getChart(self, page: 4)
-        ChartDataManager().getChart(self, page: 5)
+        ChartDataManager().getChart(self, type: 1)
+        ChartDataManager().getChart(self, type: 2)
+        ChartDataManager().getChart(self, type: 3)
+        ChartDataManager().getChart(self, type: 4)
+        
+
         
     }
             

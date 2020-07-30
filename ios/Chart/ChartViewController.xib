@@ -21,6 +21,7 @@
                 <outlet property="SearchCollectionView" destination="bXO-SQ-2QF" id="0fT-R4-dZk"/>
                 <outlet property="SixYearCollectionView" destination="gWX-jW-fcF" id="rtO-YM-xAa"/>
                 <outlet property="TopCollectionView" destination="x4h-qg-JWb" id="YcP-1W-2Ik"/>
+                <outlet property="localDate" destination="HHB-he-nfL" id="EUp-Bl-gfD"/>
                 <outlet property="topDate" destination="mKR-Sx-5BN" id="kSF-sz-p0T"/>
                 <outlet property="view" destination="klA-l6-sKf" id="SQN-Xt-THh"/>
             </connections>

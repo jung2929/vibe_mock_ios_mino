@@ -19,25 +19,26 @@ class MusicDataManager {
     func getMusic(_ musicPlayerVC: MusicPlayerViewController, musicId: Int) {
         Alamofire
             //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
-            .request("\(self.appDelegate.baseUrl)/music-file/\(musicId)", method: .get)
+            .request("\(self.appDelegate.baseUrl)/musics/\(musicId)", method: .get)
             .validate()
             .responseObject(completionHandler: { (response: DataResponse<musicResponse>) in
                 switch response.result {
                 case .success(let musicResponse):
                     if musicResponse.code == 100 {
-                        let imageUrlFromData = musicResponse.result?[0].albumImage
+                        let imageUrlFromData = musicResponse.result?.albumImage
                         let url = URL(string: imageUrlFromData!)
                         
                         musicPlayerVC.thumbnailImageView.kf.setImage(with: url)
-                        musicPlayerVC.musicId = musicResponse.result?[0].musicId
-                        musicPlayerVC.titleLabel.text = musicResponse.result?[0].musicName
-                        musicPlayerVC.artistLabel.text = musicResponse.result?[0].artistName
-                        musicPlayerVC.urlString = musicResponse.result?[0].musicFile
+                        musicPlayerVC.musicId = musicResponse.result?.musicId
+                        musicPlayerVC.titleLabel.text = musicResponse.result?.musicName
+                        musicPlayerVC.artistLabel.text = musicResponse.result?.artistName
+                        musicPlayerVC.urlString = musicResponse.result?.musicFile
                         
                         
                         let musicUrl = URL(string: musicPlayerVC.urlString!)
-                        let playerItem:AVPlayerItem = AVPlayerItem(url: musicUrl!)
-                        musicPlayerVC.player = AVPlayer(playerItem: playerItem)
+                        let playerItem: AVPlayerItem = AVPlayerItem(url: musicUrl!)
+//                        musicPlayerVC.player = AVPlayer(playerItem: playerItem)
+                        musicPlayerVC.simplePlayer.replaceCurrentItem(with: playerItem)
                         print("success")
                         
                     } else {

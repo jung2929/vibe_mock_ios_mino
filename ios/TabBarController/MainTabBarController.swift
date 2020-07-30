@@ -59,6 +59,44 @@ class MainTabBarController: UITabBarController {
             
         }
         
+        // 0, 0 위치에 너비 100 높이 50인 버튼을 구성하며 객체 생성
+        
+        let button1 = UIButton()
+        button1.frame = CGRect.init(x: CGFloat(0), y: CGFloat(0), width: CGFloat(100), height: CGFloat(50))
+
+        // 생성한 버튼의 타이틀을 지정
+        //  - normal : 일반적인 상태에서 지정한 타이틀을 보여준다. (기본값)
+        //  - highlighted : 꾹 누르고 있는 상태에서 지정된 타이틀을 보여준다.
+        button1.setTitle("", for: .normal)
+
+        // 생성한 버튼의 타이틀 폰트 사이즈를 13으로 지정한다.
+        //  - systemFont : 시스템 폰트 사용 (볼드 off)
+        //  - boldSystemFont : 시스템 폰트 사용 (볼드 on)
+        button1.titleLabel?.font = UIFont.systemFont(ofSize: CGFloat(0))
+
+        // 생성한 버튼의 타이틀 색상을 지정한다.
+        //  - normal : 일반적인 상태에서 지정한 타이틀 색을 보여준다. (기본값)
+        //  - highlighted : 꾹 누르고 있는 상태에서 지정된 타이틀 색을 보여준다.
+        button1.setTitleColor(UIColor.clear, for: .normal)
+
+        // 생성한 버튼의 타이틀의 정렬을 지정한다.
+        //  - center : 가운데 정렬
+        //  - left : 왼쪽 정렬
+        //  - right : 오른쪽 정렬
+        button1.contentHorizontalAlignment = UIControl.ContentHorizontalAlignment.left
+
+        // 생성한 버튼의 이벤트를 지정한다.
+        button1.addTarget(self, action: #selector(self.TESTAction), for: .touchUpInside)
+
+        self.view.addSubview(button1)
+        
+        button1.snp.makeConstraints { make in
+            make.bottomMargin.equalTo(tabBar.snp.top).offset(-5)
+            make.size.equalTo(CGSize(width: 200, height: 50))
+            
+        }
+        
+        
 
         
         
@@ -72,6 +110,12 @@ class MainTabBarController: UITabBarController {
 
         
 
+    }
+    
+    // 버튼 클릭 시 동작할 이벤트 함수
+    @objc func TESTAction(sender: UIButton!) {
+        let musicPlayerViewController = MusicPlayerViewController(nibName: "MusicPlayerViewController", bundle: nil)
+        self.present(musicPlayerViewController, animated: true, completion: nil)
     }
     
     

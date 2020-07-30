@@ -12,7 +12,7 @@ struct musicResponse {
     var isSuccess: Bool!
     var code: Int!
     var message: String!
-    var result: [musicInfo]!
+    var result: musicInfo!
 }
 
 extension musicResponse: Mappable {

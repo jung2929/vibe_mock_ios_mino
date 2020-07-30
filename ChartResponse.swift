@@ -47,7 +47,7 @@ extension Results: Mappable {
 }
 
 struct DateClass {
-    var data: String!
+    var date: String!
 }
 
 extension DateClass: Mappable {
@@ -56,7 +56,7 @@ extension DateClass: Mappable {
     }
 
     mutating func mapping(map: Map) {
-        data <- map["data"]
+        date <- map["date"]
     }
 
 }

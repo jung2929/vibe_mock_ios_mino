@@ -15,10 +15,10 @@ import Kingfisher
 class ChartDataManager {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
-    func getChart(_ chartVC: ChartViewController, page:Int) {
+    func getChart(_ chartVC: ChartViewController, type:Int) {
         Alamofire
             //.request("\(self.appDelegate.baseUrl)/tutorials", method: .get)
-            .request("\(self.appDelegate.baseUrl)/today-top-music-list?page=\(page)", method: .get)
+            .request("\(self.appDelegate.baseUrl)/musics?type=\(type)", method: .get)
             .validate()
             .responseObject(completionHandler: { (response: DataResponse<chartResponse>) in
                 switch response.result {
@@ -33,7 +33,7 @@ class ChartDataManager {
 //                        chartVC.imageUrl = topImageUrl!
                         chartVC.topChart.append(contentsOf: topChart)
                         chartVC.TopCollectionView.reloadData()
-                        chartVC.topDate.text = chartResponse.result?.date.data
+                        chartVC.topDate.text = chartResponse.result?.date.date
                         
                         
                         print("success")
