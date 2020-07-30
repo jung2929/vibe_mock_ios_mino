@@ -1,21 +1,21 @@
 //
-//  ChartResponse.swift
+//  GlobalResponse.swift
 //  VIBE
 //
-//  Created by 조민호 on 2020/07/30.
+//  Created by 조민호 on 2020/07/31.
 //  Copyright © 2020 Jerry Jung. All rights reserved.
 //
 
 import ObjectMapper
 
-struct localResponse {
+struct globalResponse {
     var isSuccess: Bool!
     var code: Int!
     var message: String!
-    var result: localInfo!
+    var result: globalInfo!
 }
 
-extension localResponse: Mappable {
+extension globalResponse: Mappable {
 
     init?(map: Map) {
     }
@@ -29,12 +29,12 @@ extension localResponse: Mappable {
 
 }
 
-struct localInfo {
-    var music: [localMusic]!
-    var date: localDateClass!
+struct globalInfo {
+    var music: [globalMusic]!
+    var date: globalDateClass!
 }
 
-extension localInfo: Mappable {
+extension globalInfo: Mappable {
 
     init?(map: Map) {
     }
@@ -46,11 +46,11 @@ extension localInfo: Mappable {
 
 }
 
-struct localDateClass {
+struct globalDateClass {
     var date: String!
 }
 
-extension localDateClass: Mappable {
+extension globalDateClass: Mappable {
 
     init?(map: Map) {
     }
@@ -61,15 +61,16 @@ extension localDateClass: Mappable {
 
 }
 
-struct localMusic {
+struct globalMusic {
     var musicID: Int!
     var musicName: String!
     var albumImage: String!
     var artistName: String!
     var albumID: Int!
+    var artistID: Int!
 }
 
-extension localMusic: Mappable {
+extension globalMusic: Mappable {
 
     init?(map: Map) {
     }
@@ -80,8 +81,7 @@ extension localMusic: Mappable {
         albumImage <- map["albumImage"]
         artistName <- map["artistName"]
         albumID <- map["albumID"]
+        artistID <- map["artistID"]
     }
 
 }
-
-

@@ -35,6 +35,8 @@ class ChartViewController: UIViewController {
     }
     @IBOutlet weak var topDate: UILabel!
     @IBOutlet weak var localDate: UILabel!
+    @IBOutlet weak var billboardDate: UILabel!
+    @IBOutlet weak var globalDate: UILabel!
     
     
     
@@ -49,9 +51,12 @@ class ChartViewController: UIViewController {
     let data = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10"]
     let rankData = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]
     
+    var musicId: Int = 0
     
     var topChart:[Music] = []
-//    var localChart:[localInfo] = []
+    var localChart:[localMusic] = []
+    var billboardChart:[billboardMusic] = []
+    var globalChart: [globalMusic] = []
 //    var imageUrl: URL?
             
         override func viewDidLoad() {
@@ -153,11 +158,10 @@ class ChartViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: true)
         tabBarController!.tabBar.barTintColor = .white
         tabBarController!.tabBar.clipsToBounds = true
-        ChartDataManager().getChart(self, type: 1)
-        ChartDataManager().getChart(self, type: 2)
-        ChartDataManager().getChart(self, type: 3)
-        ChartDataManager().getChart(self, type: 4)
-        
+        ChartDataManager().getChart(self)
+        ChartDataManager().getLocalChart(self)
+        ChartDataManager().getBillboardChart(self)
+        ChartDataManager().getGlobalChart(self)
 
         
     }
@@ -209,13 +213,13 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                     return topChart.count
                 }
                 if collectionView == LocalCollectionView {
-                    return data.count
+                    return localChart.count
                 }
                 if collectionView == BillboardCollectionView {
-                    return data.count
+                    return billboardChart.count
                 }
                 if collectionView == GlobalCollectionView {
-                    return data.count
+                    return globalChart.count
                 }
                 if collectionView == LocalHipHopCollectionView {
                     return data.count
@@ -257,30 +261,30 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                 
                 if collectionView == LocalCollectionView {
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! LocalCollectionViewCell
-                    cell.LocalTitleLabel.text = data[indexPath.row]
+                    cell.LocalTitleLabel.text = localChart[indexPath.row].musicName
                     cell.LocalImageView.image = UIImage(named: "recently_test2")
                     cell.backgroundColor = .white
-                    cell.LocalSubTitleLabel.text = data[indexPath.row]
+                    cell.LocalSubTitleLabel.text = localChart[indexPath.row].artistName
                     cell.LocalRankLabel.text = rankData[indexPath.row]
                     return cell
                 }
                 
                 if collectionView == BillboardCollectionView {
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! BillboardCollectionViewCell
-                    cell.BillTitleLabel.text = data[indexPath.row]
+                    cell.BillTitleLabel.text = billboardChart[indexPath.row].musicName
                     cell.BillImageView.image = UIImage(named: "recently_test2")
                     cell.backgroundColor = .white
-                    cell.BillSubTitleLabel.text = data[indexPath.row]
+                    cell.BillSubTitleLabel.text = billboardChart[indexPath.row].artistName
                     cell.BillRankLabel.text = rankData[indexPath.row]
                     return cell
                 }
                 
                 if collectionView == GlobalCollectionView {
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! GlobalCollectionViewCell
-                    cell.GlobalTitleLabel.text = data[indexPath.row]
+                    cell.GlobalTitleLabel.text = globalChart[indexPath.row].musicName
                     cell.GlobalImageView.image = UIImage(named: "recently_test2")
                     cell.backgroundColor = .white
-                    cell.GlobalSubTitleLabel.text = data[indexPath.row]
+                    cell.GlobalSubTitleLabel.text = globalChart[indexPath.row].artistName
                     cell.GlobalRankLabel.text = rankData[indexPath.row]
                     return cell
                 }

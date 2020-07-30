@@ -34,7 +34,6 @@ class MusicDataManager {
                         musicPlayerVC.artistLabel.text = musicResponse.result?.artistName
                         musicPlayerVC.urlString = musicResponse.result?.musicFile
                         
-                        
                         let musicUrl = URL(string: musicPlayerVC.urlString!)
                         let playerItem: AVPlayerItem = AVPlayerItem(url: musicUrl!)
 //                        musicPlayerVC.player = AVPlayer(playerItem: playerItem)

@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import AlamofireNetworkActivityIndicator
 import Firebase
+import AVFoundation
 
 @available(iOS 13.0, *)
 @UIApplicationMain
@@ -30,6 +31,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Use Firebase library to configure APIs
         //FirebaseApp.configure()
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+          try audioSession.setCategory(.playback, mode: .moviePlayback)
+        }
+        catch {
+          print("Setting category to AVAudioSessionCategoryPlayback failed.")
+        }
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let mainTabBarController = MainTabBarController()
@@ -43,6 +51,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
         
         return true
+        
+        
     }
 
 

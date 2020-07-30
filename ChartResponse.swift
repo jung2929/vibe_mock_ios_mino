@@ -61,7 +61,7 @@ extension DateClass: Mappable {
 
 }
 
-struct Music: Codable {
+struct Music {
     var musicID: Int!
     var musicName: String!
     var albumImage: String!

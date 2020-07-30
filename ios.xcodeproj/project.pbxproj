@@ -61,6 +61,8 @@
 		A1C6E90624D3024E00FE8BA8 /* SimplePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E90524D3024E00FE8BA8 /* SimplePlayer.swift */; };
 		A1C6E90824D3027200FE8BA8 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E90724D3027200FE8BA8 /* test.swift */; };
 		A1C6E90A24D306E400FE8BA8 /* memories (listen on spotify from 3am ep).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1C6E90924D306E400FE8BA8 /* memories (listen on spotify from 3am ep).mp3 */; };
+		A1C6E90D24D3285900FE8BA8 /* BillboardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E90C24D3285900FE8BA8 /* BillboardResponse.swift */; };
+		A1C6E90F24D32A4A00FE8BA8 /* GlobalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E90E24D32A4A00FE8BA8 /* GlobalResponse.swift */; };
 		A1DCB0A024C57C0C0009B57C /* DJRecentlyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DCB09E24C57C0C0009B57C /* DJRecentlyCollectionViewCell.swift */; };
 		A1DCB0A124C57C0C0009B57C /* DJRecentlyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1DCB09F24C57C0C0009B57C /* DJRecentlyCollectionViewCell.xib */; };
 		A1E2DAD624C5502100B1C0FC /* LocalHipHopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2DAD424C5502100B1C0FC /* LocalHipHopCollectionViewCell.swift */; };
@@ -129,7 +131,6 @@
 		A14AE04424D281E200D3B4FD /* ChartDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataManager.swift; sourceTree = SOURCE_ROOT; };
 		A14AE04624D281ED00D3B4FD /* ChartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartResponse.swift; sourceTree = SOURCE_ROOT; };
 		A14AE04824D2B59A00D3B4FD /* LocalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalResponse.swift; sourceTree = SOURCE_ROOT; };
-		A14AE04A24D2B5A900D3B4FD /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = SOURCE_ROOT; };
 		A1536D1224CD39FD00D15F6B /* MiniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniView.swift; sourceTree = "<group>"; };
 		A1536D1424CD44AD00D15F6B /* MiniView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniView.xib; sourceTree = "<group>"; };
 		A1536D1D24CDA55E00D15F6B /* MusicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicResponse.swift; sourceTree = "<group>"; };
@@ -165,6 +166,8 @@
 		A1C6E90524D3024E00FE8BA8 /* SimplePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePlayer.swift; sourceTree = "<group>"; };
 		A1C6E90724D3027200FE8BA8 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		A1C6E90924D306E400FE8BA8 /* memories (listen on spotify from 3am ep).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "memories (listen on spotify from 3am ep).mp3"; sourceTree = "<group>"; };
+		A1C6E90C24D3285900FE8BA8 /* BillboardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BillboardResponse.swift; path = ios/MusicPlayer/BillboardResponse.swift; sourceTree = SOURCE_ROOT; };
+		A1C6E90E24D32A4A00FE8BA8 /* GlobalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GlobalResponse.swift; path = ios/MusicPlayer/GlobalResponse.swift; sourceTree = SOURCE_ROOT; };
 		A1DCB09E24C57C0C0009B57C /* DJRecentlyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJRecentlyCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1DCB09F24C57C0C0009B57C /* DJRecentlyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DJRecentlyCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1E2DAD424C5502100B1C0FC /* LocalHipHopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalHipHopCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -554,6 +557,8 @@
 			children = (
 				A14AE04624D281ED00D3B4FD /* ChartResponse.swift */,
 				A14AE04824D2B59A00D3B4FD /* LocalResponse.swift */,
+				A1C6E90C24D3285900FE8BA8 /* BillboardResponse.swift */,
+				A1C6E90E24D32A4A00FE8BA8 /* GlobalResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -562,7 +567,6 @@
 			isa = PBXGroup;
 			children = (
 				A14AE04424D281E200D3B4FD /* ChartDataManager.swift */,
-				A14AE04A24D2B5A900D3B4FD /* LocalDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -927,6 +931,7 @@
 				A199307424C487BE00EA3C46 /* Top100CollectionViewCell.swift in Sources */,
 				A1E2DADE24C5556900B1C0FC /* MusicVideoCollectionViewCell.swift in Sources */,
 				A1C6E90624D3024E00FE8BA8 /* SimplePlayer.swift in Sources */,
+				A1C6E90D24D3285900FE8BA8 /* BillboardResponse.swift in Sources */,
 				A18740AE24C197CF009E118D /* HomeViewController.swift in Sources */,
 				A199307824C491D200EA3C46 /* LocalCollectionViewCell.swift in Sources */,
 				BD75ABDE2301BCE600E0FC7A /* MainDataManager.swift in Sources */,
@@ -959,6 +964,7 @@
 				A18740C724C19E0D009E118D /* DJViewController.swift in Sources */,
 				A1E2DAEE24C5669900B1C0FC /* NewAlbumCollectionViewCell.swift in Sources */,
 				A1E2DAEA24C563E000B1C0FC /* SixYearCollectionViewCell.swift in Sources */,
+				A1C6E90F24D32A4A00FE8BA8 /* GlobalResponse.swift in Sources */,
 				A14AE04524D281E200D3B4FD /* ChartDataManager.swift in Sources */,
 				A14AE03524CFD0DE00D3B4FD /* NewAlbumDetailViewController.swift in Sources */,
 				A199307C24C495B500EA3C46 /* BillboardCollectionViewCell.swift in Sources */,

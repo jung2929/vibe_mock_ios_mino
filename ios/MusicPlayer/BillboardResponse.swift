@@ -1,21 +1,21 @@
 //
-//  ChartResponse.swift
+//  BillboardResponse.swift
 //  VIBE
 //
-//  Created by 조민호 on 2020/07/30.
+//  Created by 조민호 on 2020/07/31.
 //  Copyright © 2020 Jerry Jung. All rights reserved.
 //
 
 import ObjectMapper
 
-struct localResponse {
+struct billboardResponse {
     var isSuccess: Bool!
     var code: Int!
     var message: String!
-    var result: localInfo!
+    var result: billboardInfo!
 }
 
-extension localResponse: Mappable {
+extension billboardResponse: Mappable {
 
     init?(map: Map) {
     }
@@ -29,12 +29,12 @@ extension localResponse: Mappable {
 
 }
 
-struct localInfo {
-    var music: [localMusic]!
-    var date: localDateClass!
+struct billboardInfo {
+    var music: [billboardMusic]!
+    var date: billboardDateClass!
 }
 
-extension localInfo: Mappable {
+extension billboardInfo: Mappable {
 
     init?(map: Map) {
     }
@@ -46,30 +46,31 @@ extension localInfo: Mappable {
 
 }
 
-struct localDateClass {
-    var date: String!
+struct billboardDateClass {
+    var data: String!
 }
 
-extension localDateClass: Mappable {
+extension billboardDateClass: Mappable {
 
     init?(map: Map) {
     }
 
     mutating func mapping(map: Map) {
-        date <- map["date"]
+        data <- map["data"]
     }
 
 }
 
-struct localMusic {
+struct billboardMusic {
     var musicID: Int!
     var musicName: String!
     var albumImage: String!
     var artistName: String!
     var albumID: Int!
+    var artistID: Int!
 }
 
-extension localMusic: Mappable {
+extension billboardMusic: Mappable {
 
     init?(map: Map) {
     }
@@ -80,8 +81,7 @@ extension localMusic: Mappable {
         albumImage <- map["albumImage"]
         artistName <- map["artistName"]
         albumID <- map["albumID"]
+        artistID <- map["artistID"]
     }
 
 }
-
-
