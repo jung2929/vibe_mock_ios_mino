@@ -28,7 +28,7 @@ class MusicPlayerViewController: BaseViewController, AVAudioPlayerDelegate {
     var musicId: Int? = 1
     var timeObserver: Any?
     var isSeeking: Bool = false
-    var urlString: String? = ""
+    var urlString: String?
     lazy var musicFile = URL(string: urlString!)
     var player: AVPlayer?
     var playerItem: AVPlayerItem?
@@ -39,7 +39,7 @@ class MusicPlayerViewController: BaseViewController, AVAudioPlayerDelegate {
         super.viewDidLoad()
 //        audioPlayerInit()
         
-        updatePlayButton()
+        
         updateTime(time: CMTime.zero)
         // TODO: TimeObserver 구현
         //CMTime(seconds: 1, preferredTimescale: 10) // avfoundation coremedia / coremeia 에서 0.1초씩 관찰하려고 함. 1초를 10분의 1로 분할시킬꺼다.
@@ -54,10 +54,8 @@ class MusicPlayerViewController: BaseViewController, AVAudioPlayerDelegate {
         super.viewWillAppear(animated)
 //        updateTrackInfo()
         MusicDataManager().getMusic(self, musicId: self.musicId!)
-        let url = URL(string: urlString!)
-        let playerItem:AVPlayerItem = AVPlayerItem(url: url!)
-        player = AVPlayer(playerItem: playerItem)
-        player?.play()
+        
+//        updatePlayButton()
     }
     
     @IBAction func beginDrag(_ sender: UISlider) {
@@ -80,24 +78,18 @@ class MusicPlayerViewController: BaseViewController, AVAudioPlayerDelegate {
     @available(iOS 13.0, *)
     @IBAction func togglePlayButton(_ sender: UIButton) {
         // TODO: 플레이버튼 토글 구현
-        if simplePlayer.isPlaying {
-            simplePlayer.pause()
+        if player?.rate == 0 {
+            player!.play()
         } else {
-            simplePlayer.play()
+            player!.pause()
         }
         updatePlayButton()
     }
+    
 }
 
 @available(iOS 13.0, *)
 extension MusicPlayerViewController {
-//    func updateTrackInfo() { // 받은 곡정보를 가지고 뷰를 업데이트
-//        // TODO: 트랙 정보 업데이트
-//        guard let track = simplePlayer.currentItem?.convertToTrack() else { return }
-//        thumbnailImageView.image = track.artwork
-//        titleLabel.text = track.title
-//        artistLabel.text = track.artist
-//    }
     
     func updateTime(time: CMTime) {
         // print(time.seconds)
@@ -126,13 +118,13 @@ extension MusicPlayerViewController {
     @available(iOS 13.0, *)
     func updatePlayButton() {
         // TODO: 플레이버튼 업데이트 UI작업 > 재생/멈춤
-        if simplePlayer.isPlaying {
+        if player?.rate == 0 {
             let configuration = UIImage.SymbolConfiguration(pointSize: 40)
-            let image = UIImage(systemName: "pause.fill", withConfiguration: configuration)
+            let image = UIImage(systemName: "play.fill", withConfiguration: configuration)
             playControlButton.setImage(image, for: .normal)
         } else {
             let configuration = UIImage.SymbolConfiguration(pointSize: 40)
-            let image = UIImage(systemName: "play.fill", withConfiguration: configuration)
+            let image = UIImage(systemName: "pause.fill", withConfiguration: configuration)
             playControlButton.setImage(image, for: .normal)
         }
     }

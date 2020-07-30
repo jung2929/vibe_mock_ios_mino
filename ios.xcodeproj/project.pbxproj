@@ -23,6 +23,10 @@
 		A14AE03A24CFD7BE00D3B4FD /* NewAlbumDetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A14AE03824CFD7BE00D3B4FD /* NewAlbumDetailCollectionViewCell.xib */; };
 		A14AE03D24D0063600D3B4FD /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14AE03B24D0063600D3B4FD /* NewsDetailViewController.swift */; };
 		A14AE03E24D0063600D3B4FD /* NewsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A14AE03C24D0063600D3B4FD /* NewsDetailViewController.xib */; };
+		A14AE04524D281E200D3B4FD /* ChartDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14AE04424D281E200D3B4FD /* ChartDataManager.swift */; };
+		A14AE04724D281ED00D3B4FD /* ChartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14AE04624D281ED00D3B4FD /* ChartResponse.swift */; };
+		A14AE04924D2B59A00D3B4FD /* LocalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14AE04824D2B59A00D3B4FD /* LocalResponse.swift */; };
+		A14AE04B24D2B5A900D3B4FD /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14AE04A24D2B5A900D3B4FD /* LocalDataManager.swift */; };
 		A1536D1324CD39FD00D15F6B /* MiniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1536D1224CD39FD00D15F6B /* MiniView.swift */; };
 		A1536D1524CD44AD00D15F6B /* MiniView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1536D1424CD44AD00D15F6B /* MiniView.xib */; };
 		A1536D1824CD8AEB00D15F6B /* SimplePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1536D1724CD8AEB00D15F6B /* SimplePlayer.swift */; };
@@ -118,6 +122,10 @@
 		A14AE03824CFD7BE00D3B4FD /* NewAlbumDetailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewAlbumDetailCollectionViewCell.xib; sourceTree = "<group>"; };
 		A14AE03B24D0063600D3B4FD /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 		A14AE03C24D0063600D3B4FD /* NewsDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsDetailViewController.xib; sourceTree = "<group>"; };
+		A14AE04424D281E200D3B4FD /* ChartDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataManager.swift; sourceTree = SOURCE_ROOT; };
+		A14AE04624D281ED00D3B4FD /* ChartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartResponse.swift; sourceTree = SOURCE_ROOT; };
+		A14AE04824D2B59A00D3B4FD /* LocalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalResponse.swift; sourceTree = SOURCE_ROOT; };
+		A14AE04A24D2B5A900D3B4FD /* LocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = SOURCE_ROOT; };
 		A1536D1224CD39FD00D15F6B /* MiniView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniView.swift; sourceTree = "<group>"; };
 		A1536D1424CD44AD00D15F6B /* MiniView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniView.xib; sourceTree = "<group>"; };
 		A1536D1724CD8AEB00D15F6B /* SimplePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayer.swift; sourceTree = "<group>"; };
@@ -543,6 +551,8 @@
 		A18740B924C19D98009E118D /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				A14AE04624D281ED00D3B4FD /* ChartResponse.swift */,
+				A14AE04824D2B59A00D3B4FD /* LocalResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -550,6 +560,8 @@
 		A18740BA24C19D9F009E118D /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				A14AE04424D281E200D3B4FD /* ChartDataManager.swift */,
+				A14AE04A24D2B5A900D3B4FD /* LocalDataManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -894,6 +906,8 @@
 				A1C6157724C435B9005BCE5B /* MagCollectionViewCell.swift in Sources */,
 				A18740CF24C19E30009E118D /* StorageViewController.swift in Sources */,
 				A11328E224CB2E66001121C7 /* ChartDetailViewController.swift in Sources */,
+				A14AE04924D2B59A00D3B4FD /* LocalResponse.swift in Sources */,
+				A14AE04724D281ED00D3B4FD /* ChartResponse.swift in Sources */,
 				A199307424C487BE00EA3C46 /* Top100CollectionViewCell.swift in Sources */,
 				A1E2DADE24C5556900B1C0FC /* MusicVideoCollectionViewCell.swift in Sources */,
 				A18740AE24C197CF009E118D /* HomeViewController.swift in Sources */,
@@ -926,7 +940,9 @@
 				A18740C724C19E0D009E118D /* DJViewController.swift in Sources */,
 				A1E2DAEE24C5669900B1C0FC /* NewAlbumCollectionViewCell.swift in Sources */,
 				A1E2DAEA24C563E000B1C0FC /* SixYearCollectionViewCell.swift in Sources */,
+				A14AE04524D281E200D3B4FD /* ChartDataManager.swift in Sources */,
 				A14AE03524CFD0DE00D3B4FD /* NewAlbumDetailViewController.swift in Sources */,
+				A14AE04B24D2B5A900D3B4FD /* LocalDataManager.swift in Sources */,
 				A199307C24C495B500EA3C46 /* BillboardCollectionViewCell.swift in Sources */,
 				A1E2DAD624C5502100B1C0FC /* LocalHipHopCollectionViewCell.swift in Sources */,
 				A11328E724CB364C001121C7 /* ChartDetailTableViewCell.swift in Sources */,

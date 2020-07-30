@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Kingfisher
+
 @available(iOS 13.0, *)
 class ChartViewController: UIViewController {
 
@@ -31,6 +33,7 @@ class ChartViewController: UIViewController {
         self.navigationController?.pushViewController(albumDetailVC, animated:
         true)
     }
+    @IBOutlet weak var topDate: UILabel!
     
     
     
@@ -43,7 +46,11 @@ class ChartViewController: UIViewController {
     var isOneStepPaging = true
     
     let data = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10"]
-    let rankData = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    let rankData = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]
+    
+    
+    var topChart:[Music] = []
+    var imageUrl: URL?
             
         override func viewDidLoad() {
                 super.viewDidLoad()
@@ -136,13 +143,20 @@ class ChartViewController: UIViewController {
             SearchCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
             SixYearCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
             NewAlbumCollectionView.decelerationRate = UIScrollView.DecelerationRate.fast
-                
+            
+            
             }
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: true)
         tabBarController!.tabBar.barTintColor = .white
         tabBarController!.tabBar.clipsToBounds = true
+        ChartDataManager().getChart(self, page: 1)
+        ChartDataManager().getChart(self, page: 2)
+        ChartDataManager().getChart(self, page: 3)
+        ChartDataManager().getChart(self, page: 4)
+        ChartDataManager().getChart(self, page: 5)
+        
     }
             
         }
@@ -189,7 +203,7 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
             
             func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
                 if collectionView == TopCollectionView {
-                    return data.count
+                    return topChart.count
                 }
                 if collectionView == LocalCollectionView {
                     return data.count
@@ -229,10 +243,11 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
                 if collectionView == TopCollectionView {
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! Top100CollectionViewCell
-                    cell.TopTitleLabel.text = data[indexPath.row]
+                    cell.TopTitleLabel.text = topChart[indexPath.row].musicName
                     cell.TopImageView.image = UIImage(named: "recently_test2")
+//                    cell.TopImageView.kf.setImage(with: imageUrl)
                     cell.backgroundColor = .white
-                    cell.TopSubTitleLabel.text = data[indexPath.row]
+                    cell.TopSubTitleLabel.text = topChart[indexPath.row].artistName
                     cell.TopRankLabel.text = rankData[indexPath.row]
                     return cell
                 }

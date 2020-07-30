@@ -10,6 +10,7 @@ import Alamofire
 import AlamofireObjectMapper
 import AlamofireImage
 import Kingfisher
+import AVFoundation
 
 @available(iOS 13.0, *)
 class MusicDataManager {
@@ -24,14 +25,20 @@ class MusicDataManager {
                 switch response.result {
                 case .success(let musicResponse):
                     if musicResponse.code == 100 {
-                        let imageUrlFromData = musicResponse.result[0].albumImage
+                        let imageUrlFromData = musicResponse.result?[0].albumImage
                         let url = URL(string: imageUrlFromData!)
                         
                         musicPlayerVC.thumbnailImageView.kf.setImage(with: url)
-                        musicPlayerVC.musicId = musicResponse.result[0].musicId
-                        musicPlayerVC.titleLabel.text = musicResponse.result[0].musicName
-                        musicPlayerVC.artistLabel.text = musicResponse.result[0].artistName
-                        musicPlayerVC.urlString = musicResponse.result[0].musicFile
+                        musicPlayerVC.musicId = musicResponse.result?[0].musicId
+                        musicPlayerVC.titleLabel.text = musicResponse.result?[0].musicName
+                        musicPlayerVC.artistLabel.text = musicResponse.result?[0].artistName
+                        musicPlayerVC.urlString = musicResponse.result?[0].musicFile
+                        
+                        
+                        let musicUrl = URL(string: musicPlayerVC.urlString!)
+                        let playerItem:AVPlayerItem = AVPlayerItem(url: musicUrl!)
+                        musicPlayerVC.player = AVPlayer(playerItem: playerItem)
+                        print("success")
                         
                     } else {
                         musicPlayerVC.titleLabel.text = "음악 정보를 불러오는데 실패하였습니다."
