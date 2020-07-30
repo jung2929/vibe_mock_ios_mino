@@ -63,6 +63,20 @@
 		A1C6E90A24D306E400FE8BA8 /* memories (listen on spotify from 3am ep).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1C6E90924D306E400FE8BA8 /* memories (listen on spotify from 3am ep).mp3 */; };
 		A1C6E90D24D3285900FE8BA8 /* BillboardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E90C24D3285900FE8BA8 /* BillboardResponse.swift */; };
 		A1C6E90F24D32A4A00FE8BA8 /* GlobalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E90E24D32A4A00FE8BA8 /* GlobalResponse.swift */; };
+		A1C6E91424D34ABF00FE8BA8 /* ArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E91224D34ABE00FE8BA8 /* ArtistViewController.swift */; };
+		A1C6E91524D34ABF00FE8BA8 /* ArtistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C6E91324D34ABE00FE8BA8 /* ArtistViewController.xib */; };
+		A1C6E91824D34B8E00FE8BA8 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E91624D34B8E00FE8BA8 /* AlbumViewController.swift */; };
+		A1C6E91924D34B8E00FE8BA8 /* AlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C6E91724D34B8E00FE8BA8 /* AlbumViewController.xib */; };
+		A1C6E91C24D34C8900FE8BA8 /* PlayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E91A24D34C8900FE8BA8 /* PlayListViewController.swift */; };
+		A1C6E91D24D34C8900FE8BA8 /* PlayListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C6E91B24D34C8900FE8BA8 /* PlayListViewController.xib */; };
+		A1C6E92024D34CF400FE8BA8 /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E91E24D34CF400FE8BA8 /* SendViewController.swift */; };
+		A1C6E92124D34CF400FE8BA8 /* SendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C6E91F24D34CF400FE8BA8 /* SendViewController.xib */; };
+		A1C6E92424D34D4800FE8BA8 /* StoreSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E92224D34D4800FE8BA8 /* StoreSongViewController.swift */; };
+		A1C6E92524D34D4800FE8BA8 /* StoreSongViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C6E92324D34D4800FE8BA8 /* StoreSongViewController.xib */; };
+		A1C6E92824D34D9800FE8BA8 /* StoreAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E92624D34D9800FE8BA8 /* StoreAlbumViewController.swift */; };
+		A1C6E92924D34D9800FE8BA8 /* StoreAlbumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C6E92724D34D9800FE8BA8 /* StoreAlbumViewController.xib */; };
+		A1C6E92C24D34DD400FE8BA8 /* StorePlaylListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E92A24D34DD400FE8BA8 /* StorePlaylListViewController.swift */; };
+		A1C6E92D24D34DD400FE8BA8 /* StorePlaylListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C6E92B24D34DD400FE8BA8 /* StorePlaylListViewController.xib */; };
 		A1DCB0A024C57C0C0009B57C /* DJRecentlyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DCB09E24C57C0C0009B57C /* DJRecentlyCollectionViewCell.swift */; };
 		A1DCB0A124C57C0C0009B57C /* DJRecentlyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1DCB09F24C57C0C0009B57C /* DJRecentlyCollectionViewCell.xib */; };
 		A1E2DAD624C5502100B1C0FC /* LocalHipHopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2DAD424C5502100B1C0FC /* LocalHipHopCollectionViewCell.swift */; };
@@ -168,6 +182,20 @@
 		A1C6E90924D306E400FE8BA8 /* memories (listen on spotify from 3am ep).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "memories (listen on spotify from 3am ep).mp3"; sourceTree = "<group>"; };
 		A1C6E90C24D3285900FE8BA8 /* BillboardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BillboardResponse.swift; path = ios/MusicPlayer/BillboardResponse.swift; sourceTree = SOURCE_ROOT; };
 		A1C6E90E24D32A4A00FE8BA8 /* GlobalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GlobalResponse.swift; path = ios/MusicPlayer/GlobalResponse.swift; sourceTree = SOURCE_ROOT; };
+		A1C6E91224D34ABE00FE8BA8 /* ArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewController.swift; sourceTree = "<group>"; };
+		A1C6E91324D34ABE00FE8BA8 /* ArtistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArtistViewController.xib; sourceTree = "<group>"; };
+		A1C6E91624D34B8E00FE8BA8 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		A1C6E91724D34B8E00FE8BA8 /* AlbumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumViewController.xib; sourceTree = "<group>"; };
+		A1C6E91A24D34C8900FE8BA8 /* PlayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListViewController.swift; sourceTree = "<group>"; };
+		A1C6E91B24D34C8900FE8BA8 /* PlayListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayListViewController.xib; sourceTree = "<group>"; };
+		A1C6E91E24D34CF400FE8BA8 /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		A1C6E91F24D34CF400FE8BA8 /* SendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendViewController.xib; sourceTree = "<group>"; };
+		A1C6E92224D34D4800FE8BA8 /* StoreSongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreSongViewController.swift; sourceTree = "<group>"; };
+		A1C6E92324D34D4800FE8BA8 /* StoreSongViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreSongViewController.xib; sourceTree = "<group>"; };
+		A1C6E92624D34D9800FE8BA8 /* StoreAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAlbumViewController.swift; sourceTree = "<group>"; };
+		A1C6E92724D34D9800FE8BA8 /* StoreAlbumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreAlbumViewController.xib; sourceTree = "<group>"; };
+		A1C6E92A24D34DD400FE8BA8 /* StorePlaylListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorePlaylListViewController.swift; sourceTree = "<group>"; };
+		A1C6E92B24D34DD400FE8BA8 /* StorePlaylListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StorePlaylListViewController.xib; sourceTree = "<group>"; };
 		A1DCB09E24C57C0C0009B57C /* DJRecentlyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJRecentlyCollectionViewCell.swift; sourceTree = "<group>"; };
 		A1DCB09F24C57C0C0009B57C /* DJRecentlyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DJRecentlyCollectionViewCell.xib; sourceTree = "<group>"; };
 		A1E2DAD424C5502100B1C0FC /* LocalHipHopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalHipHopCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -543,6 +571,7 @@
 		A18740B824C19D84009E118D /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				A1C6E91124D34A9F00FE8BA8 /* ETCVC */,
 				A1F6C7CD24CA91550076F103 /* Song */,
 				A18740C024C19DC3009E118D /* DataManager */,
 				A18740BF24C19DBF009E118D /* Entity */,
@@ -619,6 +648,27 @@
 				A1C6E90924D306E400FE8BA8 /* memories (listen on spotify from 3am ep).mp3 */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1C6E91124D34A9F00FE8BA8 /* ETCVC */ = {
+			isa = PBXGroup;
+			children = (
+				A1C6E91224D34ABE00FE8BA8 /* ArtistViewController.swift */,
+				A1C6E91324D34ABE00FE8BA8 /* ArtistViewController.xib */,
+				A1C6E91624D34B8E00FE8BA8 /* AlbumViewController.swift */,
+				A1C6E91724D34B8E00FE8BA8 /* AlbumViewController.xib */,
+				A1C6E91A24D34C8900FE8BA8 /* PlayListViewController.swift */,
+				A1C6E91B24D34C8900FE8BA8 /* PlayListViewController.xib */,
+				A1C6E91E24D34CF400FE8BA8 /* SendViewController.swift */,
+				A1C6E91F24D34CF400FE8BA8 /* SendViewController.xib */,
+				A1C6E92224D34D4800FE8BA8 /* StoreSongViewController.swift */,
+				A1C6E92324D34D4800FE8BA8 /* StoreSongViewController.xib */,
+				A1C6E92624D34D9800FE8BA8 /* StoreAlbumViewController.swift */,
+				A1C6E92724D34D9800FE8BA8 /* StoreAlbumViewController.xib */,
+				A1C6E92A24D34DD400FE8BA8 /* StorePlaylListViewController.swift */,
+				A1C6E92B24D34DD400FE8BA8 /* StorePlaylListViewController.xib */,
+			);
+			path = ETCVC;
 			sourceTree = "<group>";
 		};
 		A1F6C7CD24CA91550076F103 /* Song */ = {
@@ -827,11 +877,13 @@
 				A14AE03624CFD0DE00D3B4FD /* NewAlbumDetailViewController.xib in Resources */,
 				A1536D1524CD44AD00D15F6B /* MiniView.xib in Resources */,
 				A199307524C487BE00EA3C46 /* Top100CollectionViewCell.xib in Resources */,
+				A1C6E91524D34ABF00FE8BA8 /* ArtistViewController.xib in Resources */,
 				A1DCB0A124C57C0C0009B57C /* DJRecentlyCollectionViewCell.xib in Resources */,
 				A1E2DAEB24C563E000B1C0FC /* SixYearCollectionViewCell.xib in Resources */,
 				A1E2DAE724C561E100B1C0FC /* SearchCollectionViewCell.xib in Resources */,
 				A1F6C7D124CA92B20076F103 /* SongViewController.xib in Resources */,
 				A199307D24C495B500EA3C46 /* BillboardCollectionViewCell.xib in Resources */,
+				A1C6E92924D34D9800FE8BA8 /* StoreAlbumViewController.xib in Resources */,
 				BDEF323C22F9B7CB00FEF8BD /* LaunchScreen.storyboard in Resources */,
 				A1F1D10524C2AAB600085DF9 /* TitleCollectionViewCell.xib in Resources */,
 				A12806B224C4050B00EB9D5A /* RecentlyCollectionViewCell.xib in Resources */,
@@ -844,23 +896,28 @@
 				A12806B624C417ED00EB9D5A /* HearCollectionViewCell.xib in Resources */,
 				A11328E324CB2E66001121C7 /* ChartDetailViewController.xib in Resources */,
 				A1C6157424C42BC6005BCE5B /* NewCollectionViewCell.xib in Resources */,
+				A1C6E91D24D34C8900FE8BA8 /* PlayListViewController.xib in Resources */,
 				A18740C424C19DF5009E118D /* ChartViewController.xib in Resources */,
 				A14AE03A24CFD7BE00D3B4FD /* NewAlbumDetailCollectionViewCell.xib in Resources */,
+				A1C6E91924D34B8E00FE8BA8 /* AlbumViewController.xib in Resources */,
 				A11328E824CB364C001121C7 /* ChartDetailTableViewCell.xib in Resources */,
 				A1F6C7D524CAA47C0076F103 /* SongCollectionViewCell.xib in Resources */,
 				A1E2DAEF24C5669900B1C0FC /* NewAlbumCollectionViewCell.xib in Resources */,
 				BDEF323922F9B7CB00FEF8BD /* Assets.xcassets in Resources */,
 				A1F6C7E124CAEF2E0076F103 /* MusicPlayerViewController.xib in Resources */,
 				A14AE03124CEF25C00D3B4FD /* GenreDetailViewController.xib in Resources */,
+				A1C6E92124D34CF400FE8BA8 /* SendViewController.xib in Resources */,
 				A1E2DAE324C55FBC00B1C0FC /* LeagueCollectionViewCell.xib in Resources */,
 				A14AE03E24D0063600D3B4FD /* NewsDetailViewController.xib in Resources */,
 				BD75ABDC2301B7B500E0FC7A /* NoticePopUp.storyboard in Resources */,
 				A18740AF24C197CF009E118D /* HomeViewController.xib in Resources */,
 				A1E2DAD724C5502100B1C0FC /* LocalHipHopCollectionViewCell.xib in Resources */,
+				A1C6E92524D34D4800FE8BA8 /* StoreSongViewController.xib in Resources */,
 				A199307924C491D200EA3C46 /* LocalCollectionViewCell.xib in Resources */,
 				A1E2DADB24C5535A00B1C0FC /* LocalBaladCollectionViewCell.xib in Resources */,
 				A1C6E90A24D306E400FE8BA8 /* memories (listen on spotify from 3am ep).mp3 in Resources */,
 				A18740CC24C19E21009E118D /* SearchViewController.xib in Resources */,
+				A1C6E92D24D34DD400FE8BA8 /* StorePlaylListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -915,6 +972,7 @@
 			files = (
 				BDEF323722F9B7CB00FEF8BD /* ios.xcdatamodeld in Sources */,
 				A1C6E90324D3023700FE8BA8 /* Track.swift in Sources */,
+				A1C6E92824D34D9800FE8BA8 /* StoreAlbumViewController.swift in Sources */,
 				BD9BF17822F9C6CF009E47EB /* UIColor.swift in Sources */,
 				A18740B324C19860009E118D /* MainTabBarController.swift in Sources */,
 				BD9BF18022F9CDEF009E47EB /* String.swift in Sources */,
@@ -948,14 +1006,17 @@
 				A18740CB24C19E21009E118D /* SearchViewController.swift in Sources */,
 				A1536D1324CD39FD00D15F6B /* MiniView.swift in Sources */,
 				A1C6E90224D3023700FE8BA8 /* TrackManager.swift in Sources */,
+				A1C6E91C24D34C8900FE8BA8 /* PlayListViewController.swift in Sources */,
 				BD9BF17C22F9C737009E47EB /* UIViewController.swift in Sources */,
 				A168251E24C6B33F00DAEE83 /* NewsCollectionViewCell.swift in Sources */,
 				BD75ABE02301BE8200E0FC7A /* TutorialResponse.swift in Sources */,
 				A1E2DADA24C5535A00B1C0FC /* LocalBaladCollectionViewCell.swift in Sources */,
 				A1F6C7E024CAEF2E0076F103 /* MusicPlayerViewController.swift in Sources */,
+				A1C6E91824D34B8E00FE8BA8 /* AlbumViewController.swift in Sources */,
 				A1C6E90824D3027200FE8BA8 /* test.swift in Sources */,
 				A12806B524C417ED00EB9D5A /* HearCollectionViewCell.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
+				A1C6E92C24D34DD400FE8BA8 /* StorePlaylListViewController.swift in Sources */,
 				A1F1D10424C2AAB600085DF9 /* TitleCollectionViewCell.swift in Sources */,
 				A1E2DAE624C561E100B1C0FC /* SearchCollectionViewCell.swift in Sources */,
 				A1C6E90424D3023700FE8BA8 /* Extension+AVPlayerItem.swift in Sources */,
@@ -967,10 +1028,13 @@
 				A1C6E90F24D32A4A00FE8BA8 /* GlobalResponse.swift in Sources */,
 				A14AE04524D281E200D3B4FD /* ChartDataManager.swift in Sources */,
 				A14AE03524CFD0DE00D3B4FD /* NewAlbumDetailViewController.swift in Sources */,
+				A1C6E91424D34ABF00FE8BA8 /* ArtistViewController.swift in Sources */,
 				A199307C24C495B500EA3C46 /* BillboardCollectionViewCell.swift in Sources */,
 				A1E2DAD624C5502100B1C0FC /* LocalHipHopCollectionViewCell.swift in Sources */,
 				A11328E724CB364C001121C7 /* ChartDetailTableViewCell.swift in Sources */,
+				A1C6E92024D34CF400FE8BA8 /* SendViewController.swift in Sources */,
 				A14AE03024CEF25C00D3B4FD /* GenreDetailViewController.swift in Sources */,
+				A1C6E92424D34D4800FE8BA8 /* StoreSongViewController.swift in Sources */,
 				A1E2DAE224C55FBC00B1C0FC /* LeagueCollectionViewCell.swift in Sources */,
 				BD75ABD82301B5F600E0FC7A /* NoticePopUp.swift in Sources */,
 			);

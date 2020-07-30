@@ -20,8 +20,8 @@ class SearchViewController: UIViewController {
     }
     
     
-    let data = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10"]
-    var recentData = [""]
+    let data = ["슈퍼주니어-K.R.Y 단독 콘서트를 개최.", "세븐틴이 온라인 팬미팅을 개최합니다.", "데이브레이크 콘서트가 취소되었습니다."]
+    let image: [String] = ["search1", "search2", "search3"]
     
     var currentIndex: CGFloat = 0
 
@@ -79,7 +79,7 @@ extension SearchViewController: UICollectionViewDataSource, UICollectionViewDele
                     
 func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == NewsCollectionView {
-            return data.count
+            return image.count
         }
             return 0
 }
@@ -89,7 +89,7 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
     if collectionView == NewsCollectionView {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! NewsCollectionViewCell
             cell.NewsTitleLabel.text = data[indexPath.row]
-            cell.NewsImageView.image = UIImage(named: "search_test")
+        cell.NewsImageView.image = UIImage(named: image[indexPath.row])
             cell.backgroundColor = .white
             cell.layer.borderColor = UIColor.lightGray.cgColor
             cell.layer.borderWidth = 0.2

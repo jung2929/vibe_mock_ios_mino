@@ -68,7 +68,6 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! DJRecentlyCollectionViewCell
             cell.DJRecentlyImageView.image = UIImage(named: "DJ_test")
             cell.backgroundColor = .white
-            cell.alpha = 0.5
             cell.sizeToFit()
             return cell
         }

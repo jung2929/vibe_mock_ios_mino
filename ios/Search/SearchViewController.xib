@@ -53,11 +53,11 @@
                                     <rect key="frame" x="20" y="89" width="334" height="56"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
-                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vwH-9a-51h">
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vwH-9a-51h">
                                     <rect key="frame" x="20" y="165" width="334" height="212"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="MmF-Ts-C1c">
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MmF-Ts-C1c">
                                         <size key="itemSize" width="128" height="128"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -72,7 +72,7 @@
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQC-Jg-LAJ">
                                     <rect key="frame" x="20" y="453.5" width="158" height="49.5"/>
-                                    <color key="backgroundColor" red="0.91207724560922665" green="0.90648694536252483" blue="0.93548967173756348" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="국내 알앤비/소울">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
@@ -82,168 +82,168 @@
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSa-I4-Wu5">
                                     <rect key="frame" x="192" y="454.5" width="158" height="49.5"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="해외 힙합">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40Q-aG-4J4">
                                     <rect key="frame" x="20" y="515" width="158" height="50"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="국내 발라드">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSP-UX-klR">
                                     <rect key="frame" x="191" y="516" width="158" height="50"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="K-Pop">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azO-zE-Eoe">
                                     <rect key="frame" x="20" y="577" width="158" height="50"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="국내 댄스">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A84-pX-rld">
                                     <rect key="frame" x="192" y="578" width="158" height="50"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="국내 일렉트로닉">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5a-6w-IAo">
                                     <rect key="frame" x="20" y="637" width="158" height="49.5"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="국내 힙합">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWw-vn-scP">
                                     <rect key="frame" x="191" y="638" width="158" height="49.5"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="국내 락/메탈">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAP-D5-NH3">
                                     <rect key="frame" x="20" y="694.5" width="158" height="50"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="국내 재즈">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2E-gI-1zp">
                                     <rect key="frame" x="190" y="695.5" width="158" height="50"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="국내 인디">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkW-o1-MBY">
                                     <rect key="frame" x="20" y="755.5" width="158" height="50"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="국내 포크/어쿠스틱">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dK-Fi-fL4">
                                     <rect key="frame" x="191" y="756.5" width="158" height="50"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="트로트">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3g7-7g-KLG">
                                     <rect key="frame" x="20" y="815.5" width="158" height="49.5"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="Pop">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3l-nH-QNj">
                                     <rect key="frame" x="190" y="816.5" width="158" height="49.5"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="해외 댄스">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oD3-GO-riy">
                                     <rect key="frame" x="20" y="875" width="158" height="50"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="해외 일렉트로닉">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNt-pp-NsM">
                                     <rect key="frame" x="189" y="876" width="158" height="50"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="해외 알앤비/소울">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwr-y4-S4l">
                                     <rect key="frame" x="20" y="933" width="158" height="50"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="해외 락/메탈">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6o2-le-pLg">
                                     <rect key="frame" x="188" y="934" width="158" height="50"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="해외 재즈">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhV-Qy-auh">
                                     <rect key="frame" x="20" y="993" width="158" height="49.5"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="해외 인디">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hK-XN-Wkf">
                                     <rect key="frame" x="187" y="994" width="158" height="49.5"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="해외 포크/어쿠스틱">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzp-n0-7Pg">
                                     <rect key="frame" x="20" y="1053.5" width="158" height="50"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="OST">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KX-E7-def">
                                     <rect key="frame" x="188" y="1054.5" width="158" height="50"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="클래식">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvH-Uc-tcj">
                                     <rect key="frame" x="20" y="1110.5" width="158" height="50"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="뉴에이지/연주곡">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfA-oe-0ps">
                                     <rect key="frame" x="187" y="1111.5" width="158" height="50"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="J-Pop">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isU-4a-PsC">
                                     <rect key="frame" x="20" y="1170.5" width="158" height="49.5"/>
-                                    <color key="backgroundColor" red="0.91207724560000003" green="0.90648694539999997" blue="0.93548967169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="backgroundColor" red="0.95095476111191335" green="0.94512617295094536" blue="0.97536514762588833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="CCM">
                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>

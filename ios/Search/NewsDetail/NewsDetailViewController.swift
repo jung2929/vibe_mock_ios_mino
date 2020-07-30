@@ -18,7 +18,7 @@ class NewsDetailViewController: UIViewController, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let url = URL(string:"https://github.com/Mino777") else {return}
+        guard let url = URL(string:"https://imnews.imbc.com/news/2020/culture/article/5858751_32654.html") else {return}
         let request = URLRequest(url: url)
         webView?.load(request)
     }

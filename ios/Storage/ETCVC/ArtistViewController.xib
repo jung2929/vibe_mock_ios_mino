@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArtistViewController" customModule="VIBE" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="좋아요한 아티스트" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOH-hX-aT7">
+                    <rect key="frame" x="100" y="288" width="214" height="36"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내가 좋아하는 아티스트들을 모아서 감상해 보세요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jI4-ps-l3y">
+                    <rect key="frame" x="87" y="334" width="240" height="68"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="jI4-ps-l3y" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="CyT-5K-6VE"/>
+                <constraint firstItem="YOH-hX-aT7" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Jmo-zn-4pM"/>
+                <constraint firstItem="jI4-ps-l3y" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0923913" id="Naz-TJ-YOi"/>
+                <constraint firstItem="jI4-ps-l3y" firstAttribute="top" secondItem="YOH-hX-aT7" secondAttribute="bottom" constant="10" id="Pis-et-5h7"/>
+                <constraint firstItem="jI4-ps-l3y" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.57971" id="YjM-7W-bqm"/>
+                <constraint firstItem="YOH-hX-aT7" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.516908" id="izP-fh-YWM"/>
+                <constraint firstItem="YOH-hX-aT7" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.048913" id="wM4-15-CnT"/>
+                <constraint firstItem="jI4-ps-l3y" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="zW9-JD-6mk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="116.57608695652175"/>
+        </view>
+    </objects>
+</document>

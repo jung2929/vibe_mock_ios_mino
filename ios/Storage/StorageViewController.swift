@@ -5,7 +5,8 @@ import Pageboy
 @available(iOS 13.0, *)
 class StorageViewController: TabmanViewController {
     
-    private var viewControllers: Array<UIViewController> = [SongViewController(),SongViewController(),SongViewController(),SongViewController(),SongViewController(),SongViewController(),SongViewController(),SongViewController(),]
+    private var viewControllers: Array<UIViewController> = [SongViewController(), ArtistViewController(),AlbumViewController(),PlayListViewController(),SendViewController(),StoreSongViewController(),StoreAlbumViewController(),StorePlaylListViewController(),]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

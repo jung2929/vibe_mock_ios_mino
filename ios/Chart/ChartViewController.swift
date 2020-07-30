@@ -37,9 +37,7 @@ class ChartViewController: UIViewController {
     @IBOutlet weak var localDate: UILabel!
     @IBOutlet weak var billboardDate: UILabel!
     @IBOutlet weak var globalDate: UILabel!
-    
-    
-    
+   
     var currentIndex: CGFloat = 0
 
     let lineSpacing: CGFloat = 10
@@ -50,8 +48,15 @@ class ChartViewController: UIViewController {
     
     let data = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10"]
     let rankData = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]
-    
-    var musicId: Int = 0
+    let recentData1: [String] = ["홈_4_1", "홈_4_2", "홈_4_3", "홈_4_4", "홈_4_5", "홈_4_6", "홈_4_7", "홈_4_8", "홈_4_9", "recently_test2"]
+    let recentData2 = ["ROCKSTAR (Feat. Roddy Ricch)", "다시 여기 바닷가", "MARGARITA (Feat. 재규어 중사)", "One More Night", "일기", "내꺼하자", "Mama Told Me", "Physical (Feat. 화사)", "Between Us (Feat. Snoh Aalegra)", "빗소리"]
+    let recentData3 = ["DaBaby", "싹쓰리(유두래곤, 린다G, 비룡)", "KIRIN (기린)", "Maroon 5", "박소은", "원어스(ONEUS)", "Alex Newell", "Dua Lipa, 화사(Hwa Sa)", "dvsn", "산들" ]
+    let musicVideo1: [String] = ["차트1_1", "차트1_2", "musicvideo_test2"]
+    let musicVideo2 = ["다시 여기 바닷가", "눈누난나 (NUNU NANA)", "여름 안에서 (Covered By 싹쓰리)"]
+    let musicVideo3 = ["싹쓰리(유두래곤, 린다G, 비룡)", "제시(Jessi)", "싹쓰리(유두래곤, 린다G, 비룡)"]
+    let newData1: [String] = ["홈_6_1", "홈_6_2", "홈_6_3", "홈_6_4"]
+    let newData2 = ["Muwop", "Simple", "A Muse In Her Feelings", "BAMBOOCLUB[A]"]
+    let newData3 = ["Mulatto", "정은지", "dvsn", "릴러말즈"]
     
     var topChart:[Music] = []
     var localChart:[localMusic] = []
@@ -222,25 +227,25 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                     return globalChart.count
                 }
                 if collectionView == LocalHipHopCollectionView {
-                    return data.count
+                    return recentData1.count
                 }
                 if collectionView == LocalBaladCollectionView {
-                    return data.count
+                    return recentData1.count
                 }
                 if collectionView == MusicVideoCollectionView {
-                    return data.count
+                    return musicVideo1.count
                 }
                 if collectionView == LeagueCollectionView {
-                    return data.count
+                    return recentData1.count
                 }
                 if collectionView == SearchCollectionView {
-                    return data.count
+                    return recentData1.count
                 }
                 if collectionView == SixYearCollectionView {
-                    return data.count
+                    return recentData1.count
                 }
                 if collectionView == NewAlbumCollectionView {
-                    return data.count
+                    return newData1.count
                 }
 
                 return 0
@@ -291,68 +296,68 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                 
                 if collectionView == LocalHipHopCollectionView {
                                    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! LocalHipHopCollectionViewCell
-                                   cell.LocalHipHopTitleLabel.text = data[indexPath.row]
-                                   cell.LocalHipHopImageView.image = UIImage(named: "recently_test2")
+                                   cell.LocalHipHopTitleLabel.text = recentData2[indexPath.row]
+                    cell.LocalHipHopImageView.image = UIImage(named: recentData1[indexPath.row])
                                    cell.backgroundColor = .white
-                                   cell.LocalHipHopSubTitleLabel.text = data[indexPath.row]
+                                   cell.LocalHipHopSubTitleLabel.text = recentData3[indexPath.row]
                                    cell.LocalHipHopRankLabel.text = rankData[indexPath.row]
                                    return cell
                                }
                 if collectionView == LocalBaladCollectionView {
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! LocalBaladCollectionViewCell
-                    cell.LocalBaladTitleLabel.text = data[indexPath.row]
-                    cell.LocalBaladImageView.image = UIImage(named: "recently_test2")
+                    cell.LocalBaladTitleLabel.text = recentData2[indexPath.row]
+                    cell.LocalBaladImageView.image = UIImage(named: recentData1[indexPath.row])
                     cell.backgroundColor = .white
-                    cell.LocalBaladSubTitleLabel.text = data[indexPath.row]
+                    cell.LocalBaladSubTitleLabel.text = recentData3[indexPath.row]
                     cell.LocalBaladRankLabel.text = rankData[indexPath.row]
                     return cell
                 }
                 
                 if collectionView == MusicVideoCollectionView {
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MusicVideoCollectionViewCell
-                    cell.MusicVideoTitleLabel.text = data[indexPath.row]
-                    cell.MusicVideoImageView.image = UIImage(named: "musicvideo_test2")
+                    cell.MusicVideoTitleLabel.text = musicVideo2[indexPath.row]
+                    cell.MusicVideoImageView.image = UIImage(named: musicVideo1[indexPath.row])
                     cell.backgroundColor = .white
-                    cell.MusicVideoSubTitleLabel.text = data[indexPath.row]
+                    cell.MusicVideoSubTitleLabel.text = musicVideo3[indexPath.row]
                     return cell
                 }
                 
                 if collectionView == LeagueCollectionView {
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! LeagueCollectionViewCell
-                    cell.LeagueTitleLabel.text = data[indexPath.row]
-                    cell.LeagueImageView.image = UIImage(named: "recently_test2")
+                    cell.LeagueTitleLabel.text = recentData2[indexPath.row]
+                    cell.LeagueImageView.image = UIImage(named: recentData1[indexPath.row])
                     cell.backgroundColor = .white
-                    cell.LeagueSubTitleLabel.text = data[indexPath.row]
+                    cell.LeagueSubTitleLabel.text = recentData3[indexPath.row]
                     cell.LeagueRankLabel.text = rankData[indexPath.row]
                     return cell
                 }
                 
                 if collectionView == SearchCollectionView {
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SearchCollectionViewCell
-                    cell.SearchTitleLabel.text = data[indexPath.row]
-                    cell.SearchImageView.image = UIImage(named: "recently_test2")
+                    cell.SearchTitleLabel.text = recentData2[indexPath.row]
+                    cell.SearchImageView.image = UIImage(named: recentData1[indexPath.row])
                     cell.backgroundColor = .white
-                    cell.SearchSubTitleLabel.text = data[indexPath.row]
+                    cell.SearchSubTitleLabel.text = recentData3[indexPath.row]
                     cell.SearchRankLabel.text = rankData[indexPath.row]
                     return cell
                 }
                 
                 if collectionView == SixYearCollectionView {
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SixYearCollectionViewCell
-                    cell.SixYearTitleLabel.text = data[indexPath.row]
-                    cell.SixYearImageView.image = UIImage(named: "recently_test2")
+                    cell.SixYearTitleLabel.text = recentData2[indexPath.row]
+                    cell.SixYearImageView.image = UIImage(named: recentData1[indexPath.row])
                     cell.backgroundColor = .white
-                    cell.SixYearSubTitleLabel.text = data[indexPath.row]
+                    cell.SixYearSubTitleLabel.text = recentData3[indexPath.row]
                     cell.SixYearRankLabel.text = rankData[indexPath.row]
                     return cell
                 }
                 
                 if collectionView == NewAlbumCollectionView {
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! NewAlbumCollectionViewCell
-                    cell.NewAlbumTitleLabel.text = data[indexPath.row]
-                    cell.NewAlbumImageView.image = UIImage(named: "like_test")
+                    cell.NewAlbumTitleLabel.text = newData2[indexPath.row]
+                    cell.NewAlbumImageView.image = UIImage(named: newData1[indexPath.row])
                     cell.backgroundColor = .white
-                    cell.NewAlbumSubTitleLabel.text = data[indexPath.row]
+                    cell.NewAlbumSubTitleLabel.text = newData3[indexPath.row]
                     return cell
                 }
                 return cell

@@ -82,31 +82,31 @@
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGw-Lw-99k" userLabel="2">
                                     <rect key="frame" x="194" y="383.5" width="164" height="164"/>
-                                    <state key="normal" image="DJ_test"/>
+                                    <state key="normal" image="dj7"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHf-hW-jNR" userLabel="3">
                                     <rect key="frame" x="20" y="557.5" width="164" height="164"/>
-                                    <state key="normal" image="DJ_test"/>
+                                    <state key="normal" image="dj1"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nk8-GD-ngU" userLabel="4">
                                     <rect key="frame" x="194" y="557.5" width="164" height="164"/>
-                                    <state key="normal" image="DJ_test"/>
+                                    <state key="normal" image="dj2"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmy-3e-es8" userLabel="5">
                                     <rect key="frame" x="20" y="731.5" width="164" height="164.5"/>
-                                    <state key="normal" image="DJ_test"/>
+                                    <state key="normal" image="dj3"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7t-oI-vSV" userLabel="6">
                                     <rect key="frame" x="194" y="731.5" width="164" height="164.5"/>
-                                    <state key="normal" image="DJ_test"/>
+                                    <state key="normal" image="dj4"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckd-Mb-HNB" userLabel="7">
                                     <rect key="frame" x="20" y="906" width="164" height="164"/>
-                                    <state key="normal" image="DJ_test"/>
+                                    <state key="normal" image="dj5"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4K-fk-3SQ" userLabel="8">
                                     <rect key="frame" x="194" y="906" width="164" height="164"/>
-                                    <state key="normal" image="DJ_test"/>
+                                    <state key="normal" image="dj6"/>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Etb-5r-yQC" userLabel="9">
                                     <rect key="frame" x="20" y="1080" width="164" height="164"/>
@@ -325,6 +325,13 @@
     </objects>
     <resources>
         <image name="DJ_test" width="271.5" height="271.5"/>
+        <image name="dj1" width="272.5" height="271.5"/>
+        <image name="dj2" width="270" height="272"/>
+        <image name="dj3" width="267.5" height="271"/>
+        <image name="dj4" width="269.5" height="271"/>
+        <image name="dj5" width="271.5" height="271"/>
+        <image name="dj6" width="270" height="271.5"/>
+        <image name="dj7" width="270" height="272"/>
         <image name="테마" width="85" height="40.5"/>
     </resources>
 </document>

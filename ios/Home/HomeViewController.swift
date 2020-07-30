@@ -18,7 +18,28 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var NewCollectionView: UICollectionView!
     @IBOutlet weak var MagCollectionView: UICollectionView!
     
-    let data = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10"]
+    let titleData1 = ["#Mood","플레이리스트","플레이리스트"]
+    let titleData2: [String] = ["홈_1_1", "홈_1_2", "홈_1_3"]
+    let titleData3 = ["라운지바에서", "KB RAPBEAT FESTIVAL", "TV 속 이노래 뭐지?"]
+    let titleData4 = ["공간을 채우고 분위기를 바꾸는 재즈 힙합", "페스티벌 전 미리 들어봐야 할 곡들", "많이 검색된 화제의 노래들"]
+    
+    let recommendData1: [String] = ["홈_3_1", "홈_3_2", "홈_3_3", "홈_3_4"]
+    let recommendData2 = ["나른한 그루브", "DOPE!", "깊은 사랑의 감정", "숨은명곡: 국내 알앤비"]
+    let recommendData3 = ["VIBE 국내 알앤비/소울", "VIBE 트렌드", "VIBE 발라드", "VIBE 국내 알앤비/소울"]
+    
+    let recentData1: [String] = ["홈_4_1", "홈_4_2", "홈_4_3", "홈_4_4", "홈_4_5", "홈_4_6", "홈_4_7", "홈_4_8", "홈_4_9", "recently_test2"]
+    let recentData2 = ["ROCKSTAR (Feat. Roddy Ricch)", "다시 여기 바닷가", "MARGARITA (Feat. 재규어 중사)", "One More Night", "일기", "내꺼하자", "Mama Told Me", "Physical (Feat. 화사)", "Between Us (Feat. Snoh Aalegra)", "빗소리"]
+    let recentData3 = ["DaBaby", "싹쓰리(유두래곤, 린다G, 비룡)", "KIRIN (기린)", "Maroon 5", "박소은", "원어스(ONEUS)", "Alex Newell", "Dua Lipa, 화사(Hwa Sa)", "dvsn", "산들" ]
+    
+    let hereData1: [String] = ["홈_5_1", "홈_5_2"]
+    let hereData2 = ["여름밤의 바이브", "라운지바에서"]
+    let hereData3 = ["낭만적인 시티팝 사운드와 함께 깊어가는 여름밤.", "집에서 즐기는 분위기 좋은 라운지 음악."]
+    
+    let newData1: [String] = ["홈_6_1", "홈_6_2", "홈_6_3", "홈_6_4"]
+    let newData2 = ["Muwop", "Simple", "A Muse In Her Feelings", "BAMBOOCLUB[A]"]
+    let newData3 = ["Mulatto", "정은지", "dvsn", "릴러말즈"]
+    
+    let magData1 : [String] = ["홈_7_1", "mag_test2"]
     
     var currentIndex: CGFloat = 0
 
@@ -123,22 +144,22 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         
         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             if collectionView == TitleCollectionView {
-                return data.count
+                return titleData1.count
             }
             if collectionView == RecommendCollectionView {
-                return data.count
+                return recommendData1.count
             }
             if collectionView == RecentlyCollectionView {
-                return data.count
+                return recentData1.count
             }
             if collectionView == HearCollectionView {
-                return data.count
+                return hereData1.count
             }
             if collectionView == NewCollectionView {
-                return data.count
+                return newData1.count
             }
             if collectionView == MagCollectionView {
-                return data.count
+                return magData1.count
             }
             
             return 0
@@ -148,58 +169,58 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
             if collectionView == TitleCollectionView {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! TitleCollectionViewCell
-                cell.titleLabel.text = data[indexPath.row]
-                cell.imageView.image = UIImage(named: "titletest")
+                cell.titleLabel.text = titleData1[indexPath.row]
+                cell.imageView.image = UIImage(named: titleData2[indexPath.row])
                 cell.backgroundColor = .white
-                cell.subTitleLabel.text = data[indexPath.row]
-                cell.descriptionLabel.text = data[indexPath.row]
+                cell.subTitleLabel.text = titleData3[indexPath.row]
+                cell.descriptionLabel.text = titleData4[indexPath.row]
                 return cell
             }
             
             if collectionView == RecommendCollectionView {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as!
                     RecommendCollectionViewCell
-                cell.RecommendTitleLabel.text = data[indexPath.row]
-                cell.RecommendImageView.image = UIImage(named: "like_test")
+                cell.RecommendTitleLabel.text = recommendData2[indexPath.row]
+                cell.RecommendImageView.image = UIImage(named: recommendData1[indexPath.row])
                 cell.backgroundColor = .white
-                cell.RecommendSubTitleLabel.text = data[indexPath.row]
+                cell.RecommendSubTitleLabel.text = recommendData3[indexPath.row]
                 return cell
             }
             
             if collectionView == RecentlyCollectionView {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as!
                     RecentlyCollectionViewCell
-                cell.RecentlyTitleLabel.text = data[indexPath.row]
-                cell.RecentlyImageView.image = UIImage(named: "recently_test2")
+                cell.RecentlyTitleLabel.text = recentData2[indexPath.row]
+                cell.RecentlyImageView.image = UIImage(named: recentData1[indexPath.row])
                 cell.backgroundColor = .white
-                cell.RecentlySubTitleLabel.text = data[indexPath.row]
+                cell.RecentlySubTitleLabel.text = recentData3[indexPath.row]
                 return cell
             }
             
             if collectionView == HearCollectionView {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as!
                     HearCollectionViewCell
-                cell.HearTitleLabel.text = data[indexPath.row]
-                cell.HearImageView.image = UIImage(named: "hear_test2")
+                cell.HearTitleLabel.text = hereData2[indexPath.row]
+                cell.HearImageView.image = UIImage(named: hereData1[indexPath.row])
                 cell.backgroundColor = .white
-                cell.HearSubTitleLabel.text = data[indexPath.row]
+                cell.HearSubTitleLabel.text = hereData3[indexPath.row]
                 return cell
             }
             
             if collectionView == NewCollectionView {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as!
                     NewCollectionViewCell
-                cell.NewTitleLabel.text = data[indexPath.row]
-                cell.NewImageView.image = UIImage(named: "new_test2")
+                cell.NewTitleLabel.text = newData2[indexPath.row]
+                cell.NewImageView.image = UIImage(named: newData1[indexPath.row])
                 cell.backgroundColor = .white
-                cell.NewSubTitleLabel.text = data[indexPath.row]
+                cell.NewSubTitleLabel.text = newData3[indexPath.row]
                 return cell
             }
             
             if collectionView == MagCollectionView {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as!
                     MagCollectionViewCell
-                cell.MagImageView.image = UIImage(named: "mag_test2")
+                cell.MagImageView.image = UIImage(named: magData1[indexPath.row])
                 cell.backgroundColor = .white
                 return cell
             }

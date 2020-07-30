@@ -20,7 +20,9 @@ class SongViewController: BaseViewController {
     
     
     
-    let data = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "test8", "test9", "test10"]
+    let recentData1: [String] = ["홈_4_1", "홈_4_2", "홈_4_3", "홈_4_4", "홈_4_5", "홈_4_6", "홈_4_7", "홈_4_8", "홈_4_9", "recently_test2"]
+    let recentData2 = ["ROCKSTAR (Feat. Roddy Ricch)", "다시 여기 바닷가", "MARGARITA (Feat. 재규어 중사)", "One More Night", "일기", "내꺼하자", "Mama Told Me", "Physical (Feat. 화사)", "Between Us (Feat. Snoh Aalegra)", "빗소리"]
+    let recentData3 = ["DaBaby", "싹쓰리(유두래곤, 린다G, 비룡)", "KIRIN (기린)", "Maroon 5", "박소은", "원어스(ONEUS)", "Alex Newell", "Dua Lipa, 화사(Hwa Sa)", "dvsn", "산들" ]
                         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +52,7 @@ extension SongViewController: UICollectionViewDataSource, UICollectionViewDelega
                     
 func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == SongCollectionView {
-            return data.count
+            return recentData3.count
         }
             return 0
 }
@@ -59,9 +61,9 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
     if collectionView == SongCollectionView {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SongCollectionViewCell
-            cell.SongTitleLabel.text = data[indexPath.row]
-            cell.SongImageView.image = UIImage(named: "recently_test2")
-            cell.SongSubTitleLabel.text = data[indexPath.row]
+            cell.SongTitleLabel.text = recentData2[indexPath.row]
+        cell.SongImageView.image = UIImage(named: recentData1[indexPath.row])
+            cell.SongSubTitleLabel.text = recentData3[indexPath.row]
             cell.backgroundColor = .white
             return cell
         }

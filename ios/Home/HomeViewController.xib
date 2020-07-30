@@ -64,7 +64,7 @@
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mixtape_test2" translatesAutoresizingMaskIntoConstraints="NO" id="bbg-UE-5Kp">
                                     <rect key="frame" x="20" y="730" width="181" height="181"/>
                                 </imageView>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mixtape_test2" translatesAutoresizingMaskIntoConstraints="NO" id="dSZ-LE-iQN">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="홈_2_1" translatesAutoresizingMaskIntoConstraints="NO" id="dSZ-LE-iQN">
                                     <rect key="frame" x="211" y="730" width="181" height="181"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="256" text="두둠칫 믹스테잎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txg-OX-bRE">
@@ -351,5 +351,6 @@
         <image name="mixtape_test" width="373.66665649414062" height="180.66667175292969"/>
         <image name="mixtape_test2" width="181.33332824707031" height="181.33332824707031"/>
         <image name="naver" width="414" height="105"/>
+        <image name="홈_2_1" width="181" height="181.33332824707031"/>
     </resources>
 </document>
