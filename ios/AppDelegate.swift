@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     // Production 서버
-//    let baseUrl = "https://beluv.softsquared.com"
+    // let baseUrl = "https://beluv.softsquared.com"
     // Dev 서버
     let baseUrl = "http://54.180.153.77"
 

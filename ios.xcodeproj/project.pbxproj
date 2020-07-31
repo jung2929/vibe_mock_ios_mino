@@ -59,7 +59,6 @@
 		A1C6E90324D3023700FE8BA8 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E90024D3023700FE8BA8 /* Track.swift */; };
 		A1C6E90424D3023700FE8BA8 /* Extension+AVPlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E90124D3023700FE8BA8 /* Extension+AVPlayerItem.swift */; };
 		A1C6E90624D3024E00FE8BA8 /* SimplePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E90524D3024E00FE8BA8 /* SimplePlayer.swift */; };
-		A1C6E90824D3027200FE8BA8 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E90724D3027200FE8BA8 /* test.swift */; };
 		A1C6E90A24D306E400FE8BA8 /* memories (listen on spotify from 3am ep).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A1C6E90924D306E400FE8BA8 /* memories (listen on spotify from 3am ep).mp3 */; };
 		A1C6E90D24D3285900FE8BA8 /* BillboardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E90C24D3285900FE8BA8 /* BillboardResponse.swift */; };
 		A1C6E90F24D32A4A00FE8BA8 /* GlobalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C6E90E24D32A4A00FE8BA8 /* GlobalResponse.swift */; };
@@ -178,7 +177,6 @@
 		A1C6E90024D3023700FE8BA8 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		A1C6E90124D3023700FE8BA8 /* Extension+AVPlayerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+AVPlayerItem.swift"; sourceTree = "<group>"; };
 		A1C6E90524D3024E00FE8BA8 /* SimplePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePlayer.swift; sourceTree = "<group>"; };
-		A1C6E90724D3027200FE8BA8 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		A1C6E90924D306E400FE8BA8 /* memories (listen on spotify from 3am ep).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "memories (listen on spotify from 3am ep).mp3"; sourceTree = "<group>"; };
 		A1C6E90C24D3285900FE8BA8 /* BillboardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BillboardResponse.swift; path = ios/MusicPlayer/BillboardResponse.swift; sourceTree = SOURCE_ROOT; };
 		A1C6E90E24D32A4A00FE8BA8 /* GlobalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GlobalResponse.swift; path = ios/MusicPlayer/GlobalResponse.swift; sourceTree = SOURCE_ROOT; };
@@ -695,7 +693,6 @@
 				A1C6E90124D3023700FE8BA8 /* Extension+AVPlayerItem.swift */,
 				A1C6E90024D3023700FE8BA8 /* Track.swift */,
 				A1C6E8FF24D3023700FE8BA8 /* TrackManager.swift */,
-				A1C6E90724D3027200FE8BA8 /* test.swift */,
 			);
 			path = MusicPlayer;
 			sourceTree = "<group>";
@@ -1013,7 +1010,6 @@
 				A1E2DADA24C5535A00B1C0FC /* LocalBaladCollectionViewCell.swift in Sources */,
 				A1F6C7E024CAEF2E0076F103 /* MusicPlayerViewController.swift in Sources */,
 				A1C6E91824D34B8E00FE8BA8 /* AlbumViewController.swift in Sources */,
-				A1C6E90824D3027200FE8BA8 /* test.swift in Sources */,
 				A12806B524C417ED00EB9D5A /* HearCollectionViewCell.swift in Sources */,
 				BDEF322F22F9B7CB00FEF8BD /* AppDelegate.swift in Sources */,
 				A1C6E92C24D34DD400FE8BA8 /* StorePlaylListViewController.swift in Sources */,

@@ -62,6 +62,11 @@ class ChartViewController: UIViewController {
     var localChart:[localMusic] = []
     var billboardChart:[billboardMusic] = []
     var globalChart: [globalMusic] = []
+    var topImageUrl: [URL?] = []
+    var localImageUrl: [URL?] = []
+    var billboardImageUrl: [URL?] = []
+    var globalImageUrl: [URL?] = []
+    
 //    var imageUrl: URL?
             
         override func viewDidLoad() {
@@ -167,6 +172,7 @@ class ChartViewController: UIViewController {
         ChartDataManager().getLocalChart(self)
         ChartDataManager().getBillboardChart(self)
         ChartDataManager().getGlobalChart(self)
+        print("topimageurl --> \([topImageUrl])")
 
         
     }
@@ -256,18 +262,19 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                 if collectionView == TopCollectionView {
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! Top100CollectionViewCell
                     cell.TopTitleLabel.text = topChart[indexPath.row].musicName
-                    cell.TopImageView.image = UIImage(named: "recently_test2")
-//                    cell.TopImageView.kf.setImage(with: imageUrl)
+                    print("\(topImageUrl[indexPath.row]!)")
+                    cell.TopImageView.kf.setImage(with: topImageUrl[indexPath.row])
                     cell.backgroundColor = .white
                     cell.TopSubTitleLabel.text = topChart[indexPath.row].artistName
                     cell.TopRankLabel.text = rankData[indexPath.row]
+//                        String(topChart[indexPath.row].musicID)
                     return cell
                 }
                 
                 if collectionView == LocalCollectionView {
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! LocalCollectionViewCell
                     cell.LocalTitleLabel.text = localChart[indexPath.row].musicName
-                    cell.LocalImageView.image = UIImage(named: "recently_test2")
+                    cell.LocalImageView.kf.setImage(with: localImageUrl[indexPath.row])
                     cell.backgroundColor = .white
                     cell.LocalSubTitleLabel.text = localChart[indexPath.row].artistName
                     cell.LocalRankLabel.text = rankData[indexPath.row]
@@ -277,7 +284,7 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                 if collectionView == BillboardCollectionView {
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! BillboardCollectionViewCell
                     cell.BillTitleLabel.text = billboardChart[indexPath.row].musicName
-                    cell.BillImageView.image = UIImage(named: "recently_test2")
+                    cell.BillImageView.kf.setImage(with: billboardImageUrl[indexPath.row])
                     cell.backgroundColor = .white
                     cell.BillSubTitleLabel.text = billboardChart[indexPath.row].artistName
                     cell.BillRankLabel.text = rankData[indexPath.row]
@@ -287,7 +294,7 @@ extension ChartViewController: UICollectionViewDataSource, UICollectionViewDeleg
                 if collectionView == GlobalCollectionView {
                     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! GlobalCollectionViewCell
                     cell.GlobalTitleLabel.text = globalChart[indexPath.row].musicName
-                    cell.GlobalImageView.image = UIImage(named: "recently_test2")
+                    cell.GlobalImageView.kf.setImage(with: globalImageUrl[indexPath.row])
                     cell.backgroundColor = .white
                     cell.GlobalSubTitleLabel.text = globalChart[indexPath.row].artistName
                     cell.GlobalRankLabel.text = rankData[indexPath.row]

@@ -30,7 +30,7 @@ class MusicPlayerViewController: BaseViewController, AVAudioPlayerDelegate {
         }
     }
     @IBAction func shuffleButton(_ sender: UIButton) {
-        musicId = Int.random(in: 1...16)
+        musicId = Int.random(in: 1...24)
         MusicDataManager().getMusic(self, musicId: self.musicId!)
     }
     
@@ -51,11 +51,13 @@ class MusicPlayerViewController: BaseViewController, AVAudioPlayerDelegate {
             timeObserver = simplePlayer.addPeriodicTimeObserver(forInterval: CMTime(seconds: 1, preferredTimescale: 10), queue: DispatchQueue.main/* 메인스레드한테 0.1초마다 알려주겠다. */, using: { time in
                 self.updateTime(time: time)
             }) // 재생되는 아이템의 시간을 관찰하겠다.
+            updateTrackInfo()
+            
+            print(#function)
         }
         
         override func viewWillAppear(_ animated: Bool) { // 보이기전에 호출
             super.viewWillAppear(animated)
-            updateTrackInfo()
             MusicDataManager().getMusic(self, musicId: self.musicId!)
         }
         

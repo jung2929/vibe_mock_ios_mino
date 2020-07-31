@@ -25,15 +25,17 @@ class ChartDataManager {
                 case .success(let chartResponse):
                     if chartResponse.code == 100 {
                         
-//                        musicPlayerVC.thumbnailImageView.kf.setImage(with: url)
                         
-                        let topChart:[Music] = (chartResponse.result?.music)!
-//                        let topImageFromData = chartResponse.result?.music?[10].albumImage
-//                        let topImageUrl = URL(string: topImageFromData!)
-//                        chartVC.imageUrl = topImageUrl!
-                        chartVC.topChart.append(contentsOf: topChart)
-                        chartVC.topDate.text = chartResponse.result?.date.date
-                        chartVC.TopCollectionView.reloadData()
+                    let topChart:[Music] = (chartResponse.result?.music)!
+
+                    for i in 0..<(chartResponse.result?.music!.count)! {
+                    chartVC.topImageUrl.append(URL(string: (chartResponse.result?.music?[i].albumImage)!))
+                    chartVC.TopCollectionView.reloadData()
+                    }
+                        
+                    chartVC.topChart.append(contentsOf: topChart)
+                    chartVC.topDate.text = chartResponse.result?.date.date
+                    chartVC.TopCollectionView.reloadData()
                         
                         
                         print("success")
@@ -60,6 +62,11 @@ class ChartDataManager {
                     if localResponse.code == 100 {
                         
                         let localChart:[localMusic] = (localResponse.result?.music)!
+                        
+                        for i in 0..<(localResponse.result?.music!.count)! {
+                        chartVC.localImageUrl.append(URL(string: (localResponse.result?.music?[i].albumImage)!))
+                        chartVC.LocalCollectionView.reloadData()
+                        }
 
                         chartVC.localChart.append(contentsOf: localChart)
                         chartVC.localDate.text = localResponse.result?.date.date
@@ -90,6 +97,11 @@ class ChartDataManager {
                     if billboardResponse.code == 100 {
                         
                         let billboardChart:[billboardMusic] = (billboardResponse.result?.music)!
+                        
+                        for i in 0..<(billboardResponse.result?.music!.count)! {
+                        chartVC.billboardImageUrl.append(URL(string: (billboardResponse.result?.music?[i].albumImage)!))
+                        chartVC.BillboardCollectionView.reloadData()
+                        }
 
                         chartVC.billboardChart.append(contentsOf: billboardChart)
                         chartVC.billboardDate.text = billboardResponse.result?.date.data
@@ -120,6 +132,11 @@ class ChartDataManager {
                     if globalResponse.code == 100 {
                         
                         let globalChart:[globalMusic] = (globalResponse.result?.music)!
+                        
+                        for i in 0..<(globalResponse.result?.music!.count)! {
+                        chartVC.globalImageUrl.append(URL(string: (globalResponse.result?.music?[i].albumImage)!))
+                        chartVC.GlobalCollectionView.reloadData()
+                        }
 
                         chartVC.globalChart.append(contentsOf: globalChart)
                         chartVC.globalDate.text = globalResponse.result?.date.date

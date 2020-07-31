@@ -38,7 +38,7 @@ class MusicDataManager {
                         let playerItem: AVPlayerItem = AVPlayerItem(url: musicUrl!)
 //                        musicPlayerVC.player = AVPlayer(playerItem: playerItem)
                         musicPlayerVC.simplePlayer.replaceCurrentItem(with: playerItem)
-                        print("success")
+                        print("Music Play Success")
                         
                     } else {
                         musicPlayerVC.titleLabel.text = "음악 정보를 불러오는데 실패하였습니다."

@@ -27,7 +27,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JU0-Ju-6EX">
-                        <rect key="frame" x="88" y="28" width="42" height="21"/>
+                        <rect key="frame" x="88" y="23" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -54,7 +54,7 @@
                     <constraint firstItem="oJe-e0-rYg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="rrK-Ha-f3p"/>
                     <constraint firstItem="oJe-e0-rYg" firstAttribute="leading" secondItem="sYv-Sx-dEh" secondAttribute="trailing" constant="15" id="t30-5R-StD"/>
                     <constraint firstAttribute="trailing" secondItem="ihx-dC-QTR" secondAttribute="trailing" id="to9-LV-imu"/>
-                    <constraint firstItem="JU0-Ju-6EX" firstAttribute="top" secondItem="oJe-e0-rYg" secondAttribute="bottom" constant="3" id="vDI-e8-RtR"/>
+                    <constraint firstItem="JU0-Ju-6EX" firstAttribute="top" secondItem="oJe-e0-rYg" secondAttribute="bottom" constant="-2" id="vDI-e8-RtR"/>
                     <constraint firstItem="ihx-dC-QTR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="veB-9F-XKU"/>
                     <constraint firstItem="PCa-VR-OT6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zhj-uT-pRy"/>
                 </constraints>
